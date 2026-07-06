@@ -43,7 +43,7 @@ checkpoints), and the `.venv`/tool caches that `misc/resetup.sh` rebuilds.
 `pipelines/smoke_results/` and the small prepped-dataset metadata under
 `One-DM/data/` are kept so the repo is self-explanatory without them.
 
-## Citations and Acknowledgements
+## Citations and acknowledgements
 
 This project builds on:
 
