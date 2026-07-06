@@ -74,3 +74,6 @@ This project builds on:
 
 **archaeohack-starterpack** (canonical Gardiner glyphs, Unicode mapping,
 font): [github.com/ArchaeoHack/archaeohack-starterpack](https://github.com/ArchaeoHack/archaeohack-starterpack)
+
+This project originates from and builds upon work from the [ArchaeoHack 2025 hackathon](https://archaeohack-evfhl.wordpress.com/), 
+and has been assisted by Claude Fable 5, Opus 4.8 and Sonnet 5.
