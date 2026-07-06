@@ -43,7 +43,7 @@ checkpoints), and the `.venv`/tool caches that `misc/resetup.sh` rebuilds.
 `pipelines/smoke_results/` and the small prepped-dataset metadata under
 `One-DM/data/` are kept so the repo is self-explanatory without them.
 
-## Citations
+## Citations and Acknowledgements
 
 This project builds on:
 
@@ -75,5 +75,5 @@ This project builds on:
 **archaeohack-starterpack** (canonical Gardiner glyphs, Unicode mapping,
 font): [github.com/ArchaeoHack/archaeohack-starterpack](https://github.com/ArchaeoHack/archaeohack-starterpack)
 
-This project originates from and builds upon work from the [ArchaeoHack 2025 hackathon](https://archaeohack-evfhl.wordpress.com/), 
+In addition, this project originates from and builds upon work from the [ArchaeoHack 2025 hackathon](https://archaeohack-evfhl.wordpress.com/), 
 and has been assisted by Claude Fable 5, Opus 4.8 and Sonnet 5.
