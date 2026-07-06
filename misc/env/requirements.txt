@@ -1,0 +1,18 @@
+# ============================================================================
+# Portable environment for the egyptian_hiero project.
+# Edit this file to ADD packages, then re-run:  bash env/bootstrap.sh
+# (Installed into the project-local .venv on persistent NFS storage, so it
+#  survives JupyterHub overlay/container resets.)
+# ============================================================================
+
+# --- core deps for scripts/ (used by pipelines/generation procedural engine) ---
+numpy                     # all scripts
+scipy                     # handwriting_augment
+scikit-image              # skeletonize (handwriting_augment, skeleton_simplify)
+pillow                    # skeleton_simplify
+opencv-python-headless    # cv2 (headless: no libGL needed on this server)
+
+# --- utilities (notebooks / visual inspection) ---
+matplotlib                # visual inspection of glyphs/variants
+tqdm
+ipykernel                 # register this env as a Jupyter kernel on JupyterHub

@@ -1,0 +1,45 @@
+# ============================================================================
+# egyptian_hiero .gitignore
+#
+# Goal: keep all code, docs, configs, and small result/evidence artifacts;
+# omit anything that's either (a) regenerable (venvs, tool caches, __pycache__)
+# or (b) large binary data/weights that don't belong in git. See
+# misc/PROJECT_NOTES.md and misc/RESETUP.md for how to regenerate everything
+# excluded here.
+# ============================================================================
+
+# --- Virtual environments & managed toolchains (rebuild: bash misc/resetup.sh) ---
+.venv/
+**/.venv/
+misc/.tools/
+
+# --- Python / Jupyter cruft ---
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+
+# --- Leftover backup of the archaeohack-starterpack's original nested clone
+# (kept on disk for provenance, not tracked; upstream: github.com/ArchaeoHack/archaeohack-starterpack)
+hiero_data/archaeohack-starterpack/.git.orig-clone-backup/
+
+# --- Raw / prepped datasets (multi-GB; see hiero_data/ and README provenance notes) ---
+hiero_data/Hand-drawn Hieroglyph Dataset/
+One-DM/data/hiero/
+One-DM/data/hiero_smoke*/
+
+# --- Model weights & checkpoints (regenerate via download_weights.py / training runs) ---
+One-DM/model_zoo/
+One-DM/Saved/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# --- Misc training/output scratch dirs, if ever created ---
+misc/outputs/
+
+# --- External reference literature (public papers, not authored here) ---
+misc/OneDM.pdf
+hiero_data/archaeohack-starterpack/docs/*.pdf

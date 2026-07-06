@@ -1,0 +1,386 @@
+{
+ "model": "runs/smoke/best.pt (resnet18@112, 3 epochs on T4)",
+ "index": "769 canonical + 565 handwriting-centroid prototypes",
+ "pjb_unseen_writer": [
+  {
+   "query": "hiero_data/archaeohack-starterpack/data/me-sign-examples-pjb/I10/I10_sample_20250118_164138.png",
+   "true": "I10",
+   "top5": [
+    {
+     "label": "I10",
+     "score": 0.7998
+    },
+    {
+     "label": "U19",
+     "score": 0.6224
+    },
+    {
+     "label": "V23",
+     "score": 0.608
+    },
+    {
+     "label": "I11",
+     "score": 0.5495
+    },
+    {
+     "label": "I12",
+     "score": 0.5028
+    }
+   ],
+   "correct_at": 1
+  },
+  {
+   "query": "hiero_data/archaeohack-starterpack/data/me-sign-examples-pjb/M17/M17_sample_20250117_130918.png",
+   "true": "M17",
+   "top5": [
+    {
+     "label": "M17",
+     "score": 0.4885
+    },
+    {
+     "label": "P11",
+     "score": 0.4707
+    },
+    {
+     "label": "R8",
+     "score": 0.4498
+    },
+    {
+     "label": "Aa28",
+     "score": 0.4249
+    },
+    {
+     "label": "M44",
+     "score": 0.3812
+    }
+   ],
+   "correct_at": 1
+  },
+  {
+   "query": "hiero_data/archaeohack-starterpack/data/me-sign-examples-pjb/N35/N35_sample_20250115_145928.png",
+   "true": "N35",
+   "top5": [
+    {
+     "label": "N35",
+     "score": 0.7089
+    },
+    {
+     "label": "O43",
+     "score": 0.5514
+    },
+    {
+     "label": "N35a",
+     "score": 0.536
+    },
+    {
+     "label": "L5",
+     "score": 0.5314
+    },
+    {
+     "label": "T9a",
+     "score": 0.5194
+    }
+   ],
+   "correct_at": 1
+  },
+  {
+   "query": "hiero_data/archaeohack-starterpack/data/me-sign-examples-pjb/O1/O1_sample_20250118_152706.png",
+   "true": "O1",
+   "top5": [
+    {
+     "label": "N29",
+     "score": 0.5073
+    },
+    {
+     "label": "Aa11",
+     "score": 0.4968
+    },
+    {
+     "label": "Q5",
+     "score": 0.4876
+    },
+    {
+     "label": "T30",
+     "score": 0.4804
+    },
+    {
+     "label": "O1",
+     "score": 0.4757
+    }
+   ],
+   "correct_at": 5
+  },
+  {
+   "query": "hiero_data/archaeohack-starterpack/data/me-sign-examples-pjb/V28/V28_sample_20250115_150144.png",
+   "true": "V28",
+   "top5": [
+    {
+     "label": "V28",
+     "score": 0.869
+    },
+    {
+     "label": "V29",
+     "score": 0.6023
+    },
+    {
+     "label": "V8",
+     "score": 0.5468
+    },
+    {
+     "label": "R16",
+     "score": 0.4596
+    },
+    {
+     "label": "S42",
+     "score": 0.4587
+    }
+   ],
+   "correct_at": 1
+  },
+  {
+   "query": "hiero_data/archaeohack-starterpack/data/me-sign-examples-pjb/X1/X1_sample_20250115_150116.png",
+   "true": "X1",
+   "top5": [
+    {
+     "label": "X1",
+     "score": 0.7922
+    },
+    {
+     "label": "N12",
+     "score": 0.6245
+    },
+    {
+     "label": "N11",
+     "score": 0.5793
+    },
+    {
+     "label": "D24",
+     "score": 0.528
+    },
+    {
+     "label": "Aa16",
+     "score": 0.4795
+    }
+   ],
+   "correct_at": 1
+  }
+ ],
+ "val_heldout": [
+  {
+   "query": "hiero_data/Hand-drawn Hieroglyph Dataset/A1/498_5_4_A1-6-0.png",
+   "true": "A1",
+   "top5": [
+    {
+     "label": "A1",
+     "score": 0.7054
+    },
+    {
+     "label": "A11",
+     "score": 0.6563
+    },
+    {
+     "label": "C11",
+     "score": 0.6249
+    },
+    {
+     "label": "A32",
+     "score": 0.5738
+    },
+    {
+     "label": "B5",
+     "score": 0.5476
+    }
+   ],
+   "correct_at": 1
+  },
+  {
+   "query": "hiero_data/Hand-drawn Hieroglyph Dataset/Aa14/625_3_6_Aa14-5-0.png",
+   "true": "Aa14",
+   "top5": [
+    {
+     "label": "Aa14",
+     "score": 0.9336
+    },
+    {
+     "label": "Aa15",
+     "score": 0.625
+    },
+    {
+     "label": "Aa13",
+     "score": 0.611
+    },
+    {
+     "label": "D13",
+     "score": 0.5721
+    },
+    {
+     "label": "Aa7",
+     "score": 0.5695
+    }
+   ],
+   "correct_at": 1
+  },
+  {
+   "query": "hiero_data/Hand-drawn Hieroglyph Dataset/D28/416_4_1_D28-1-0.png",
+   "true": "D28",
+   "top5": [
+    {
+     "label": "D28",
+     "score": 0.6862
+    },
+    {
+     "label": "Aa20",
+     "score": 0.4901
+    },
+    {
+     "label": "Q1",
+     "score": 0.4297
+    },
+    {
+     "label": "M31",
+     "score": 0.3966
+    },
+    {
+     "label": "S27",
+     "score": 0.3959
+    }
+   ],
+   "correct_at": 1
+  },
+  {
+   "query": "hiero_data/Hand-drawn Hieroglyph Dataset/F10/45_3_6_F10-4-0.png",
+   "true": "F10",
+   "top5": [
+    {
+     "label": "F10",
+     "score": 0.8599
+    },
+    {
+     "label": "F11",
+     "score": 0.6316
+    },
+    {
+     "label": "F12",
+     "score": 0.5077
+    },
+    {
+     "label": "O30",
+     "score": 0.4068
+    },
+    {
+     "label": "F5",
+     "score": 0.4062
+    }
+   ],
+   "correct_at": 1
+  },
+  {
+   "query": "hiero_data/Hand-drawn Hieroglyph Dataset/I5/578_2_11_I5-4-0.png",
+   "true": "I5",
+   "top5": [
+    {
+     "label": "I5",
+     "score": 0.9162
+    },
+    {
+     "label": "P4",
+     "score": 0.5876
+    },
+    {
+     "label": "I4",
+     "score": 0.5866
+    },
+    {
+     "label": "M9",
+     "score": 0.5145
+    },
+    {
+     "label": "I7",
+     "score": 0.5125
+    }
+   ],
+   "correct_at": 1
+  },
+  {
+   "query": "hiero_data/Hand-drawn Hieroglyph Dataset/N16/368_6_2_N16-6-0.png",
+   "true": "N16",
+   "top5": [
+    {
+     "label": "N16",
+     "score": 0.8958
+    },
+    {
+     "label": "Aa12",
+     "score": 0.504
+    },
+    {
+     "label": "F47",
+     "score": 0.4434
+    },
+    {
+     "label": "N37",
+     "score": 0.4382
+    },
+    {
+     "label": "H5",
+     "score": 0.416
+    }
+   ],
+   "correct_at": 1
+  },
+  {
+   "query": "hiero_data/Hand-drawn Hieroglyph Dataset/O41/539_1_4_O41-1-0.png",
+   "true": "O41",
+   "top5": [
+    {
+     "label": "O41",
+     "score": 0.7914
+    },
+    {
+     "label": "O40",
+     "score": 0.7319
+    },
+    {
+     "label": "U17",
+     "score": 0.4615
+    },
+    {
+     "label": "O51",
+     "score": 0.4079
+    },
+    {
+     "label": "Aa6",
+     "score": 0.4067
+    }
+   ],
+   "correct_at": 1
+  },
+  {
+   "query": "hiero_data/Hand-drawn Hieroglyph Dataset/S19/280_6_5_S19-5-0.png",
+   "true": "S19",
+   "top5": [
+    {
+     "label": "S19",
+     "score": 0.6771
+    },
+    {
+     "label": "D31",
+     "score": 0.558
+    },
+    {
+     "label": "O23",
+     "score": 0.5161
+    },
+    {
+     "label": "F9",
+     "score": 0.4821
+    },
+    {
+     "label": "D32",
+     "score": 0.4723
+    }
+   ],
+   "correct_at": 1
+  }
+ ]
+}

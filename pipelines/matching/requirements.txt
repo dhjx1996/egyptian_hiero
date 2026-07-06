@@ -1,0 +1,8 @@
+# Pipeline 2 (matching) deps -- torch/torchvision are installed separately by
+# setup_env.sh with the right CPU/CUDA index url.
+numpy
+opencv-python-headless
+pillow
+scipy
+scikit-image
+tqdm

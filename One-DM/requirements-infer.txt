@@ -1,0 +1,19 @@
+# One-DM INFERENCE dependencies (CPU). torch/torchvision are installed
+# separately from the PyTorch CPU index by setup_env.sh (so we get the small
+# CPU-only wheels, not the multi-GB CUDA build from PyPI).
+einops
+numpy
+diffusers
+safetensors
+huggingface-hub
+pyyaml
+easydict
+opencv-python-headless
+lmdb
+tqdm
+pillow
+tensorboardX
+six
+packaging
+omegaconf
+

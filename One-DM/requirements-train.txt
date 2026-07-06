@@ -1,0 +1,18 @@
+# One-DM TRAINING-only extras (on top of requirements-infer.txt).
+# Needed to fine-tune / train from scratch (requires GPUs; not runnable on this
+# CPU-only JupyterHub box). Install with:
+#   uv pip install --python ./.venv/bin/python -r requirements-train.txt
+accelerate
+pytorch-lightning
+torchmetrics
+torch-fidelity
+pytorch-fid
+kornia
+wandb
+tensorboard
+scikit-image
+scipy
+pandas
+editdistance
+omegaconf
+ema-pytorch

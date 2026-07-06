@@ -1,0 +1,6154 @@
+[
+  {
+    "gardiner_num": "A1",
+    "hieroglyph": "𓀀",
+    "description": "Seated man",
+    "details": "Det. of man, names; Pronoun1st sing. i, wi, ink, kwi. “I,” “me,” “my.”",
+    "is_priority": true,
+    "unicode_hex": "13000"
+  },
+  {
+    "gardiner_num": "A2",
+    "hieroglyph": "𓀁",
+    "description": "Man with hand to mouth",
+    "details": "Det. of eat, drink, speak, think.",
+    "is_priority": true,
+    "unicode_hex": "13001"
+  },
+  {
+    "gardiner_num": "A3",
+    "hieroglyph": "𓀂",
+    "description": "Man sitting on heel",
+    "details": "Det. of sit.",
+    "is_priority": false,
+    "unicode_hex": "13002"
+  },
+  {
+    "gardiner_num": "A4",
+    "hieroglyph": "𓀃",
+    "description": "Man with arms raised",
+    "details": "Det. adoration, hide",
+    "is_priority": false,
+    "unicode_hex": "13003"
+  },
+  {
+    "gardiner_num": "A5",
+    "hieroglyph": "𓀄",
+    "description": "Man hiding",
+    "details": "Det. hide",
+    "is_priority": false,
+    "unicode_hex": "13004"
+  },
+  {
+    "gardiner_num": "A5a",
+    "hieroglyph": "𓀅",
+    "description": null,
+    "details": null,
+    "is_priority": false,
+    "unicode_hex": "13005"
+  },
+  {
+    "gardiner_num": "A6",
+    "hieroglyph": "𓀆",
+    "description": "Man purifying",
+    "details": "Det. purity, cleanliness",
+    "is_priority": false,
+    "unicode_hex": "13006"
+  },
+  {
+    "gardiner_num": "A6a",
+    "hieroglyph": "𓀇",
+    "description": null,
+    "details": null,
+    "is_priority": false,
+    "unicode_hex": "13007"
+  },
+  {
+    "gardiner_num": "A6b",
+    "hieroglyph": "𓀈",
+    "description": null,
+    "details": null,
+    "is_priority": false,
+    "unicode_hex": "13008"
+  },
+  {
+    "gardiner_num": "A7",
+    "hieroglyph": "𓀉",
+    "description": "Fatigued man",
+    "details": "Det. weary, weak",
+    "is_priority": false,
+    "unicode_hex": "13009"
+  },
+  {
+    "gardiner_num": "A8",
+    "hieroglyph": "𓀊",
+    "description": "Man performing hnw",
+    "details": "Det. in hnw “jubilation”",
+    "is_priority": false,
+    "unicode_hex": "1300"
+  },
+  {
+    "gardiner_num": "A9",
+    "hieroglyph": "𓀋",
+    "description": "Man with basket on head",
+    "details": "Det. in 3ṯp “load,” f3i “carry,” k3t “work.”",
+    "is_priority": false,
+    "unicode_hex": "1300"
+  },
+  {
+    "gardiner_num": "A10",
+    "hieroglyph": "𓀌",
+    "description": "Man holding an oar",
+    "details": "Det. in sḳdw “sail.”",
+    "is_priority": false,
+    "unicode_hex": "1300"
+  },
+  {
+    "gardiner_num": "A11",
+    "hieroglyph": "𓀍",
+    "description": "Man with scepter and crook",
+    "details": "Det. ḫnms “friend.”",
+    "is_priority": false,
+    "unicode_hex": "1300"
+  },
+  {
+    "gardiner_num": "A12",
+    "hieroglyph": "𓀎",
+    "description": "Man with bow and quiver",
+    "details": "Det. mšʿ “army,” soldier.",
+    "is_priority": false,
+    "unicode_hex": "1300"
+  },
+  {
+    "gardiner_num": "A13",
+    "hieroglyph": "𓀏",
+    "description": "Man with arms bound",
+    "details": "Det. ḫfty “enemy.”",
+    "is_priority": false,
+    "unicode_hex": "1300"
+  },
+  {
+    "gardiner_num": "A14",
+    "hieroglyph": "𓀐",
+    "description": "Man with bleeding head",
+    "details": "Det. of mwt “die,” enemy.",
+    "is_priority": false,
+    "unicode_hex": "13010"
+  },
+  {
+    "gardiner_num": "A14a",
+    "hieroglyph": "𓀑",
+    "description": "Man with axe to head",
+    "details": "Var. of A14",
+    "is_priority": false,
+    "unicode_hex": "13011"
+  },
+  {
+    "gardiner_num": "A15",
+    "hieroglyph": "𓀒",
+    "description": "Man falling",
+    "details": "Det. ḫr “fall,” sḫrt “overthrow.”",
+    "is_priority": false,
+    "unicode_hex": "13012"
+  },
+  {
+    "gardiner_num": "A16",
+    "hieroglyph": "𓀓",
+    "description": "Man bowing",
+    "details": "Det. ksi “bow.”",
+    "is_priority": false,
+    "unicode_hex": "13013"
+  },
+  {
+    "gardiner_num": "A17",
+    "hieroglyph": "𓀔",
+    "description": "Child with hand to mouth",
+    "details": "Det. šri “young.” Ideo. ẖrd “child.”",
+    "is_priority": false,
+    "unicode_hex": "13014"
+  },
+  {
+    "gardiner_num": "A17a",
+    "hieroglyph": "𓀕",
+    "description": "Child sitting",
+    "details": "Det. sit, young.",
+    "is_priority": false,
+    "unicode_hex": "13015"
+  },
+  {
+    "gardiner_num": "A18",
+    "hieroglyph": "𓀖",
+    "description": "Child wearing red crown",
+    "details": "Det. child-king",
+    "is_priority": false,
+    "unicode_hex": "13016"
+  },
+  {
+    "gardiner_num": "A19",
+    "hieroglyph": "𓀗",
+    "description": "Aged man bending with stick",
+    "details": "Det. i3w “old,” smsw “eldest,” wr “great one, chief.”",
+    "is_priority": false,
+    "unicode_hex": "13017"
+  },
+  {
+    "gardiner_num": "A20",
+    "hieroglyph": "𓀘",
+    "description": "Man leaning on forked stick",
+    "details": "Var. of A19.",
+    "is_priority": false,
+    "unicode_hex": "13018"
+  },
+  {
+    "gardiner_num": "A21",
+    "hieroglyph": "𓀙",
+    "description": "Man with stick",
+    "details": "Det. and Ideo. sr “official, noble.”",
+    "is_priority": false,
+    "unicode_hex": "13019"
+  },
+  {
+    "gardiner_num": "A22",
+    "hieroglyph": "𓀚",
+    "description": "Statue of man with stick and scepter",
+    "details": "Det. statue.",
+    "is_priority": false,
+    "unicode_hex": "1301"
+  },
+  {
+    "gardiner_num": "A23",
+    "hieroglyph": "𓀛",
+    "description": "King with stick and mace",
+    "details": "Det. ity, “sovereign.”",
+    "is_priority": false,
+    "unicode_hex": "1301"
+  },
+  {
+    "gardiner_num": "A24",
+    "hieroglyph": "𓀜",
+    "description": "Man striking with stick in both hands",
+    "details": "Det. ḥwi, “strike,” nḥm “take away.” Ideo. nḫt strong.",
+    "is_priority": false,
+    "unicode_hex": "1301"
+  },
+  {
+    "gardiner_num": "A25",
+    "hieroglyph": "𓀝",
+    "description": "Man striking with stick in one hand",
+    "details": "Det. hwi “strike.”",
+    "is_priority": false,
+    "unicode_hex": "1301"
+  },
+  {
+    "gardiner_num": "A26",
+    "hieroglyph": "𓀞",
+    "description": "Man beckoning",
+    "details": "Det. nis “call.” Ideo. vocative i, “Oh!”",
+    "is_priority": false,
+    "unicode_hex": "1301"
+  },
+  {
+    "gardiner_num": "A27",
+    "hieroglyph": "𓀟",
+    "description": "Man running",
+    "details": "Phon. in “by,” agent particle.",
+    "is_priority": false,
+    "unicode_hex": "1301"
+  },
+  {
+    "gardiner_num": "A28",
+    "hieroglyph": "𓀠",
+    "description": "Man with arms raised",
+    "details": "Det. ḳ3 “high,” ḥʿi “rejoice.”",
+    "is_priority": false,
+    "unicode_hex": "13020"
+  },
+  {
+    "gardiner_num": "A29",
+    "hieroglyph": "𓀡",
+    "description": "Man upside down",
+    "details": "Det. upside down.",
+    "is_priority": false,
+    "unicode_hex": "13021"
+  },
+  {
+    "gardiner_num": "A30",
+    "hieroglyph": "𓀢",
+    "description": "Man with arms outstretched",
+    "details": "Det. i3w “praise,” dw3 “adoration.”",
+    "is_priority": false,
+    "unicode_hex": "13022"
+  },
+  {
+    "gardiner_num": "A31",
+    "hieroglyph": "𓀣",
+    "description": "Man with arms turned behind him",
+    "details": "Det. turn away.",
+    "is_priority": false,
+    "unicode_hex": "13023"
+  },
+  {
+    "gardiner_num": "A32",
+    "hieroglyph": "𓀤",
+    "description": "Man dancing",
+    "details": "Det. dance.",
+    "is_priority": false,
+    "unicode_hex": "13024"
+  },
+  {
+    "gardiner_num": "A33",
+    "hieroglyph": "𓀦",
+    "description": "Man with stick and bundle",
+    "details": "Det. wander, herdsman.",
+    "is_priority": false,
+    "unicode_hex": "13026"
+  },
+  {
+    "gardiner_num": "A34",
+    "hieroglyph": "𓀧",
+    "description": "Man pounding in a mortar",
+    "details": "Det. ḫwsi “pound, build.”",
+    "is_priority": false,
+    "unicode_hex": "13027"
+  },
+  {
+    "gardiner_num": "A35",
+    "hieroglyph": "𓀨",
+    "description": "Man building a wall",
+    "details": "Det. and Ideo. ḳd “build.”",
+    "is_priority": false,
+    "unicode_hex": "13028"
+  },
+  {
+    "gardiner_num": "A36",
+    "hieroglyph": "𓀩",
+    "description": "Man straining into a vessel",
+    "details": "Det. and Ideo. ʿfty “brewer.”",
+    "is_priority": false,
+    "unicode_hex": "13029"
+  },
+  {
+    "gardiner_num": "A37",
+    "hieroglyph": "𓀪",
+    "description": "Commoner form A36",
+    "details": "Use as A36.",
+    "is_priority": false,
+    "unicode_hex": "1302"
+  },
+  {
+    "gardiner_num": "A38",
+    "hieroglyph": "𓀫",
+    "description": "Man holding two animal emblems",
+    "details": "Ideo. ḳis/ḳsi “”Cusae” (town).",
+    "is_priority": false,
+    "unicode_hex": "1302"
+  },
+  {
+    "gardiner_num": "A39",
+    "hieroglyph": "𓀬",
+    "description": "Man holding two giraffes",
+    "details": "Use as A38.",
+    "is_priority": false,
+    "unicode_hex": "1302"
+  },
+  {
+    "gardiner_num": "A40",
+    "hieroglyph": "𓀭",
+    "description": "Seated god",
+    "details": "Det. god. Replaces A1 as 1st sing pronoun when god speaks. i, wi, ink, kwi.",
+    "is_priority": false,
+    "unicode_hex": "1302"
+  },
+  {
+    "gardiner_num": "A40a",
+    "hieroglyph": "𓀮",
+    "description": null,
+    "details": null,
+    "is_priority": false,
+    "unicode_hex": "1302"
+  },
+  {
+    "gardiner_num": "A41",
+    "hieroglyph": "𓀯",
+    "description": "Seated king",
+    "details": "Det. nsw “king,” ḥm “majesty,” nb “lord.”",
+    "is_priority": false,
+    "unicode_hex": "1302"
+  },
+  {
+    "gardiner_num": "A42",
+    "hieroglyph": "𓀰",
+    "description": "Seated king holding flail",
+    "details": "Use as A41.",
+    "is_priority": false,
+    "unicode_hex": "13030"
+  },
+  {
+    "gardiner_num": "A42a",
+    "hieroglyph": "𓀱",
+    "description": null,
+    "details": null,
+    "is_priority": false,
+    "unicode_hex": "13031"
+  },
+  {
+    "gardiner_num": "A43",
+    "hieroglyph": "𓀲",
+    "description": "King wearing white crown of Upper Egypt",
+    "details": "Det. king of Upper Egypt.",
+    "is_priority": false,
+    "unicode_hex": "13032"
+  },
+  {
+    "gardiner_num": "A43a",
+    "hieroglyph": "𓀳",
+    "description": null,
+    "details": null,
+    "is_priority": false,
+    "unicode_hex": "13033"
+  },
+  {
+    "gardiner_num": "A44",
+    "hieroglyph": "𓀴",
+    "description": "King holding flail and wearing white crown of Upper Egypt",
+    "details": "Use as A43.",
+    "is_priority": false,
+    "unicode_hex": "13034"
+  },
+  {
+    "gardiner_num": "A45",
+    "hieroglyph": "𓀵",
+    "description": "King wearing red crown of Lower Egypt.",
+    "details": "Det. and Ideo. bity “king of Lower Egypt.”",
+    "is_priority": false,
+    "unicode_hex": "13035"
+  },
+  {
+    "gardiner_num": "A45a",
+    "hieroglyph": "𓀶",
+    "description": null,
+    "details": null,
+    "is_priority": false,
+    "unicode_hex": "13036"
+  },
+  {
+    "gardiner_num": "A46",
+    "hieroglyph": "𓀷",
+    "description": "King holding flail and wearing red crown of Lower Egypt.",
+    "details": "Same as A45",
+    "is_priority": false,
+    "unicode_hex": "13037"
+  },
+  {
+    "gardiner_num": "A47",
+    "hieroglyph": "𓀸",
+    "description": "Seated sheperd",
+    "details": "Det. and Ideo. s3w “guard,” mniw “herdsman.”",
+    "is_priority": false,
+    "unicode_hex": "13038"
+  },
+  {
+    "gardiner_num": "A48",
+    "hieroglyph": "𓀹",
+    "description": "Man holding knife",
+    "details": "Det. iry “relating to.”",
+    "is_priority": false,
+    "unicode_hex": "13039"
+  },
+  {
+    "gardiner_num": "A49",
+    "hieroglyph": "𓀺",
+    "description": "Foreigner with stick",
+    "details": "Det. foreigner, ʿ3mw “Asiatics.”",
+    "is_priority": false,
+    "unicode_hex": "1303"
+  },
+  {
+    "gardiner_num": "A50",
+    "hieroglyph": "𓀻",
+    "description": "Noble seated on chair",
+    "details": "Det. revered person, deceased. Var. A1 for 1st sing. pronoun.",
+    "is_priority": false,
+    "unicode_hex": "1303"
+  },
+  {
+    "gardiner_num": "A51",
+    "hieroglyph": "𓀼",
+    "description": "Noble seated on chair with flagellum",
+    "details": "Det. and Ideo. špsi “noble”",
+    "is_priority": false,
+    "unicode_hex": "1303"
+  },
+  {
+    "gardiner_num": "A52",
+    "hieroglyph": "𓀽",
+    "description": "Kneeling noble with flail",
+    "details": "Det. revered person, deceased.",
+    "is_priority": false,
+    "unicode_hex": "1303"
+  },
+  {
+    "gardiner_num": "A53",
+    "hieroglyph": "𓀾",
+    "description": "Upright mummy",
+    "details": "Det. mummy, statue, likeness, form.",
+    "is_priority": false,
+    "unicode_hex": "1303"
+  },
+  {
+    "gardiner_num": "A54",
+    "hieroglyph": "𓀿",
+    "description": "Recumbent mummy",
+    "details": "Det. dead.",
+    "is_priority": false,
+    "unicode_hex": "1303"
+  },
+  {
+    "gardiner_num": "A55",
+    "hieroglyph": "𓁀",
+    "description": "Mummy on bed",
+    "details": "Det. sḏr “lie down,” dead.",
+    "is_priority": false,
+    "unicode_hex": "13040"
+  },
+  {
+    "gardiner_num": "A59",
+    "hieroglyph": "𓁄",
+    "description": "Man threatening stick with one hand",
+    "details": "Det. drive off.",
+    "is_priority": false,
+    "unicode_hex": "13044"
+  },
+  {
+    "gardiner_num": "B1",
+    "hieroglyph": "𓁐",
+    "description": "Seated Woman",
+    "details": "Det. woman, name. Sometimes for A1 1st sing. pronoun – i",
+    "is_priority": true,
+    "unicode_hex": "13050"
+  },
+  {
+    "gardiner_num": "B2",
+    "hieroglyph": "𓁑",
+    "description": "Pregnant woman",
+    "details": "Det. pregnant",
+    "is_priority": false,
+    "unicode_hex": "13051"
+  },
+  {
+    "gardiner_num": "B3",
+    "hieroglyph": "𓁒",
+    "description": "Woman giving birth",
+    "details": "Det. and Ideo. msi “give birth, bear.”",
+    "is_priority": false,
+    "unicode_hex": "13052"
+  },
+  {
+    "gardiner_num": "B4",
+    "hieroglyph": "𓁓",
+    "description": "Var. B3",
+    "details": "Use as B3.",
+    "is_priority": false,
+    "unicode_hex": "13053"
+  },
+  {
+    "gardiner_num": "B5",
+    "hieroglyph": "𓁔",
+    "description": "Woman nursing child",
+    "details": "Det. mnʿt “nurse.”",
+    "is_priority": false,
+    "unicode_hex": "13054"
+  },
+  {
+    "gardiner_num": "B6",
+    "hieroglyph": "𓁖",
+    "description": "Woman and seated child",
+    "details": "Det. rnn “nurse.”",
+    "is_priority": false,
+    "unicode_hex": "13056"
+  },
+  {
+    "gardiner_num": "B7",
+    "hieroglyph": "𓁗",
+    "description": "Seated queen holding flower",
+    "details": "Det. queens’ names.",
+    "is_priority": false,
+    "unicode_hex": "13057"
+  },
+  {
+    "gardiner_num": "C1",
+    "hieroglyph": "𓁚",
+    "description": "God with sun-disk and uraeus",
+    "details": "Det. and Ideo. Rʿ “Re, sun-god”",
+    "is_priority": false,
+    "unicode_hex": "1305"
+  },
+  {
+    "gardiner_num": "C2",
+    "hieroglyph": "𓁜",
+    "description": "God with falcon head and sun-disk holding ʿnḫ",
+    "details": "Var. C1. Det. and Ideo. Rʿ “Re, sun-god”",
+    "is_priority": false,
+    "unicode_hex": "1305"
+  },
+  {
+    "gardiner_num": "C3",
+    "hieroglyph": "𓁟",
+    "description": "God with ibis head",
+    "details": "Det. or Ideo. ḏḥwty “Thoth”",
+    "is_priority": false,
+    "unicode_hex": "1305"
+  },
+  {
+    "gardiner_num": "C4",
+    "hieroglyph": "𓁠",
+    "description": "God with ram head",
+    "details": "Det. or Ideo. ẖnmw “Khnum”",
+    "is_priority": false,
+    "unicode_hex": "13060"
+  },
+  {
+    "gardiner_num": "C5",
+    "hieroglyph": "𓁡",
+    "description": "God with ram head holding ʿnḫ",
+    "details": "Use as C4.",
+    "is_priority": false,
+    "unicode_hex": "13061"
+  },
+  {
+    "gardiner_num": "C6",
+    "hieroglyph": "𓁢",
+    "description": "God with jackal head",
+    "details": "Det. and Ideo. inpw “Anubis,” wp-w3wt “Wepwawet.”",
+    "is_priority": false,
+    "unicode_hex": "13062"
+  },
+  {
+    "gardiner_num": "C7",
+    "hieroglyph": "𓁣",
+    "description": "God with Seth head",
+    "details": "Det. and Ideo. Stḫ “Seth.”",
+    "is_priority": false,
+    "unicode_hex": "13063"
+  },
+  {
+    "gardiner_num": "C8",
+    "hieroglyph": "𓁤",
+    "description": "Min",
+    "details": "Det. and Ideo. Mnw “Min.”",
+    "is_priority": false,
+    "unicode_hex": "13064"
+  },
+  {
+    "gardiner_num": "C9",
+    "hieroglyph": "𓁥",
+    "description": "Goddess with horned sun-disk",
+    "details": "Det. and Ideo.",
+    "is_priority": false,
+    "unicode_hex": "13065"
+  },
+  {
+    "gardiner_num": "C10",
+    "hieroglyph": "𓁦",
+    "description": "God with feather",
+    "details": "Det. and Ideo. M3ʿt “Maat”",
+    "is_priority": false,
+    "unicode_hex": "13066"
+  },
+  {
+    "gardiner_num": "C10a",
+    "hieroglyph": "𓁧",
+    "description": "Goddess with feather holding ʿnḫ",
+    "details": "Use as C10",
+    "is_priority": false,
+    "unicode_hex": "13067"
+  },
+  {
+    "gardiner_num": "C11",
+    "hieroglyph": "𓁨",
+    "description": "ḥḥ-figure",
+    "details": "Ideo. ḥḥ “million,” god Heh.",
+    "is_priority": false,
+    "unicode_hex": "13068"
+  },
+  {
+    "gardiner_num": "C12",
+    "hieroglyph": "𓁩",
+    "description": "Amun",
+    "details": "Det. and Ideo. Imn “Amun.”",
+    "is_priority": false,
+    "unicode_hex": "13069"
+  },
+  {
+    "gardiner_num": "C17",
+    "hieroglyph": "𓁮",
+    "description": "Montu",
+    "details": "Det. and Ideo Mntw “Montu.”",
+    "is_priority": false,
+    "unicode_hex": "1306"
+  },
+  {
+    "gardiner_num": "C18",
+    "hieroglyph": "𓁯",
+    "description": "Tatjenen",
+    "details": "Det. and Ideo. t3-ṯnnii “Tatjenen.”",
+    "is_priority": false,
+    "unicode_hex": "1306"
+  },
+  {
+    "gardiner_num": "C19",
+    "hieroglyph": "𓁰",
+    "description": "Ptah",
+    "details": "Det. and Ideo. Ptḥ “Ptah.”",
+    "is_priority": false,
+    "unicode_hex": "13070"
+  },
+  {
+    "gardiner_num": "C20",
+    "hieroglyph": "𓁱",
+    "description": "Variant C19",
+    "details": "Use as C19",
+    "is_priority": false,
+    "unicode_hex": "13071"
+  },
+  {
+    "gardiner_num": "D1",
+    "hieroglyph": "𓁶",
+    "description": "Head",
+    "details": "Phono. tp. Det. or Ideo. for tp “head,” tpy “first, chief.” Det. ḏ3ḏ3“head.”",
+    "is_priority": false,
+    "unicode_hex": "13076"
+  },
+  {
+    "gardiner_num": "D2",
+    "hieroglyph": "𓁷",
+    "description": "Face",
+    "details": "Phon. ḥr. Ideo. for ḥr “face.”",
+    "is_priority": true,
+    "unicode_hex": "13077"
+  },
+  {
+    "gardiner_num": "D3",
+    "hieroglyph": "𓁸",
+    "description": "Hair",
+    "details": "Det. for šny “hair,” iwn “complexion, nature.” Abbr. for gm wš “found missing.”",
+    "is_priority": false,
+    "unicode_hex": "13078"
+  },
+  {
+    "gardiner_num": "D4",
+    "hieroglyph": "𓁹",
+    "description": "Eye",
+    "details": "Phono. iri “to do, make.” Ideo. for irt “eye.”",
+    "is_priority": true,
+    "unicode_hex": "13079"
+  },
+  {
+    "gardiner_num": "D5",
+    "hieroglyph": "𓁺",
+    "description": "Eye with paint",
+    "details": "Det. for actions or conditions of the eye. ex. dgi “look,” šp “blind.”",
+    "is_priority": false,
+    "unicode_hex": "1307"
+  },
+  {
+    "gardiner_num": "D6",
+    "hieroglyph": "𓁻",
+    "description": "Eye with paint",
+    "details": "Use as D5.",
+    "is_priority": false,
+    "unicode_hex": "1307"
+  },
+  {
+    "gardiner_num": "D7",
+    "hieroglyph": "𓁼",
+    "description": "Eye with paint",
+    "details": "Det. for adorn and in ʿnw ” “Anu” (location).",
+    "is_priority": false,
+    "unicode_hex": "1307"
+  },
+  {
+    "gardiner_num": "D8",
+    "hieroglyph": "𓁽",
+    "description": "Eye enclosed",
+    "details": "Det. forʿnw “Turah,” ʿn “beautiful.”",
+    "is_priority": false,
+    "unicode_hex": "1307"
+  },
+  {
+    "gardiner_num": "D9",
+    "hieroglyph": "𓁿",
+    "description": "Eye weeping",
+    "details": "Det. or Ideo. for rmi “weep.”",
+    "is_priority": false,
+    "unicode_hex": "1307"
+  },
+  {
+    "gardiner_num": "D10",
+    "hieroglyph": "𓂀",
+    "description": "Eye with falcon’s head marking",
+    "details": "Det. or Ideo. for w3ḏt “wedjat eye.”",
+    "is_priority": false,
+    "unicode_hex": "13080"
+  },
+  {
+    "gardiner_num": "D11",
+    "hieroglyph": "𓂁",
+    "description": "White part of w3ḏt eye",
+    "details": "1/2 ḥeqat measure of grain.",
+    "is_priority": false,
+    "unicode_hex": "13081"
+  },
+  {
+    "gardiner_num": "D12",
+    "hieroglyph": "𓂂",
+    "description": "Eye pupil",
+    "details": "Det. for ḏfd “pupil of eye.”",
+    "is_priority": false,
+    "unicode_hex": "13082"
+  },
+  {
+    "gardiner_num": "D13",
+    "hieroglyph": "𓂃",
+    "description": "Eyebrow",
+    "details": "1/8 ḥeqat measure of grain.",
+    "is_priority": false,
+    "unicode_hex": "13083"
+  },
+  {
+    "gardiner_num": "D14",
+    "hieroglyph": "𓂄",
+    "description": "White part of w3ḏt eye",
+    "details": "1/16 ḥeqat measure of grain.",
+    "is_priority": false,
+    "unicode_hex": "13084"
+  },
+  {
+    "gardiner_num": "D15",
+    "hieroglyph": "𓂅",
+    "description": "Part of w3ḏt eye markings",
+    "details": "1/32 ḥeqat measure of grain.",
+    "is_priority": false,
+    "unicode_hex": "13085"
+  },
+  {
+    "gardiner_num": "D16",
+    "hieroglyph": "𓂆",
+    "description": "Part of w3ḏt eye markings",
+    "details": "1/64 ḥeqat measure of grain.",
+    "is_priority": false,
+    "unicode_hex": "13086"
+  },
+  {
+    "gardiner_num": "D17",
+    "hieroglyph": "𓂇",
+    "description": "Markings of w3ḏt eye",
+    "details": "Det. or Ideo. for tit “figure, image.”",
+    "is_priority": false,
+    "unicode_hex": "13087"
+  },
+  {
+    "gardiner_num": "D18",
+    "hieroglyph": "𓂈",
+    "description": "Ear",
+    "details": "Det. or Ideo. for msḏr “ear.”",
+    "is_priority": false,
+    "unicode_hex": "13088"
+  },
+  {
+    "gardiner_num": "D19",
+    "hieroglyph": "𓂉",
+    "description": "Eye, nose, and cheek",
+    "details": "Det. or Ideo. for fnd “nose.” Det. sn “smell,” rš “rejoice.”",
+    "is_priority": false,
+    "unicode_hex": "13089"
+  },
+  {
+    "gardiner_num": "D20",
+    "hieroglyph": "𓂊",
+    "description": "Var. D19",
+    "details": "Use as D19",
+    "is_priority": false,
+    "unicode_hex": "1308"
+  },
+  {
+    "gardiner_num": "D21",
+    "hieroglyph": "𓂋",
+    "description": "Mouth",
+    "details": "Phon. r. Ideo. for r “mouth.”",
+    "is_priority": true,
+    "unicode_hex": "1308"
+  },
+  {
+    "gardiner_num": "D22",
+    "hieroglyph": "𓂌",
+    "description": "Mouth with two lines",
+    "details": "Ideo. for rwy “2/3.”",
+    "is_priority": false,
+    "unicode_hex": "1308"
+  },
+  {
+    "gardiner_num": "D23",
+    "hieroglyph": "𓂍",
+    "description": "Mouth with three lines",
+    "details": "Ideo. for ḫmt rw “3/4.”",
+    "is_priority": false,
+    "unicode_hex": "1308"
+  },
+  {
+    "gardiner_num": "D24",
+    "hieroglyph": "𓂎",
+    "description": "Upper lip with teeth",
+    "details": "Det. or Ideo. for spt “lip.” Mistakenly used a F42.",
+    "is_priority": false,
+    "unicode_hex": "1308"
+  },
+  {
+    "gardiner_num": "D25",
+    "hieroglyph": "𓂏",
+    "description": "Lips with teeth",
+    "details": "Det. or Ideo. for spty “lips.”",
+    "is_priority": false,
+    "unicode_hex": "1308"
+  },
+  {
+    "gardiner_num": "D26",
+    "hieroglyph": "𓂐",
+    "description": "Lips spewing water",
+    "details": "Det. for spit, spew. ex. psg “spit,” ḳʿ “spew out.”",
+    "is_priority": false,
+    "unicode_hex": "13090"
+  },
+  {
+    "gardiner_num": "D27",
+    "hieroglyph": "𓂑",
+    "description": "Breast",
+    "details": "Det. for breast, suckle. ex. mnḏ “breast”",
+    "is_priority": false,
+    "unicode_hex": "13091"
+  },
+  {
+    "gardiner_num": "D27a",
+    "hieroglyph": "𓂒",
+    "description": "Var. of D27",
+    "details": "Use as D27.",
+    "is_priority": false,
+    "unicode_hex": "13092"
+  },
+  {
+    "gardiner_num": "D28",
+    "hieroglyph": "𓂓",
+    "description": "Two arms",
+    "details": "Phono. k3. Ideo. for k3 “soul.”",
+    "is_priority": false,
+    "unicode_hex": "13093"
+  },
+  {
+    "gardiner_num": "D29",
+    "hieroglyph": "𓂔",
+    "description": "Var. of D28",
+    "details": "Use as D28.",
+    "is_priority": false,
+    "unicode_hex": "13094"
+  },
+  {
+    "gardiner_num": "D30",
+    "hieroglyph": "𓂕",
+    "description": "Two arms with tail",
+    "details": "Det. for nḥb-k3w “Uniter of Attributes, Assigner of Kas,” name of mythical serpent deity.",
+    "is_priority": false,
+    "unicode_hex": "13095"
+  },
+  {
+    "gardiner_num": "D31",
+    "hieroglyph": "𓂖",
+    "description": "Combination of signs D32 and U36",
+    "details": "Ideo. for ḥm-k3 “ka servent.”",
+    "is_priority": false,
+    "unicode_hex": "13096"
+  },
+  {
+    "gardiner_num": "D32",
+    "hieroglyph": "𓂘",
+    "description": "Two arms embracing",
+    "details": "Det. for embrace, open. ex. inḳ “envelop,” ḥpt “embrace.”",
+    "is_priority": false,
+    "unicode_hex": "13098"
+  },
+  {
+    "gardiner_num": "D33",
+    "hieroglyph": "𓂙",
+    "description": "Arms holding oar",
+    "details": "Phono. ẖn. Ideo. for ẖni “row.”",
+    "is_priority": false,
+    "unicode_hex": "13099"
+  },
+  {
+    "gardiner_num": "D34",
+    "hieroglyph": "𓂚",
+    "description": "Arms with shield and axe",
+    "details": "Ideo. for ʿḥ3 “fight”",
+    "is_priority": false,
+    "unicode_hex": "1309"
+  },
+  {
+    "gardiner_num": "D34a",
+    "hieroglyph": "𓂛",
+    "description": "Arms with shield and mace",
+    "details": "Use as D34.",
+    "is_priority": false,
+    "unicode_hex": "1309"
+  },
+  {
+    "gardiner_num": "D35",
+    "hieroglyph": "𓂜",
+    "description": "Negative arms",
+    "details": "Phono. n. Ideo. for n and nn, “not.” Det. negation.",
+    "is_priority": false,
+    "unicode_hex": "1309"
+  },
+  {
+    "gardiner_num": "D21",
+    "hieroglyph": "𓂝",
+    "description": "Arm",
+    "details": "Phono. ʿ. Ideo. ʿ “arm, hand.”",
+    "is_priority": true,
+    "unicode_hex": "1309"
+  },
+  {
+    "gardiner_num": "D37",
+    "hieroglyph": "𓂞",
+    "description": "Arm holding sign X8",
+    "details": "Phono. di in rdi “give.”",
+    "is_priority": true,
+    "unicode_hex": "1309"
+  },
+  {
+    "gardiner_num": "D38",
+    "hieroglyph": "𓂟",
+    "description": "Arm holding bread",
+    "details": "Phono. mi or m. Det. for imi “give.”",
+    "is_priority": false,
+    "unicode_hex": "1309"
+  },
+  {
+    "gardiner_num": "D39",
+    "hieroglyph": "𓂠",
+    "description": "Arm holding W24",
+    "details": "Det. for offer, present. ex. ḥnk “present,” drp “offer.”",
+    "is_priority": false,
+    "unicode_hex": "1300"
+  },
+  {
+    "gardiner_num": "D40",
+    "hieroglyph": "𓂡",
+    "description": "Arm holding stick",
+    "details": "Det. for force, effort. ex. nḫt “strong.” Ideo. h3i “evaluate.”",
+    "is_priority": false,
+    "unicode_hex": "1301"
+  },
+  {
+    "gardiner_num": "D41",
+    "hieroglyph": "𓂢",
+    "description": "Arm with downward facing palm",
+    "details": "Phono. ni. Det. for arm. ex. rmn “arm, shoulder.”",
+    "is_priority": false,
+    "unicode_hex": "1302"
+  },
+  {
+    "gardiner_num": "D42",
+    "hieroglyph": "𓂣",
+    "description": "Arm with downward facing palm",
+    "details": "Det. or Ideo. for mḥ “cubit”",
+    "is_priority": false,
+    "unicode_hex": "1303"
+  },
+  {
+    "gardiner_num": "D43",
+    "hieroglyph": "𓂤",
+    "description": "Arm with flail",
+    "details": "Phono. ḫw. Ideo. for ḫwi “protect.",
+    "is_priority": false,
+    "unicode_hex": "1304"
+  },
+  {
+    "gardiner_num": "D44",
+    "hieroglyph": "𓂥",
+    "description": "Arm with scepter",
+    "details": "Det. and Ideo. for ḫrp “control, be at head of, administer.”",
+    "is_priority": false,
+    "unicode_hex": "1305"
+  },
+  {
+    "gardiner_num": "D45",
+    "hieroglyph": "𓂦",
+    "description": "Arm with brush",
+    "details": "Det. and Ideo. for ḏsr “clear road, sacred, holy.”",
+    "is_priority": false,
+    "unicode_hex": "1306"
+  },
+  {
+    "gardiner_num": "D46",
+    "hieroglyph": "𓂧",
+    "description": "Hand",
+    "details": "Phono. d. Ideo. for ḏrt “hand.”",
+    "is_priority": true,
+    "unicode_hex": "1307"
+  },
+  {
+    "gardiner_num": "D46a",
+    "hieroglyph": "𓂨",
+    "description": "Hand with water",
+    "details": "Ideo. for idt “fragrance.”",
+    "is_priority": false,
+    "unicode_hex": "1308"
+  },
+  {
+    "gardiner_num": "D47",
+    "hieroglyph": "𓂩",
+    "description": "Hand",
+    "details": "Det. for ḏrt “hand” when spelled with Phono.",
+    "is_priority": false,
+    "unicode_hex": "1309"
+  },
+  {
+    "gardiner_num": "D48",
+    "hieroglyph": "𓂪",
+    "description": "Palm without thumb",
+    "details": "Ideo. šsp “palm, hand-breadth” (measure)",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "D49",
+    "hieroglyph": "𓂬",
+    "description": "Fist",
+    "details": "Det. for grasp. ex. 3mm “grasp,” ḫfʿ “seize.”",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "D50",
+    "hieroglyph": "𓂭",
+    "description": "Vertical finger",
+    "details": "Ideo. for ḏbʿ “finger,” ḏbʿ “10,000.” Det. for accurate, when doubled.",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "D51",
+    "hieroglyph": "𓂷",
+    "description": "Horizontal finger",
+    "details": "Det. for actions related to finger, fruit, flower. ex. ʿnt “nail,” ḫ3i “measure,” dḳr “fruit.”",
+    "is_priority": false,
+    "unicode_hex": "1307"
+  },
+  {
+    "gardiner_num": "D52",
+    "hieroglyph": "𓂸",
+    "description": "Penis",
+    "details": "Phono. mt. Det. for male. ex. ʿ3 “ass,” ṯ3y “male.” Ideo. k3 “bull.”",
+    "is_priority": false,
+    "unicode_hex": "1308"
+  },
+  {
+    "gardiner_num": "D53",
+    "hieroglyph": "𓂺",
+    "description": "Penis with liquid",
+    "details": "Det. for male, penis. ex. m b3ḥ “in the presence of” ḏr b3ḥ “since,” r b3ḥ “before.”",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "D54",
+    "hieroglyph": "𓂻",
+    "description": "Legs walking",
+    "details": "Phono. iw in iwi “come.” Det. for motion.",
+    "is_priority": true,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "D55",
+    "hieroglyph": "𓂽",
+    "description": "Legs walking (reverse of D54)",
+    "details": "Det. for backwards. ex. ʿnn “turn back,” ḫtḫt “be reversed.”",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "D56",
+    "hieroglyph": "𓂾",
+    "description": "Leg",
+    "details": "Phono. pd. Det. for leg, foot. ex. rd “leg,” pd “knee.”",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "D57",
+    "hieroglyph": "𓂿",
+    "description": "Leg with T30",
+    "details": "Det. for mutilate. ex. i3ṯ “be mutilated.”",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "D58",
+    "hieroglyph": "𓃀",
+    "description": "Foot",
+    "details": "Phono. b. Ideo. for bw “place.”",
+    "is_priority": true,
+    "unicode_hex": "1300"
+  },
+  {
+    "gardiner_num": "D59",
+    "hieroglyph": "𓃁",
+    "description": "Foot with D36",
+    "details": "Phono. ʿb",
+    "is_priority": false,
+    "unicode_hex": "1301"
+  },
+  {
+    "gardiner_num": "D60",
+    "hieroglyph": "𓃂",
+    "description": "Foot with water streaming",
+    "details": "Ideo. for wʿb “pure, clean.”",
+    "is_priority": false,
+    "unicode_hex": "1302"
+  },
+  {
+    "gardiner_num": "D61",
+    "hieroglyph": "𓃃",
+    "description": "Toes",
+    "details": "Ideo. for s3ḥ “toe”",
+    "is_priority": false,
+    "unicode_hex": "1303"
+  },
+  {
+    "gardiner_num": "D62",
+    "hieroglyph": "𓃄",
+    "description": "Var. D61",
+    "details": "Use as D61.",
+    "is_priority": false,
+    "unicode_hex": "1304"
+  },
+  {
+    "gardiner_num": "D63",
+    "hieroglyph": "𓃅",
+    "description": "Var. D61",
+    "details": "Use as D61.",
+    "is_priority": false,
+    "unicode_hex": "1305"
+  },
+  {
+    "gardiner_num": "E1",
+    "hieroglyph": "𓃒",
+    "description": "Bull",
+    "details": "Det. of cattle. ex. ng “bull,” mnmnt “cattle.” Ideo. in k3 “bull.”",
+    "is_priority": false,
+    "unicode_hex": "1302"
+  },
+  {
+    "gardiner_num": "E2",
+    "hieroglyph": "𓃓",
+    "description": "Bull preparing to charge",
+    "details": "Det. in sm3 “fighting bull.” Ideo. in k3 nḫt “victorious bull,” (epithet of Pharaoh.)",
+    "is_priority": false,
+    "unicode_hex": "1303"
+  },
+  {
+    "gardiner_num": "E3",
+    "hieroglyph": "𓃔",
+    "description": "Calf",
+    "details": "Det. in bḥs “calf”",
+    "is_priority": false,
+    "unicode_hex": "1304"
+  },
+  {
+    "gardiner_num": "E4",
+    "hieroglyph": "𓃕",
+    "description": "Sacred cow",
+    "details": "Det. in ḥs3t “sacred cow.”",
+    "is_priority": false,
+    "unicode_hex": "1305"
+  },
+  {
+    "gardiner_num": "E5",
+    "hieroglyph": "𓃖",
+    "description": "Cow with calf",
+    "details": "Det. in 3ms “show solicitude.”",
+    "is_priority": false,
+    "unicode_hex": "1306"
+  },
+  {
+    "gardiner_num": "E6",
+    "hieroglyph": "𓃗",
+    "description": "Horse",
+    "details": "Ideo. or Det. in ssmt “horse.” Det. in ibr “stallion.”",
+    "is_priority": false,
+    "unicode_hex": "1307"
+  },
+  {
+    "gardiner_num": "E7",
+    "hieroglyph": "𓃘",
+    "description": "Donkey",
+    "details": "Det. in ʿ3 “donkey.”",
+    "is_priority": false,
+    "unicode_hex": "1308"
+  },
+  {
+    "gardiner_num": "E8",
+    "hieroglyph": "𓃙",
+    "description": "Kid",
+    "details": "Phon. ib, “kid.” Det. in ʿwt “flocks.”",
+    "is_priority": false,
+    "unicode_hex": "1309"
+  },
+  {
+    "gardiner_num": "E9",
+    "hieroglyph": "𓃚",
+    "description": "Newborn bubalis",
+    "details": "Phon. iw. In iwr “conceive.”",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "E10",
+    "hieroglyph": "𓃛",
+    "description": "Ram",
+    "details": "Det. in b3 “ram,” ẖnmw “Khnum,”ʿwt ḥḏt “white flocks, sheep”",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "E11",
+    "hieroglyph": "𓃞",
+    "description": "Ram",
+    "details": "Use as E10",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "E12",
+    "hieroglyph": "𓃟",
+    "description": "Pig",
+    "details": "Det. in rri “pig.”",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "E13",
+    "hieroglyph": "𓃠",
+    "description": "Cat",
+    "details": "Det. in miw “cat.”",
+    "is_priority": false,
+    "unicode_hex": "1300"
+  },
+  {
+    "gardiner_num": "E14",
+    "hieroglyph": "𓃡",
+    "description": "Dog",
+    "details": "Det. in iw “dog,” ṯsm “hound.”",
+    "is_priority": false,
+    "unicode_hex": "1301"
+  },
+  {
+    "gardiner_num": "E15",
+    "hieroglyph": "𓃢",
+    "description": "Recumbent Jackal",
+    "details": "Det. or Ideo. in Inpw, “Anubis.”",
+    "is_priority": false,
+    "unicode_hex": "1302"
+  },
+  {
+    "gardiner_num": "E16",
+    "hieroglyph": "𓃣",
+    "description": "Recumbent Jackal on shrine",
+    "details": "Use as E15.",
+    "is_priority": false,
+    "unicode_hex": "1303"
+  },
+  {
+    "gardiner_num": "E17",
+    "hieroglyph": "𓃥",
+    "description": "Jackal",
+    "details": "Det. or Ideo. in s3b “jackal” and “dignitary.”",
+    "is_priority": false,
+    "unicode_hex": "1305"
+  },
+  {
+    "gardiner_num": "E18",
+    "hieroglyph": "𓃧",
+    "description": "Jackal on standard R12",
+    "details": "Det. or Ideo. in Wp-w3wt “Opener of ways, Wepwawet.”",
+    "is_priority": false,
+    "unicode_hex": "1307"
+  },
+  {
+    "gardiner_num": "E19",
+    "hieroglyph": "𓃨",
+    "description": "O.K. form of last",
+    "details": "Use as E18",
+    "is_priority": false,
+    "unicode_hex": "1308"
+  },
+  {
+    "gardiner_num": "E20",
+    "hieroglyph": "𓃩",
+    "description": "Seth animal",
+    "details": "Det. or Ideo. in stẖ, stš “Seth.” Det. in ẖnnw “turmoil,” sh3 “confusion.”",
+    "is_priority": false,
+    "unicode_hex": "1309"
+  },
+  {
+    "gardiner_num": "E21",
+    "hieroglyph": "𓃫",
+    "description": "Recumbent Seth animal",
+    "details": "Det. in nšni “storm, rage.”",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "E22",
+    "hieroglyph": "𓃬",
+    "description": "Lion",
+    "details": "Det. or Ideo. in m3i “lion”",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "E23",
+    "hieroglyph": "𓃭",
+    "description": "Recumbent Lion",
+    "details": "Phon. rw. Det. or Ideo. in rw “lion.”",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "E24",
+    "hieroglyph": "𓃮",
+    "description": "Panther",
+    "details": "Det. or Ideo. in 3by “panther, leopard.”",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "E25",
+    "hieroglyph": "𓃯",
+    "description": "Hippopotamus",
+    "details": "Det. in db, dib “hippopotamus.”",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "E26",
+    "hieroglyph": "𓃰",
+    "description": "Elephant",
+    "details": "Det. 3bw “elephant.” Ideo. in 3bw “Elephantine.”",
+    "is_priority": false,
+    "unicode_hex": "1300"
+  },
+  {
+    "gardiner_num": "E27",
+    "hieroglyph": "𓃱",
+    "description": "Giraffe",
+    "details": "Det. sr “foretell.” Det. or Ideo in mmi “giraffe.”",
+    "is_priority": false,
+    "unicode_hex": "1301"
+  },
+  {
+    "gardiner_num": "E28",
+    "hieroglyph": "𓃲",
+    "description": "Oryx",
+    "details": "Det. in m3ḥḏ “oryx.”",
+    "is_priority": false,
+    "unicode_hex": "1302"
+  },
+  {
+    "gardiner_num": "E29",
+    "hieroglyph": "𓃴",
+    "description": "Gazelle",
+    "details": "Det. in gḥs “gazelle.”",
+    "is_priority": false,
+    "unicode_hex": "1304"
+  },
+  {
+    "gardiner_num": "E30",
+    "hieroglyph": "𓃵",
+    "description": "Ibex",
+    "details": "Det. in n3w, nr3w, ni3 “ibex.”",
+    "is_priority": false,
+    "unicode_hex": "1305"
+  },
+  {
+    "gardiner_num": "E31",
+    "hieroglyph": "𓃶",
+    "description": "Goat with collar",
+    "details": "Det. in sʿḥ “rank, privilege.”",
+    "is_priority": false,
+    "unicode_hex": "1306"
+  },
+  {
+    "gardiner_num": "E32",
+    "hieroglyph": "𓃷",
+    "description": "Baboon",
+    "details": "Det. in iʿn “baboon,” ky “monkey,” qnd “furious.”",
+    "is_priority": false,
+    "unicode_hex": "1307"
+  },
+  {
+    "gardiner_num": "E33",
+    "hieroglyph": "𓃸",
+    "description": "Monkey",
+    "details": "Det. gf, gif “monkey.”",
+    "is_priority": false,
+    "unicode_hex": "1308"
+  },
+  {
+    "gardiner_num": "E34",
+    "hieroglyph": "𓃹",
+    "description": "Hare",
+    "details": "Phono. wn. wnn “be.”",
+    "is_priority": false,
+    "unicode_hex": "1309"
+  },
+  {
+    "gardiner_num": "F1",
+    "hieroglyph": "𓃾",
+    "description": "Head of ox",
+    "details": "Ideo. in offering formulas for k3 “cattle.”",
+    "is_priority": false,
+    "unicode_hex": "130"
+  },
+  {
+    "gardiner_num": "F2",
+    "hieroglyph": "𓄀",
+    "description": "Head of charging ox",
+    "details": "Det. in ḏnd “rage.”",
+    "is_priority": false,
+    "unicode_hex": "13100"
+  },
+  {
+    "gardiner_num": "F3",
+    "hieroglyph": "𓄁",
+    "description": "Head of hippopotamus",
+    "details": "Phono. 3t. Det. or Ideo. in “moment, attack.”",
+    "is_priority": false,
+    "unicode_hex": "13101"
+  },
+  {
+    "gardiner_num": "F4",
+    "hieroglyph": "𓄂",
+    "description": "Forepart of lion",
+    "details": "Ideo. in ḥ3t “front,” ḥ3ty “heart.”",
+    "is_priority": false,
+    "unicode_hex": "13102"
+  },
+  {
+    "gardiner_num": "F5",
+    "hieroglyph": "𓄃",
+    "description": "Head of bubalis",
+    "details": "Phon. šs3. Det. and Ideo. in šs3 “skilled” and “prayer.”",
+    "is_priority": false,
+    "unicode_hex": "13103"
+  },
+  {
+    "gardiner_num": "F6",
+    "hieroglyph": "𓄄",
+    "description": "Forepart of bubalis",
+    "details": "Use as F5",
+    "is_priority": false,
+    "unicode_hex": "13104"
+  },
+  {
+    "gardiner_num": "F7",
+    "hieroglyph": "𓄅",
+    "description": "Head of ram",
+    "details": "Det. in šft “ram’s head.” Det. or Ideo. in šfyt “worth, dignity.”",
+    "is_priority": false,
+    "unicode_hex": "13105"
+  },
+  {
+    "gardiner_num": "F8",
+    "hieroglyph": "𓄆",
+    "description": "Forepart of ram",
+    "details": "Use as F7",
+    "is_priority": false,
+    "unicode_hex": "13106"
+  },
+  {
+    "gardiner_num": "F9",
+    "hieroglyph": "𓄇",
+    "description": "Head of leopard",
+    "details": "Det. or Ideo. in pḥty “strength.”",
+    "is_priority": false,
+    "unicode_hex": "13107"
+  },
+  {
+    "gardiner_num": "F10",
+    "hieroglyph": "𓄈",
+    "description": "Head and neck of animal",
+    "details": "Det. in ḫḫ “throat,” ʿm “swallow.”",
+    "is_priority": false,
+    "unicode_hex": "13108"
+  },
+  {
+    "gardiner_num": "F11",
+    "hieroglyph": "𓄉",
+    "description": "O.K. form of F10",
+    "details": "Use as F10",
+    "is_priority": false,
+    "unicode_hex": "13109"
+  },
+  {
+    "gardiner_num": "F12",
+    "hieroglyph": "𓄊",
+    "description": "Head and neck of jackal",
+    "details": "Phon. wsr. Ideo in wsrt “neck.” In wsr “powerful”",
+    "is_priority": false,
+    "unicode_hex": "1310"
+  },
+  {
+    "gardiner_num": "F13",
+    "hieroglyph": "𓄋",
+    "description": "Horns of ox",
+    "details": "Phon. wp. Ideo. in wpt “brow, beginning.”",
+    "is_priority": false,
+    "unicode_hex": "1310"
+  },
+  {
+    "gardiner_num": "F14",
+    "hieroglyph": "𓄍",
+    "description": "Combination of F13 and M4",
+    "details": "Ideo. wpt-rnpt “Opening of the Year.”",
+    "is_priority": false,
+    "unicode_hex": "1310"
+  },
+  {
+    "gardiner_num": "F15",
+    "hieroglyph": "𓄎",
+    "description": "Combination of F14 and N5",
+    "details": "Use as F14",
+    "is_priority": false,
+    "unicode_hex": "1310"
+  },
+  {
+    "gardiner_num": "F16",
+    "hieroglyph": "𓄏",
+    "description": "Horn",
+    "details": "Phono. ʿb. Det. or Ideo. in db “horn,” ʿb “horn.” In m-ʿb “together with.”",
+    "is_priority": false,
+    "unicode_hex": "1310"
+  },
+  {
+    "gardiner_num": "F17",
+    "hieroglyph": "𓄐",
+    "description": "Combination of F16 and D60 water vessel",
+    "details": "Det. or Ideo. in ʿbw “purification.”",
+    "is_priority": false,
+    "unicode_hex": "13110"
+  },
+  {
+    "gardiner_num": "F18",
+    "hieroglyph": "𓄑",
+    "description": "Tusk of elephant",
+    "details": "Phono. bḥ, ḥw. Det. and Ideo. in ibḥ “tooth.” Det. in sbḥ “cry.”",
+    "is_priority": false,
+    "unicode_hex": "13111"
+  },
+  {
+    "gardiner_num": "F19",
+    "hieroglyph": "𓄒",
+    "description": "Jawbone of ox",
+    "details": "Det. in ʿrt “jaw.”",
+    "is_priority": false,
+    "unicode_hex": "13112"
+  },
+  {
+    "gardiner_num": "F20",
+    "hieroglyph": "𓄓",
+    "description": "Tongue",
+    "details": "Phono. ns. In ns “tongue.” Ideo. in imy-r “overseer.”",
+    "is_priority": false,
+    "unicode_hex": "13113"
+  },
+  {
+    "gardiner_num": "F21",
+    "hieroglyph": "𓄔",
+    "description": "Ear of ox",
+    "details": "Phono. sḏm, idn. Det. or Ideo. in msḏr “ear. Ideo. sḏm, “hear.”",
+    "is_priority": false,
+    "unicode_hex": "13114"
+  },
+  {
+    "gardiner_num": "F22",
+    "hieroglyph": "𓄖",
+    "description": "Hindquarters of leopard or lion",
+    "details": "Phono. pḥ in “reach,” pḥty “strength.” Ideo. for pḥwy “end.”",
+    "is_priority": false,
+    "unicode_hex": "13116"
+  },
+  {
+    "gardiner_num": "F23",
+    "hieroglyph": "𓄗",
+    "description": "Foreleg of ox",
+    "details": "Det. or Ideo. in ḫpš “strong arm, leg.”",
+    "is_priority": false,
+    "unicode_hex": "13117"
+  },
+  {
+    "gardiner_num": "F24",
+    "hieroglyph": "𓄘",
+    "description": "Reverse of F23",
+    "details": "Use as F23.",
+    "is_priority": false,
+    "unicode_hex": "13118"
+  },
+  {
+    "gardiner_num": "F25",
+    "hieroglyph": "𓄙",
+    "description": "Leg and hoof of ox",
+    "details": "Phono. wḥm in “hoof,” “repeat.”",
+    "is_priority": false,
+    "unicode_hex": "13119"
+  },
+  {
+    "gardiner_num": "F26",
+    "hieroglyph": "𓄚",
+    "description": "Goatskin",
+    "details": "Phono. ẖn. In ẖnw “interior,” ẖn “approach.”",
+    "is_priority": false,
+    "unicode_hex": "1311"
+  },
+  {
+    "gardiner_num": "F27",
+    "hieroglyph": "𓄛",
+    "description": "Cowskin",
+    "details": "Det. in dḥr “hide,” msk3 “skin.”",
+    "is_priority": false,
+    "unicode_hex": "1311"
+  },
+  {
+    "gardiner_num": "F28",
+    "hieroglyph": "𓄜",
+    "description": "Var. of F27",
+    "details": "Phono. s3b.",
+    "is_priority": false,
+    "unicode_hex": "1311"
+  },
+  {
+    "gardiner_num": "F29",
+    "hieroglyph": "𓄝",
+    "description": "Combination of F28 + arrow",
+    "details": "Phono. st. Det. and Ideo. sti “pierce, shoot.”",
+    "is_priority": false,
+    "unicode_hex": "1311"
+  },
+  {
+    "gardiner_num": "F30",
+    "hieroglyph": "𓄞",
+    "description": "Water skin",
+    "details": "Phono. šd. In šdi “draw forth,” šdw “water skin.”",
+    "is_priority": false,
+    "unicode_hex": "1311"
+  },
+  {
+    "gardiner_num": "F31",
+    "hieroglyph": "𓄟",
+    "description": "Three fox skins",
+    "details": "Phono. ms. In msi “give birth.”",
+    "is_priority": false,
+    "unicode_hex": "1311"
+  },
+  {
+    "gardiner_num": "F32",
+    "hieroglyph": "𓄡",
+    "description": "Animal belly and tail",
+    "details": "Phono. ẖ. Ideo. in ẖt “belly, body.”",
+    "is_priority": false,
+    "unicode_hex": "13121"
+  },
+  {
+    "gardiner_num": "F33",
+    "hieroglyph": "𓄢",
+    "description": "Tail",
+    "details": "Phono. sd. Det. and Ideo in sd “tail.”",
+    "is_priority": false,
+    "unicode_hex": "13122"
+  },
+  {
+    "gardiner_num": "F34",
+    "hieroglyph": "𓄣",
+    "description": "Heart",
+    "details": "Ideo. in ib “heart.” Det. of ” ḥ3ty “heart.”",
+    "is_priority": false,
+    "unicode_hex": "13123"
+  },
+  {
+    "gardiner_num": "F35",
+    "hieroglyph": "𓄤",
+    "description": "Heart and windpipe",
+    "details": "Phono. nfr. In nfr “good, beautiful.”",
+    "is_priority": false,
+    "unicode_hex": "13124"
+  },
+  {
+    "gardiner_num": "F36",
+    "hieroglyph": "𓄥",
+    "description": "Lung and windpipe",
+    "details": "Phono. sm3. In sm3 “unite” and “lung.”",
+    "is_priority": false,
+    "unicode_hex": "13125"
+  },
+  {
+    "gardiner_num": "F37",
+    "hieroglyph": "𓄦",
+    "description": "Backbone and ribs",
+    "details": "Det. or Ideo. in i3t “back.” Det. in psd “back.”",
+    "is_priority": false,
+    "unicode_hex": "13126"
+  },
+  {
+    "gardiner_num": "F38",
+    "hieroglyph": "𓄨",
+    "description": "Var. of F37",
+    "details": "Det. in psd “back.”",
+    "is_priority": false,
+    "unicode_hex": "13128"
+  },
+  {
+    "gardiner_num": "F39",
+    "hieroglyph": "𓄪",
+    "description": "Backbone and spinal cord",
+    "details": "Det. and Ideo. in im3ḫ “spine” and “honor.”",
+    "is_priority": false,
+    "unicode_hex": "1312"
+  },
+  {
+    "gardiner_num": "F40",
+    "hieroglyph": "𓄫",
+    "description": "Backbone and spinal cord at each end",
+    "details": "Phono. 3w.",
+    "is_priority": false,
+    "unicode_hex": "1312"
+  },
+  {
+    "gardiner_num": "F41",
+    "hieroglyph": "𓄬",
+    "description": "Vertebrae",
+    "details": "Det. in psd “back.”",
+    "is_priority": false,
+    "unicode_hex": "1312"
+  },
+  {
+    "gardiner_num": "F42",
+    "hieroglyph": "𓄭",
+    "description": "Rib",
+    "details": "Phono. spr. In spr “approach.”",
+    "is_priority": false,
+    "unicode_hex": "1312"
+  },
+  {
+    "gardiner_num": "F43",
+    "hieroglyph": "𓄮",
+    "description": "Ribs",
+    "details": "Det. in sḥpt “ribs.”",
+    "is_priority": false,
+    "unicode_hex": "1312"
+  },
+  {
+    "gardiner_num": "F44",
+    "hieroglyph": "𓄯",
+    "description": "Leg bone with meat",
+    "details": "Phono. iwʿ, isw. In iwʿ inherit,” siw “exchange.”",
+    "is_priority": false,
+    "unicode_hex": "1312"
+  },
+  {
+    "gardiner_num": "F45",
+    "hieroglyph": "𓄰",
+    "description": "Heifer uterus",
+    "details": "Det. or Ideo. in dit “vulva, cow.”",
+    "is_priority": false,
+    "unicode_hex": "13130"
+  },
+  {
+    "gardiner_num": "F46",
+    "hieroglyph": "𓄲",
+    "description": "Intestine",
+    "details": "Ideo. in q3b “instestine,” m-q3b “in the midst of” pḫr “turn.”",
+    "is_priority": false,
+    "unicode_hex": "13132"
+  },
+  {
+    "gardiner_num": "F47",
+    "hieroglyph": "𓄴",
+    "description": "Var. of F46",
+    "details": "Use as F46.",
+    "is_priority": false,
+    "unicode_hex": "13134"
+  },
+  {
+    "gardiner_num": "F48",
+    "hieroglyph": "𓄶",
+    "description": "Var. of F46",
+    "details": "Use as F46.",
+    "is_priority": false,
+    "unicode_hex": "13136"
+  },
+  {
+    "gardiner_num": "F49",
+    "hieroglyph": "𓄷",
+    "description": "Var. of F46",
+    "details": "Use as F46.",
+    "is_priority": false,
+    "unicode_hex": "13137"
+  },
+  {
+    "gardiner_num": "F50",
+    "hieroglyph": "𓄸",
+    "description": "Combination of F46 and S29",
+    "details": "Phono. spḫr, “write, copy.”",
+    "is_priority": false,
+    "unicode_hex": "13138"
+  },
+  {
+    "gardiner_num": "F51",
+    "hieroglyph": "𓄹",
+    "description": "Piece of flesh",
+    "details": "Phono. is, ist, ws. Det. ḥʿ “flesh,” iwf “meat.”",
+    "is_priority": false,
+    "unicode_hex": "13139"
+  },
+  {
+    "gardiner_num": "F52",
+    "hieroglyph": "𓄽",
+    "description": "Excrement",
+    "details": "Det. in ḥs “excrement.”",
+    "is_priority": false,
+    "unicode_hex": "1313"
+  },
+  {
+    "gardiner_num": "G1",
+    "hieroglyph": "𓄿",
+    "description": "Vulture",
+    "details": "Phono. 3. In 3 “vulture.’",
+    "is_priority": true,
+    "unicode_hex": "1313"
+  },
+  {
+    "gardiner_num": "G2",
+    "hieroglyph": "𓅀",
+    "description": "Two Vultures",
+    "details": "Phono 33. In m33 “see.”",
+    "is_priority": false,
+    "unicode_hex": "13140"
+  },
+  {
+    "gardiner_num": "G3",
+    "hieroglyph": "𓅁",
+    "description": "Combination of G1 + U1",
+    "details": "Phono. in m3. In sm3wy “renew.”",
+    "is_priority": false,
+    "unicode_hex": "13141"
+  },
+  {
+    "gardiner_num": "G4",
+    "hieroglyph": "𓅂",
+    "description": "Buzzard",
+    "details": "Phono. tyw.",
+    "is_priority": true,
+    "unicode_hex": "13142"
+  },
+  {
+    "gardiner_num": "G5",
+    "hieroglyph": "𓅃",
+    "description": "Falcon",
+    "details": "Ideo. ḥrw “Horus.”",
+    "is_priority": false,
+    "unicode_hex": "13143"
+  },
+  {
+    "gardiner_num": "G6",
+    "hieroglyph": "𓅄",
+    "description": "Falcon with flail",
+    "details": "De.t in bik “falcon.”",
+    "is_priority": false,
+    "unicode_hex": "13144"
+  },
+  {
+    "gardiner_num": "G7",
+    "hieroglyph": "𓅆",
+    "description": "Falcon on standard",
+    "details": "Det. imn “Amun,” nsw “king,” divine. 1st sing. pro. i, wi, with divine speaker.",
+    "is_priority": false,
+    "unicode_hex": "13146"
+  },
+  {
+    "gardiner_num": "G7a",
+    "hieroglyph": "𓅇",
+    "description": "Var of G7, Falcon in boat",
+    "details": "Ideo. nmty “Nemty”",
+    "is_priority": false,
+    "unicode_hex": "13147"
+  },
+  {
+    "gardiner_num": "G7b",
+    "hieroglyph": "𓅈",
+    "description": "Var of G7, G7a",
+    "details": "Use as G7a.",
+    "is_priority": false,
+    "unicode_hex": "13148"
+  },
+  {
+    "gardiner_num": "G8",
+    "hieroglyph": "𓅉",
+    "description": "Combination of G5 + S12",
+    "details": "Ideo. Hr/bik nbw “Golden Horus/falcon.”",
+    "is_priority": false,
+    "unicode_hex": "13149"
+  },
+  {
+    "gardiner_num": "G9",
+    "hieroglyph": "𓅊",
+    "description": "Falcon with sun disk",
+    "details": "Ideo. in rʿ-ḥrw-3ḫty “Re-Horakhty.”",
+    "is_priority": false,
+    "unicode_hex": "1314"
+  },
+  {
+    "gardiner_num": "G10",
+    "hieroglyph": "𓅋",
+    "description": "Falcon in sacred bark",
+    "details": "Det. in skr “Sokar,” ḥnw “Sokar bark.”",
+    "is_priority": false,
+    "unicode_hex": "1314"
+  },
+  {
+    "gardiner_num": "G11",
+    "hieroglyph": "𓅌",
+    "description": "Falcon image",
+    "details": "Det. in ʿšm, ʿẖm, ʿḫm “divine image,” šnbt “breast.”",
+    "is_priority": false,
+    "unicode_hex": "1314"
+  },
+  {
+    "gardiner_num": "G12",
+    "hieroglyph": "𓅎",
+    "description": "Falcon image with flail",
+    "details": "Use as G11.",
+    "is_priority": false,
+    "unicode_hex": "1314"
+  },
+  {
+    "gardiner_num": "G13",
+    "hieroglyph": "𓅏",
+    "description": "Falcon image with S9",
+    "details": "Ideo. ḥrw nḫny “Horus of Hierakonopolis.” Det. in spdw “Sopdu.”",
+    "is_priority": false,
+    "unicode_hex": "1314"
+  },
+  {
+    "gardiner_num": "G14",
+    "hieroglyph": "𓅐",
+    "description": "Vulture",
+    "details": "Phono. mwt, mt. In mwt “mother.”",
+    "is_priority": false,
+    "unicode_hex": "13150"
+  },
+  {
+    "gardiner_num": "G15",
+    "hieroglyph": "𓅑",
+    "description": "Vulture with flail",
+    "details": "Det. in mwt “Mut.”",
+    "is_priority": false,
+    "unicode_hex": "13151"
+  },
+  {
+    "gardiner_num": "G16",
+    "hieroglyph": "𓅒",
+    "description": "Nehkbet and Edjo",
+    "details": "Ideo. in nbty “Two Ladies” (title of Pharaoh)",
+    "is_priority": false,
+    "unicode_hex": "13152"
+  },
+  {
+    "gardiner_num": "G17",
+    "hieroglyph": "𓅓",
+    "description": "Owl",
+    "details": "Phono. m.",
+    "is_priority": true,
+    "unicode_hex": "13153"
+  },
+  {
+    "gardiner_num": "G18",
+    "hieroglyph": "𓅔",
+    "description": "Two Owls",
+    "details": "Phono. mm.",
+    "is_priority": false,
+    "unicode_hex": "13154"
+  },
+  {
+    "gardiner_num": "G19",
+    "hieroglyph": "𓅕",
+    "description": "Combination of G17 + D37",
+    "details": "Phono. mi, m.",
+    "is_priority": false,
+    "unicode_hex": "13155"
+  },
+  {
+    "gardiner_num": "G20",
+    "hieroglyph": "𓅖",
+    "description": "Combination of G17 + D36",
+    "details": "Use as G19.",
+    "is_priority": false,
+    "unicode_hex": "13156"
+  },
+  {
+    "gardiner_num": "G21",
+    "hieroglyph": "𓅘",
+    "description": "Guinea fowl",
+    "details": "Phono. nḥ. In nḥḥ “eternity.”",
+    "is_priority": false,
+    "unicode_hex": "13158"
+  },
+  {
+    "gardiner_num": "G22",
+    "hieroglyph": "𓅙",
+    "description": "Hoopoe",
+    "details": "Phono. ḏb/ḏbt.",
+    "is_priority": false,
+    "unicode_hex": "13159"
+  },
+  {
+    "gardiner_num": "G23",
+    "hieroglyph": "𓅚",
+    "description": "Lapwing",
+    "details": "Det. and Ideo. in rḫyt “commoners.”",
+    "is_priority": false,
+    "unicode_hex": "1315"
+  },
+  {
+    "gardiner_num": "G24",
+    "hieroglyph": "𓅛",
+    "description": "Var. of G23",
+    "details": "Use as G23.",
+    "is_priority": false,
+    "unicode_hex": "1315"
+  },
+  {
+    "gardiner_num": "G25",
+    "hieroglyph": "𓅜",
+    "description": "Crested Ibis",
+    "details": "Phono. 3ḫ. In “spirit.”",
+    "is_priority": false,
+    "unicode_hex": "1315"
+  },
+  {
+    "gardiner_num": "G26",
+    "hieroglyph": "𓅝",
+    "description": "Sacred ibis on standard",
+    "details": "Det. in ḏḥwty “Thoth.”",
+    "is_priority": false,
+    "unicode_hex": "1315"
+  },
+  {
+    "gardiner_num": "G26a",
+    "hieroglyph": "𓅞",
+    "description": "Sacred ibis",
+    "details": "Use as G26.",
+    "is_priority": false,
+    "unicode_hex": "1315"
+  },
+  {
+    "gardiner_num": "G27",
+    "hieroglyph": "𓅟",
+    "description": "Flamingo",
+    "details": "Phono. dšr. In dšr “red,” “flamingo.”",
+    "is_priority": false,
+    "unicode_hex": "1315"
+  },
+  {
+    "gardiner_num": "G28",
+    "hieroglyph": "𓅠",
+    "description": "Black ibis",
+    "details": "Phono. gm. In gmi “find.”",
+    "is_priority": false,
+    "unicode_hex": "13160"
+  },
+  {
+    "gardiner_num": "G29",
+    "hieroglyph": "𓅡",
+    "description": "Jabiru",
+    "details": "Phono. b3. In “soul.”",
+    "is_priority": false,
+    "unicode_hex": "13161"
+  },
+  {
+    "gardiner_num": "G30",
+    "hieroglyph": "𓅢",
+    "description": "Three jabirus",
+    "details": "Ideo. in b3w “spirits, strength.”",
+    "is_priority": false,
+    "unicode_hex": "13162"
+  },
+  {
+    "gardiner_num": "G31",
+    "hieroglyph": "𓅣",
+    "description": "Heron",
+    "details": "Det. in šnty “heron.”",
+    "is_priority": false,
+    "unicode_hex": "13163"
+  },
+  {
+    "gardiner_num": "G32",
+    "hieroglyph": "𓅤",
+    "description": "Heron on perch",
+    "details": "Det. or Ideo. in bʿḫi “inundated.”",
+    "is_priority": false,
+    "unicode_hex": "13164"
+  },
+  {
+    "gardiner_num": "G33",
+    "hieroglyph": "𓅥",
+    "description": "Egret",
+    "details": "Det. sd3 “tremble.”",
+    "is_priority": false,
+    "unicode_hex": "13165"
+  },
+  {
+    "gardiner_num": "G34",
+    "hieroglyph": "𓅦",
+    "description": "Ostrich",
+    "details": "Det. in niw “ostrich.”",
+    "is_priority": false,
+    "unicode_hex": "13166"
+  },
+  {
+    "gardiner_num": "G35",
+    "hieroglyph": "𓅧",
+    "description": "Cormorant",
+    "details": "Phono. ʿq. In ʿq “enter.”",
+    "is_priority": false,
+    "unicode_hex": "13167"
+  },
+  {
+    "gardiner_num": "G36",
+    "hieroglyph": "𓅨",
+    "description": "Swallow",
+    "details": "Phono. wr. In wr “great.”",
+    "is_priority": true,
+    "unicode_hex": "13168"
+  },
+  {
+    "gardiner_num": "G37",
+    "hieroglyph": "𓅪",
+    "description": "Sparrow",
+    "details": "Det. in nḏs “small,” bin “bad.”",
+    "is_priority": true,
+    "unicode_hex": "1316"
+  },
+  {
+    "gardiner_num": "G38",
+    "hieroglyph": "𓅬",
+    "description": "Goose",
+    "details": "Phono. gb. In gb “Geb.” Det. in wf3 “talk,” wsf “idle,” ḥtm “perish.”",
+    "is_priority": false,
+    "unicode_hex": "1316"
+  },
+  {
+    "gardiner_num": "G39",
+    "hieroglyph": "𓅭",
+    "description": "Duck",
+    "details": "Phono. s3. In s3 “son.” Det. in si “duck.”",
+    "is_priority": false,
+    "unicode_hex": "1316"
+  },
+  {
+    "gardiner_num": "G40",
+    "hieroglyph": "𓅮",
+    "description": "Duck flying",
+    "details": "Phono. p3. In p3 “the,” “fly.”",
+    "is_priority": false,
+    "unicode_hex": "1316"
+  },
+  {
+    "gardiner_num": "G41",
+    "hieroglyph": "𓅯",
+    "description": "Duck landing",
+    "details": "Phono. ḫn. In ḫni “alight, halt,” ḫn “speech,” qm3 “throw,” “create.”",
+    "is_priority": false,
+    "unicode_hex": "1316"
+  },
+  {
+    "gardiner_num": "G42",
+    "hieroglyph": "𓅰",
+    "description": "Fattened bird",
+    "details": "Det. and Ideo. in wš3 “fatten,” ḏf3w “provisions.”",
+    "is_priority": false,
+    "unicode_hex": "13170"
+  },
+  {
+    "gardiner_num": "G43",
+    "hieroglyph": "𓅱",
+    "description": "Quail chick, var. Z7",
+    "details": "Phono. w.",
+    "is_priority": true,
+    "unicode_hex": "13171"
+  },
+  {
+    "gardiner_num": "G44",
+    "hieroglyph": "𓅳",
+    "description": "Two quail chicks",
+    "details": "Phono. ww. In pḥww “end.”",
+    "is_priority": false,
+    "unicode_hex": "13173"
+  },
+  {
+    "gardiner_num": "G45",
+    "hieroglyph": "𓅴",
+    "description": "Combination of G43 + D36",
+    "details": "Phono wʿ.In wʿw “soldier.”",
+    "is_priority": false,
+    "unicode_hex": "13174"
+  },
+  {
+    "gardiner_num": "G46",
+    "hieroglyph": "𓅶",
+    "description": "Combination of G43 + U1",
+    "details": "Phono. m3w.",
+    "is_priority": false,
+    "unicode_hex": "13176"
+  },
+  {
+    "gardiner_num": "G47",
+    "hieroglyph": "𓅷",
+    "description": "Duckling",
+    "details": "Phono. ṯ3. In ṯ3y “male.”",
+    "is_priority": false,
+    "unicode_hex": "13177"
+  },
+  {
+    "gardiner_num": "G48",
+    "hieroglyph": "𓅸",
+    "description": "Three ducklings in nest",
+    "details": "Ideo. in sš “nest.”",
+    "is_priority": false,
+    "unicode_hex": "13178"
+  },
+  {
+    "gardiner_num": "G49",
+    "hieroglyph": "𓅹",
+    "description": "Ducks’ heads protruding from pool",
+    "details": "Det. or Ideo. in sš “nest.”",
+    "is_priority": false,
+    "unicode_hex": "13179"
+  },
+  {
+    "gardiner_num": "G50",
+    "hieroglyph": "𓅺",
+    "description": "Two plovers",
+    "details": "Ideo. for rḫty “washerman.”",
+    "is_priority": false,
+    "unicode_hex": "1317"
+  },
+  {
+    "gardiner_num": "G51",
+    "hieroglyph": "𓅻",
+    "description": "Bird pecking fish",
+    "details": "Det. in ḥ3m “catch fish.”",
+    "is_priority": false,
+    "unicode_hex": "1317"
+  },
+  {
+    "gardiner_num": "G52",
+    "hieroglyph": "𓅼",
+    "description": "Goose feeding",
+    "details": "Det. in snm “feed.”",
+    "is_priority": false,
+    "unicode_hex": "1317"
+  },
+  {
+    "gardiner_num": "G53",
+    "hieroglyph": "𓅽",
+    "description": "Human headed bird",
+    "details": "Ideo. in b3 “soul.”",
+    "is_priority": false,
+    "unicode_hex": "1317"
+  },
+  {
+    "gardiner_num": "G54",
+    "hieroglyph": "𓅾",
+    "description": "Plucked bird",
+    "details": "Phono. snḏ. In snḏ “fear.”",
+    "is_priority": false,
+    "unicode_hex": "1317"
+  },
+  {
+    "gardiner_num": "H1",
+    "hieroglyph": "𓅿",
+    "description": "Head of duck",
+    "details": "Ideo. in 3pd “bird.” Det. in wšn “wring the neck of birds.”",
+    "is_priority": false,
+    "unicode_hex": "1317"
+  },
+  {
+    "gardiner_num": "H2",
+    "hieroglyph": "𓆀",
+    "description": "Head of crested bird",
+    "details": "Phono. m3ʿ, wšm, p3q. Det. in m3ʿ “temple of the head,” “true.”",
+    "is_priority": false,
+    "unicode_hex": "13180"
+  },
+  {
+    "gardiner_num": "H3",
+    "hieroglyph": "𓆁",
+    "description": "Head of spoonbill",
+    "details": "Phono. p3q.",
+    "is_priority": false,
+    "unicode_hex": "13181"
+  },
+  {
+    "gardiner_num": "H4",
+    "hieroglyph": "𓆂",
+    "description": "Head of vulture",
+    "details": "Phono. nr. Det. in nrt “vulture.”",
+    "is_priority": false,
+    "unicode_hex": "13182"
+  },
+  {
+    "gardiner_num": "H5",
+    "hieroglyph": "𓆃",
+    "description": "Wing",
+    "details": "Det. in ḏnḥ “wing.”",
+    "is_priority": false,
+    "unicode_hex": "13183"
+  },
+  {
+    "gardiner_num": "H6",
+    "hieroglyph": "𓆄",
+    "description": "Feather",
+    "details": "Phono. šw. Ideo. in šwt “feather.” Det. and Ideo. in m3ʿt “truth.”",
+    "is_priority": false,
+    "unicode_hex": "13184"
+  },
+  {
+    "gardiner_num": "H7",
+    "hieroglyph": "𓆆",
+    "description": "Claw",
+    "details": "Phono. š3, š3t. In š3t “Shat” (location).",
+    "is_priority": false,
+    "unicode_hex": "13186"
+  },
+  {
+    "gardiner_num": "H8",
+    "hieroglyph": "𓆇",
+    "description": "Egg",
+    "details": "Ideo. in s3 “son.” Det. sḥwt “egg.”",
+    "is_priority": false,
+    "unicode_hex": "13187"
+  },
+  {
+    "gardiner_num": "I1",
+    "hieroglyph": "𓆈",
+    "description": "Lizard",
+    "details": "Phono. ʿš3. Det. for lizard. ex. ʿš3 “lizard” and ʿš3 “many, numerous.”",
+    "is_priority": false,
+    "unicode_hex": "13188"
+  },
+  {
+    "gardiner_num": "I2",
+    "hieroglyph": "𓆉",
+    "description": "Turtle",
+    "details": "Det. or Ideo. for štyw “turtle.”",
+    "is_priority": false,
+    "unicode_hex": "13189"
+  },
+  {
+    "gardiner_num": "I3",
+    "hieroglyph": "𓆊",
+    "description": "Crocodile",
+    "details": "Det. or Ideo. for crocodile. ex. msḥ “crocodile,” 3d “agressive.” Ideo. ity “sovereign,” when reduplicated",
+    "is_priority": false,
+    "unicode_hex": "1318"
+  },
+  {
+    "gardiner_num": "I4",
+    "hieroglyph": "𓆋",
+    "description": "Crocodile on shrine",
+    "details": "Det. sbk “Sobek.”",
+    "is_priority": false,
+    "unicode_hex": "1318"
+  },
+  {
+    "gardiner_num": "I5",
+    "hieroglyph": "𓆌",
+    "description": "Crocodile with curved tail",
+    "details": "Det. in s3q “collect, gather.”",
+    "is_priority": false,
+    "unicode_hex": "1318"
+  },
+  {
+    "gardiner_num": "I6",
+    "hieroglyph": "𓆎",
+    "description": "Crocodile scales",
+    "details": "Phono. km. In kmt “Egypt.”",
+    "is_priority": false,
+    "unicode_hex": "1318"
+  },
+  {
+    "gardiner_num": "I7",
+    "hieroglyph": "𓆏",
+    "description": "Frog",
+    "details": "Det. in ḥqt “Heqet.” Ideo. wḥm ʿnḫ “repeating life.”",
+    "is_priority": false,
+    "unicode_hex": "1318"
+  },
+  {
+    "gardiner_num": "I8",
+    "hieroglyph": "𓆐",
+    "description": "Tadpole",
+    "details": "Det. ḥfnr “tadpole.” Ideo. ḥfn “100,000.”",
+    "is_priority": false,
+    "unicode_hex": "13190"
+  },
+  {
+    "gardiner_num": "I9",
+    "hieroglyph": "𓆑",
+    "description": "Horned viper",
+    "details": "Phono. f. Det. in it “father.”",
+    "is_priority": true,
+    "unicode_hex": "13191"
+  },
+  {
+    "gardiner_num": "I10",
+    "hieroglyph": "𓆓",
+    "description": "Cobra",
+    "details": "Phono. ḏ.",
+    "is_priority": false,
+    "unicode_hex": "13193"
+  },
+  {
+    "gardiner_num": "I11",
+    "hieroglyph": "𓆕",
+    "description": "Two cobras",
+    "details": "Phono ḏḏ.",
+    "is_priority": false,
+    "unicode_hex": "13195"
+  },
+  {
+    "gardiner_num": "I12",
+    "hieroglyph": "𓆗",
+    "description": "Erect cobra",
+    "details": "Det. in ʿirt “uraeus.” Det. of goddesses.",
+    "is_priority": false,
+    "unicode_hex": "13197"
+  },
+  {
+    "gardiner_num": "I13",
+    "hieroglyph": "𓆘",
+    "description": "Combination of I12 + V30",
+    "details": "Det. in w3ḏt “Wadjet.”",
+    "is_priority": false,
+    "unicode_hex": "13198"
+  },
+  {
+    "gardiner_num": "I14",
+    "hieroglyph": "𓆙",
+    "description": "Snake",
+    "details": "Det. ḥf3w “snake, serpent.”",
+    "is_priority": false,
+    "unicode_hex": "13199"
+  },
+  {
+    "gardiner_num": "I15",
+    "hieroglyph": "𓆚",
+    "description": "Var. of I15",
+    "details": "Use as I14.",
+    "is_priority": false,
+    "unicode_hex": "1319"
+  },
+  {
+    "gardiner_num": "K1",
+    "hieroglyph": "𓆛",
+    "description": "Bulti fish",
+    "details": "Phono. in. In int “bulti.”",
+    "is_priority": false,
+    "unicode_hex": "1319"
+  },
+  {
+    "gardiner_num": "K2",
+    "hieroglyph": "𓆜",
+    "description": "Barbel fish",
+    "details": "Phono. bw. In bwt “abomination.”",
+    "is_priority": false,
+    "unicode_hex": "1319"
+  },
+  {
+    "gardiner_num": "K3",
+    "hieroglyph": "𓆝",
+    "description": "Mullet fish",
+    "details": "Phono. ʿḏ. In ʿḏ-mr “district administrator.”",
+    "is_priority": false,
+    "unicode_hex": "1319"
+  },
+  {
+    "gardiner_num": "K4",
+    "hieroglyph": "𓆞",
+    "description": "Oxyrhynchus fish",
+    "details": "Phono. ẖ3. In ẖ3t “oxyrhynchus.”",
+    "is_priority": false,
+    "unicode_hex": "1319"
+  },
+  {
+    "gardiner_num": "K5",
+    "hieroglyph": "𓆟",
+    "description": "Pike fish",
+    "details": "Phono. bs. Det. in bsi “introduce.”",
+    "is_priority": false,
+    "unicode_hex": "1319"
+  },
+  {
+    "gardiner_num": "K6",
+    "hieroglyph": "𓆠",
+    "description": "Fish scale",
+    "details": "Det. and Ideo. in nšmt “fish scale.”",
+    "is_priority": false,
+    "unicode_hex": "1310"
+  },
+  {
+    "gardiner_num": "K7",
+    "hieroglyph": "𓆡",
+    "description": "Blowfish",
+    "details": "Det. špt “discontented.”",
+    "is_priority": false,
+    "unicode_hex": "1311"
+  },
+  {
+    "gardiner_num": "L1",
+    "hieroglyph": "𓆣",
+    "description": "Scarab beetle",
+    "details": "Phono. ḫpr. In ḫpr “being, exist, become.",
+    "is_priority": false,
+    "unicode_hex": "1313"
+  },
+  {
+    "gardiner_num": "L2",
+    "hieroglyph": "𓆤",
+    "description": "Bee",
+    "details": "Ideo. for bity “King of Lower Egypt.”",
+    "is_priority": false,
+    "unicode_hex": "1314"
+  },
+  {
+    "gardiner_num": "L3",
+    "hieroglyph": "𓆦",
+    "description": "Fly",
+    "details": "Det. in ʿff “fly.”",
+    "is_priority": false,
+    "unicode_hex": "1316"
+  },
+  {
+    "gardiner_num": "L4",
+    "hieroglyph": "𓆧",
+    "description": "Locust",
+    "details": "Det. in snḥm “locust.”",
+    "is_priority": false,
+    "unicode_hex": "1317"
+  },
+  {
+    "gardiner_num": "L5",
+    "hieroglyph": "𓆨",
+    "description": "Centipede",
+    "details": "Det. sp3 “centipede.”",
+    "is_priority": false,
+    "unicode_hex": "1318"
+  },
+  {
+    "gardiner_num": "L6",
+    "hieroglyph": "𓆩",
+    "description": "Shell",
+    "details": "Phono ḫ3. In ḫ3wt “offering table.”",
+    "is_priority": false,
+    "unicode_hex": "1319"
+  },
+  {
+    "gardiner_num": "L7",
+    "hieroglyph": "𓆫",
+    "description": "Scorpion",
+    "details": "Det. and Ideo. in srqt “Selket.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "M1",
+    "hieroglyph": "𓆭",
+    "description": "Tree",
+    "details": "Phono. im3. Det. nhwt, mnw “trees.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "M2",
+    "hieroglyph": "𓆰",
+    "description": "Plant",
+    "details": "Phono. ḥn. In ḥni “rush,” ḥnw “vessel.” Det. in is “tomb.”",
+    "is_priority": false,
+    "unicode_hex": "1310"
+  },
+  {
+    "gardiner_num": "M3",
+    "hieroglyph": "𓆱",
+    "description": "Branch",
+    "details": "Phono. ḫt. In ḫt “wood,” ḫtyw “terrace,” nḫt “strong.”",
+    "is_priority": false,
+    "unicode_hex": "1311"
+  },
+  {
+    "gardiner_num": "M4",
+    "hieroglyph": "𓆳",
+    "description": "Stripped palm branch",
+    "details": "Ideo. in rnpt “year,” ḥsbt “regnal year.” Det. in tr “time.”",
+    "is_priority": false,
+    "unicode_hex": "1313"
+  },
+  {
+    "gardiner_num": "M5",
+    "hieroglyph": "𓆴",
+    "description": "Combination of M4 + X1",
+    "details": "Det. or Ideo. in tr “time, season.”",
+    "is_priority": false,
+    "unicode_hex": "1314"
+  },
+  {
+    "gardiner_num": "M6",
+    "hieroglyph": "𓆵",
+    "description": "Combination of M4 + D21",
+    "details": "Det. or Ideo. in tr “time, season.”",
+    "is_priority": false,
+    "unicode_hex": "1315"
+  },
+  {
+    "gardiner_num": "M7",
+    "hieroglyph": "𓆶",
+    "description": "Combination of M4 + Q3",
+    "details": "Det. or Ideo. in rnpi “young.”",
+    "is_priority": false,
+    "unicode_hex": "1316"
+  },
+  {
+    "gardiner_num": "M8",
+    "hieroglyph": "𓆷",
+    "description": "Pool with lilies",
+    "details": "Phono š3. In š3 “marsh.” Ideo. 3ḫt “Inundation” (season).",
+    "is_priority": false,
+    "unicode_hex": "1317"
+  },
+  {
+    "gardiner_num": "M9",
+    "hieroglyph": "𓆸",
+    "description": "Lily",
+    "details": "Det. or Ideo in sšn “lily.”",
+    "is_priority": false,
+    "unicode_hex": "1318"
+  },
+  {
+    "gardiner_num": "M10",
+    "hieroglyph": "𓆹",
+    "description": "Lily bud",
+    "details": "Det. in nḥbt “lily bud.”",
+    "is_priority": false,
+    "unicode_hex": "1319"
+  },
+  {
+    "gardiner_num": "M11",
+    "hieroglyph": "𓆻",
+    "description": "Flower and stem",
+    "details": "Det. or Ideo. in wdn “offer.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "M12",
+    "hieroglyph": "𓆼",
+    "description": "Lily plant",
+    "details": "Phono. ḫ3. In ḫ3w nw sšn “lily plants” ḫ3 “1,000,” sḫ3 “remember.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "M13",
+    "hieroglyph": "𓇅",
+    "description": "Papyrus stem",
+    "details": "Phono. w3ḏ, wḏ.",
+    "is_priority": false,
+    "unicode_hex": "1315"
+  },
+  {
+    "gardiner_num": "M14",
+    "hieroglyph": "𓇆",
+    "description": "Combination of M13 and I10",
+    "details": "Phono. w3ḏ. In w3ḏ wr “the sea.”",
+    "is_priority": false,
+    "unicode_hex": "1316"
+  },
+  {
+    "gardiner_num": "M15",
+    "hieroglyph": "𓇇",
+    "description": "Papyrus clump with downward facing buds.",
+    "details": "Phono. 3ḫ. In 3ḫ-bit “Chemmis.” Det. of Papyrus.",
+    "is_priority": false,
+    "unicode_hex": "1317"
+  },
+  {
+    "gardiner_num": "M16",
+    "hieroglyph": "𓇉",
+    "description": "Papyrus clump",
+    "details": "Phono. ḥ3 . In ḥ3q “capture.” Det. in “The Delta.”",
+    "is_priority": false,
+    "unicode_hex": "1319"
+  },
+  {
+    "gardiner_num": "M17",
+    "hieroglyph": "𓇋",
+    "description": "Reed leaf",
+    "details": "Phono. i. Phono. y, when doubled.",
+    "is_priority": true,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "M18",
+    "hieroglyph": "𓇍",
+    "description": "Combination of M17 + D54",
+    "details": "Phono i. In ii “come.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "M19",
+    "hieroglyph": "𓇎",
+    "description": "Conical cakes between signs M17 and U36",
+    "details": "Det. and Ideo. in ʿ3bt “offering.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "M20",
+    "hieroglyph": "𓇏",
+    "description": "Reed field",
+    "details": "Det. sḫt “marshland,” sm “occupation.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "M21",
+    "hieroglyph": "𓇐",
+    "description": "Reed field with root",
+    "details": "Det. in sm “plant,” “help.”",
+    "is_priority": false,
+    "unicode_hex": "1310"
+  },
+  {
+    "gardiner_num": "M22",
+    "hieroglyph": "𓇑",
+    "description": "Rush with shoots",
+    "details": "Phono. nḫb . Phono. nn, when doubled. In nḫbt “germination,” “Nehkbet.”",
+    "is_priority": false,
+    "unicode_hex": "1311"
+  },
+  {
+    "gardiner_num": "M23",
+    "hieroglyph": "𓇓",
+    "description": "Sedge",
+    "details": "Phono. sw. Ideo. nswt “king.”",
+    "is_priority": false,
+    "unicode_hex": "1313"
+  },
+  {
+    "gardiner_num": "M24",
+    "hieroglyph": "𓇔",
+    "description": "Combination of M23 + D21",
+    "details": "Ideo. rsw “south.”",
+    "is_priority": false,
+    "unicode_hex": "1314"
+  },
+  {
+    "gardiner_num": "M25",
+    "hieroglyph": "𓇖",
+    "description": "Combination of M26 + M24",
+    "details": "Use as M24.",
+    "is_priority": false,
+    "unicode_hex": "1316"
+  },
+  {
+    "gardiner_num": "M26",
+    "hieroglyph": "𓇗",
+    "description": "Sedge",
+    "details": "Phono. šmʿ. Ideo. šmʿw in “Upper Egypt.”",
+    "is_priority": false,
+    "unicode_hex": "1317"
+  },
+  {
+    "gardiner_num": "M27",
+    "hieroglyph": "𓇘",
+    "description": "Combination of M26 + D36",
+    "details": "Phono. šmʿ.",
+    "is_priority": false,
+    "unicode_hex": "1318"
+  },
+  {
+    "gardiner_num": "M28",
+    "hieroglyph": "𓇙",
+    "description": "Combination of M26 + V20",
+    "details": "Ideo. in title wr mḏw šmʿw “Greatest of the tens of Upper Egypt.”",
+    "is_priority": false,
+    "unicode_hex": "1319"
+  },
+  {
+    "gardiner_num": "M29",
+    "hieroglyph": "𓇛",
+    "description": "Pod",
+    "details": "Phono. nḏm. In nḏm “sweet.",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "M30",
+    "hieroglyph": "𓇜",
+    "description": "Root",
+    "details": "Det. or Ideo. bnr “sweet.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "M31",
+    "hieroglyph": "𓇝",
+    "description": "Rhizome",
+    "details": "Det. in rd “grow.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "M32",
+    "hieroglyph": "𓇟",
+    "description": "Var of M31",
+    "details": "Use as M31",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "M33",
+    "hieroglyph": "𓇠",
+    "description": "Grain",
+    "details": "Ideo. in it “barley, corn.”",
+    "is_priority": false,
+    "unicode_hex": "1310"
+  },
+  {
+    "gardiner_num": "M34",
+    "hieroglyph": "𓇣",
+    "description": "Emmer sheaf",
+    "details": "Det. or Ideo. in bti “emmer.”",
+    "is_priority": false,
+    "unicode_hex": "1313"
+  },
+  {
+    "gardiner_num": "M35",
+    "hieroglyph": "𓇤",
+    "description": "Grain heap",
+    "details": "Det. in ʿḥʿw “heaps.”",
+    "is_priority": false,
+    "unicode_hex": "1314"
+  },
+  {
+    "gardiner_num": "M36",
+    "hieroglyph": "𓇥",
+    "description": "Flax bundle",
+    "details": "Phono. ḏr. In ḏr “since,” nḏri “hold fast.”",
+    "is_priority": false,
+    "unicode_hex": "1315"
+  },
+  {
+    "gardiner_num": "M37",
+    "hieroglyph": "𓇦",
+    "description": "Flax bundle with stems",
+    "details": "Phono. ḏr.",
+    "is_priority": false,
+    "unicode_hex": "1316"
+  },
+  {
+    "gardiner_num": "M38",
+    "hieroglyph": "𓇧",
+    "description": "Flax bundle",
+    "details": "Det. in mḥʿ “flax,” dm3 “bind together.”",
+    "is_priority": false,
+    "unicode_hex": "1317"
+  },
+  {
+    "gardiner_num": "M39",
+    "hieroglyph": "𓇨",
+    "description": "Basket of fruit or grain",
+    "details": "Det. in rnpt “vegetables.”",
+    "is_priority": false,
+    "unicode_hex": "1318"
+  },
+  {
+    "gardiner_num": "M40",
+    "hieroglyph": "𓇩",
+    "description": "Reed bundle",
+    "details": "Phono is. In is “tomb,” iswt “crew.”",
+    "is_priority": false,
+    "unicode_hex": "1319"
+  },
+  {
+    "gardiner_num": "M41",
+    "hieroglyph": "𓇫",
+    "description": "Wood log",
+    "details": "Det. in ʿš “cedar.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "M42",
+    "hieroglyph": "𓇬",
+    "description": "Flower",
+    "details": "Phono. wn. In wnm “eat,” ḥwn “be young.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "M43",
+    "hieroglyph": "𓇭",
+    "description": "Grape vines on props",
+    "details": "Det. or Ideo. in irp “wine.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "M44",
+    "hieroglyph": "𓇮",
+    "description": "Thorn",
+    "details": "Det. spd “sharp.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "N1",
+    "hieroglyph": "𓇯",
+    "description": "Sky",
+    "details": "Det. or Ideo. pt “sky,” ḥrt “heaven,” ḥry “above.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "N2",
+    "hieroglyph": "𓇰",
+    "description": "Sky with broken S40",
+    "details": "Det. or Ideo. grḥ “night.”",
+    "is_priority": false,
+    "unicode_hex": "1310"
+  },
+  {
+    "gardiner_num": "N3",
+    "hieroglyph": "𓇱",
+    "description": "Var. of N2",
+    "details": "Use as N2.",
+    "is_priority": false,
+    "unicode_hex": "1311"
+  },
+  {
+    "gardiner_num": "N4",
+    "hieroglyph": "𓇲",
+    "description": "Sky with rain",
+    "details": "Det. or Ideo. šnyt “rain,” i3dt “dew.”",
+    "is_priority": false,
+    "unicode_hex": "1312"
+  },
+  {
+    "gardiner_num": "N5",
+    "hieroglyph": "𓇳",
+    "description": "Sun",
+    "details": "Ideo. rʿ “sun, Re” hrw “day,” sw “day.”",
+    "is_priority": false,
+    "unicode_hex": "1313"
+  },
+  {
+    "gardiner_num": "N6",
+    "hieroglyph": "𓇴",
+    "description": "Sun with uraeus",
+    "details": "Det. or ideo in rʿ “sun, Re.”",
+    "is_priority": false,
+    "unicode_hex": "1314"
+  },
+  {
+    "gardiner_num": "N7",
+    "hieroglyph": "𓇵",
+    "description": "Combination of N5 + T28",
+    "details": "Det. ẖrt-hrw “daytime.”",
+    "is_priority": false,
+    "unicode_hex": "1315"
+  },
+  {
+    "gardiner_num": "N8",
+    "hieroglyph": "𓇶",
+    "description": "Sun with rays",
+    "details": "Phono. wbn. Det. or Ideo. 3ḫw “sunshine,” psḏ “shine,” wbn “rise.”",
+    "is_priority": false,
+    "unicode_hex": "1316"
+  },
+  {
+    "gardiner_num": "N9",
+    "hieroglyph": "𓇷",
+    "description": "Moon",
+    "details": "Phono. psḏ. In psḏt “Ennead.”",
+    "is_priority": false,
+    "unicode_hex": "1317"
+  },
+  {
+    "gardiner_num": "N10",
+    "hieroglyph": "𓇸",
+    "description": "Var of N9",
+    "details": "Use as N9.",
+    "is_priority": false,
+    "unicode_hex": "1318"
+  },
+  {
+    "gardiner_num": "N11",
+    "hieroglyph": "𓇹",
+    "description": "Crescent moon",
+    "details": "Ideo. 3bd “month.” Det. iʿḥ “moon.”",
+    "is_priority": false,
+    "unicode_hex": "1319"
+  },
+  {
+    "gardiner_num": "N12",
+    "hieroglyph": "𓇺",
+    "description": "Var. of N11",
+    "details": "Det. iʿḥ “moon.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "N13",
+    "hieroglyph": "𓇻",
+    "description": "Combination of half of N11 and N14",
+    "details": "Ideo. mḏdiwnt “half month festival.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "N14",
+    "hieroglyph": "𓇼",
+    "description": "Star",
+    "details": "Phono. sb3, dw3. In sb3 “star,” dw3 “morning.” Ideo. wnwt “hour.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "N15",
+    "hieroglyph": "𓇽",
+    "description": "Star encircled",
+    "details": "Ideo. in dw3t “netherworld.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "N16",
+    "hieroglyph": "𓇾",
+    "description": "Flat land with grain",
+    "details": "Phono. t3. In t3 “land, earth.”Det. in ḏt “eternity.”",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "N17",
+    "hieroglyph": "𓇿",
+    "description": "Var. of N16",
+    "details": "Use as N16.",
+    "is_priority": false,
+    "unicode_hex": "131"
+  },
+  {
+    "gardiner_num": "N18",
+    "hieroglyph": "𓈀",
+    "description": "Strip of sand",
+    "details": "Ideo. in iw “island.”",
+    "is_priority": false,
+    "unicode_hex": "13200"
+  },
+  {
+    "gardiner_num": "N19",
+    "hieroglyph": "𓈃",
+    "description": "Two strips of sand",
+    "details": "Ideo. in 3ḫt “horizon,” ḥrw-3ḫty “Horakhty.”",
+    "is_priority": false,
+    "unicode_hex": "13203"
+  },
+  {
+    "gardiner_num": "N20",
+    "hieroglyph": "𓈄",
+    "description": "Tongue of land",
+    "details": "Phono. wḏb. In wḏb “shore.” Det. in ḥ3b-sd “Sed Festival.”",
+    "is_priority": false,
+    "unicode_hex": "13204"
+  },
+  {
+    "gardiner_num": "N21",
+    "hieroglyph": "𓈅",
+    "description": "Tongue of land",
+    "details": "Ideo. in idb “bank,” idbwy “two banks.”",
+    "is_priority": false,
+    "unicode_hex": "13205"
+  },
+  {
+    "gardiner_num": "N22",
+    "hieroglyph": "𓈆",
+    "description": "Tongue of land",
+    "details": "Det. in ʿḥt “field,” sḫt “field.”",
+    "is_priority": false,
+    "unicode_hex": "13206"
+  },
+  {
+    "gardiner_num": "N23",
+    "hieroglyph": "𓈇",
+    "description": "Canal",
+    "details": "Det. in t3 “land,” i3š “boundary.”",
+    "is_priority": false,
+    "unicode_hex": "13207"
+  },
+  {
+    "gardiner_num": "N24",
+    "hieroglyph": "𓈈",
+    "description": "Irrigation canal system",
+    "details": "Det. or Ideo. in sp3t “nome.”",
+    "is_priority": false,
+    "unicode_hex": "13208"
+  },
+  {
+    "gardiner_num": "N25",
+    "hieroglyph": "𓈉",
+    "description": "Mountain rande",
+    "details": "Ideo. in ḫ3st “foreign land, hill country.”",
+    "is_priority": false,
+    "unicode_hex": "13209"
+  },
+  {
+    "gardiner_num": "N26",
+    "hieroglyph": "𓈋",
+    "description": "Mountain",
+    "details": "Phono. ḏw “mountain.”",
+    "is_priority": false,
+    "unicode_hex": "1320"
+  },
+  {
+    "gardiner_num": "N27",
+    "hieroglyph": "𓈌",
+    "description": "Sunrise over mountain",
+    "details": "Ideo. in 3ḫt “horizon.”",
+    "is_priority": false,
+    "unicode_hex": "1320"
+  },
+  {
+    "gardiner_num": "N28",
+    "hieroglyph": "𓈍",
+    "description": "Hill with sun rays",
+    "details": "Phono. ḫʿ. In ḫʿ “appear.”",
+    "is_priority": false,
+    "unicode_hex": "1320"
+  },
+  {
+    "gardiner_num": "N29",
+    "hieroglyph": "𓈎",
+    "description": "Sandy slope",
+    "details": "Phono. q.",
+    "is_priority": true,
+    "unicode_hex": "1320"
+  },
+  {
+    "gardiner_num": "N30",
+    "hieroglyph": "𓈏",
+    "description": "Hill with shrubs",
+    "details": "Det. or Ideo. in i3t “mound.”",
+    "is_priority": false,
+    "unicode_hex": "1320"
+  },
+  {
+    "gardiner_num": "N31",
+    "hieroglyph": "𓈐",
+    "description": "Road bordered by shrubs",
+    "details": "Det. and Ideo. in w3t “road.”",
+    "is_priority": false,
+    "unicode_hex": "13210"
+  },
+  {
+    "gardiner_num": "N32",
+    "hieroglyph": "𓈑",
+    "description": "Lump of clay, Var. Aa2 and F52.",
+    "details": "Det. in sin “clay.”",
+    "is_priority": false,
+    "unicode_hex": "13211"
+  },
+  {
+    "gardiner_num": "N33",
+    "hieroglyph": "𓈒",
+    "description": "Grain of sand",
+    "details": "Det. in nbw “gold.”",
+    "is_priority": false,
+    "unicode_hex": "13212"
+  },
+  {
+    "gardiner_num": "N34",
+    "hieroglyph": "𓈔",
+    "description": "Metal Ingot",
+    "details": "Ideo. in bi3, ḥmt “copper.”",
+    "is_priority": false,
+    "unicode_hex": "13214"
+  },
+  {
+    "gardiner_num": "N35",
+    "hieroglyph": "𓈖",
+    "description": "Water ripple",
+    "details": "Phono. n.",
+    "is_priority": true,
+    "unicode_hex": "13216"
+  },
+  {
+    "gardiner_num": "N35a",
+    "hieroglyph": "𓈗",
+    "description": "Three ripples",
+    "details": "Phono. mw. In mw “water.”",
+    "is_priority": false,
+    "unicode_hex": "13217"
+  },
+  {
+    "gardiner_num": "N36",
+    "hieroglyph": "𓈘",
+    "description": "Canal",
+    "details": "Phono. mr. In mr “canal.”",
+    "is_priority": false,
+    "unicode_hex": "13218"
+  },
+  {
+    "gardiner_num": "N37",
+    "hieroglyph": "𓈙",
+    "description": "Pool",
+    "details": "Phono. š. In š “pool.”",
+    "is_priority": true,
+    "unicode_hex": "13219"
+  },
+  {
+    "gardiner_num": "N38",
+    "hieroglyph": "𓈛",
+    "description": "Var. of N37",
+    "details": "Use as N37.",
+    "is_priority": false,
+    "unicode_hex": "1321"
+  },
+  {
+    "gardiner_num": "N39",
+    "hieroglyph": "𓈜",
+    "description": "Var. of N37",
+    "details": "Use as N37.",
+    "is_priority": false,
+    "unicode_hex": "1321"
+  },
+  {
+    "gardiner_num": "N40",
+    "hieroglyph": "𓈝",
+    "description": "Combination of N37 and D54",
+    "details": "Phono. šm. In šm “to go.”",
+    "is_priority": false,
+    "unicode_hex": "1321"
+  },
+  {
+    "gardiner_num": "N41",
+    "hieroglyph": "𓈞",
+    "description": "Well with water",
+    "details": "Phono. ḥm. In ḥmt “wife.” Det. in bi3 “copper.”",
+    "is_priority": false,
+    "unicode_hex": "1321"
+  },
+  {
+    "gardiner_num": "N42",
+    "hieroglyph": "𓈟",
+    "description": "Var. of N41",
+    "details": "Use as N41.",
+    "is_priority": false,
+    "unicode_hex": "1321"
+  },
+  {
+    "gardiner_num": "O1",
+    "hieroglyph": "𓉐",
+    "description": "House plan",
+    "details": "Phono. pr. In pr “house,” pri “go.”",
+    "is_priority": false,
+    "unicode_hex": "13250"
+  },
+  {
+    "gardiner_num": "O2",
+    "hieroglyph": "𓉒",
+    "description": "Combination of O1 + T3",
+    "details": "Ideo. in pr-ḥḏ “treasury.”",
+    "is_priority": false,
+    "unicode_hex": "13252"
+  },
+  {
+    "gardiner_num": "O3",
+    "hieroglyph": "𓉓",
+    "description": "Combination of O1 + P8 + X3 + W22",
+    "details": "Ideo. in prt-ḫrw “invocation offering.”",
+    "is_priority": false,
+    "unicode_hex": "13253"
+  },
+  {
+    "gardiner_num": "O4",
+    "hieroglyph": "𓉔",
+    "description": "Reed shelter",
+    "details": "Phono. h.",
+    "is_priority": true,
+    "unicode_hex": "13254"
+  },
+  {
+    "gardiner_num": "O5",
+    "hieroglyph": "𓉕",
+    "description": "Winding wall",
+    "details": "Phono. nm. In nmi “traverse.”",
+    "is_priority": false,
+    "unicode_hex": "13255"
+  },
+  {
+    "gardiner_num": "O6",
+    "hieroglyph": "𓉗",
+    "description": "Plan of rectangular enclosure",
+    "details": "Ideo. in ḥwt “temple, tomb, enclosure.”",
+    "is_priority": false,
+    "unicode_hex": "13257"
+  },
+  {
+    "gardiner_num": "O7",
+    "hieroglyph": "𓉞",
+    "description": "Var of O6",
+    "details": "Use as O6.",
+    "is_priority": false,
+    "unicode_hex": "1325"
+  },
+  {
+    "gardiner_num": "O8",
+    "hieroglyph": "𓉟",
+    "description": "Combination of O7 + O29",
+    "details": "Ideo. in ḥwt-ʿ3 “Great temple, enclosure.”",
+    "is_priority": false,
+    "unicode_hex": "1325"
+  },
+  {
+    "gardiner_num": "O9",
+    "hieroglyph": "𓉠",
+    "description": "Combination of O7 + O30",
+    "details": "Ideo. in nbt-ḥyt “Nephthys.”",
+    "is_priority": false,
+    "unicode_hex": "13260"
+  },
+  {
+    "gardiner_num": "O10",
+    "hieroglyph": "𓉡",
+    "description": "Combination of O6 + G5",
+    "details": "Ideo. in ḥwt-ḥrw “Hathor.”",
+    "is_priority": false,
+    "unicode_hex": "13261"
+  },
+  {
+    "gardiner_num": "O12",
+    "hieroglyph": "𓉥",
+    "description": "Palace with battlements",
+    "details": "Ideo. in ʿḥ “palace.”",
+    "is_priority": false,
+    "unicode_hex": "13265"
+  },
+  {
+    "gardiner_num": "O13",
+    "hieroglyph": "𓉦",
+    "description": "Enclosure with battlements",
+    "details": "Det. in sbḫ “enclose,” sbḫt “gateway.”",
+    "is_priority": false,
+    "unicode_hex": "13266"
+  },
+  {
+    "gardiner_num": "O14",
+    "hieroglyph": "𓉧",
+    "description": "Var. of O13",
+    "details": "Use as O13",
+    "is_priority": false,
+    "unicode_hex": "13267"
+  },
+  {
+    "gardiner_num": "O15",
+    "hieroglyph": "𓉨",
+    "description": "Walled enclosure with buttresses + W10 + X1",
+    "details": "Ideo. in wsḫt “hall.”",
+    "is_priority": false,
+    "unicode_hex": "13268"
+  },
+  {
+    "gardiner_num": "O16",
+    "hieroglyph": "𓉩",
+    "description": "Gateway with serpents",
+    "details": "Det. or Ideo. in t3yt “curtain,” t3yty “he of the curtain” (vizier title).",
+    "is_priority": false,
+    "unicode_hex": "13269"
+  },
+  {
+    "gardiner_num": "O17",
+    "hieroglyph": "𓉪",
+    "description": "Var. of O16",
+    "details": "Use as O16",
+    "is_priority": false,
+    "unicode_hex": "1326"
+  },
+  {
+    "gardiner_num": "O18",
+    "hieroglyph": "𓉫",
+    "description": "Shrine in profile",
+    "details": "Det. or Ideo. in k3r “shrine, chapel.”",
+    "is_priority": false,
+    "unicode_hex": "1326"
+  },
+  {
+    "gardiner_num": "O19",
+    "hieroglyph": "𓉬",
+    "description": "Shrine in profile with poles",
+    "details": "Det. in pr-wr “Great House.”",
+    "is_priority": false,
+    "unicode_hex": "1326"
+  },
+  {
+    "gardiner_num": "O20",
+    "hieroglyph": "𓉭",
+    "description": "Shrine",
+    "details": "Det. in itrt “row of sanctuaries,” ḫm “shrine.”",
+    "is_priority": false,
+    "unicode_hex": "1326"
+  },
+  {
+    "gardiner_num": "O21",
+    "hieroglyph": "𓉯",
+    "description": "Shrine Facade",
+    "details": "Det. or Ideo. in sḥ-nṯr “divine shrine.”",
+    "is_priority": false,
+    "unicode_hex": "1326"
+  },
+  {
+    "gardiner_num": "O22",
+    "hieroglyph": "𓉱",
+    "description": "Booth supported by pole",
+    "details": "Det. or Ideo. in sḥ “counsel,” “booth.”",
+    "is_priority": false,
+    "unicode_hex": "13271"
+  },
+  {
+    "gardiner_num": "O23",
+    "hieroglyph": "𓉲",
+    "description": "Double platform",
+    "details": "Ideo. in ḥ3b-sd “Sed Festival.”",
+    "is_priority": false,
+    "unicode_hex": "13272"
+  },
+  {
+    "gardiner_num": "O24",
+    "hieroglyph": "𓉳",
+    "description": "Pyramid surrounded by wall",
+    "details": "Det. in mr “pyramid.”",
+    "is_priority": false,
+    "unicode_hex": "13273"
+  },
+  {
+    "gardiner_num": "O25",
+    "hieroglyph": "𓉴",
+    "description": "Obelisk",
+    "details": "Det. or Ideo. in tḫn “obelisk.”",
+    "is_priority": false,
+    "unicode_hex": "13274"
+  },
+  {
+    "gardiner_num": "O26",
+    "hieroglyph": "𓉶",
+    "description": "Stela",
+    "details": "Det. or Ideo. in wḏ “stela.”",
+    "is_priority": false,
+    "unicode_hex": "13276"
+  },
+  {
+    "gardiner_num": "O27",
+    "hieroglyph": "𓉸",
+    "description": "Hall with columns",
+    "details": "Det. in ḫ3 “office,” ḫ3wy “night.”",
+    "is_priority": false,
+    "unicode_hex": "13278"
+  },
+  {
+    "gardiner_num": "O28",
+    "hieroglyph": "𓉹",
+    "description": "Column with tenon",
+    "details": "Phono iwn. In iwnw “Heliopolis,” iwn “column.”",
+    "is_priority": false,
+    "unicode_hex": "13279"
+  },
+  {
+    "gardiner_num": "O29",
+    "hieroglyph": "𓉺",
+    "description": "Wood column",
+    "details": "Phono. ʿ3. In ʿ3 “great.”",
+    "is_priority": false,
+    "unicode_hex": "1327"
+  },
+  {
+    "gardiner_num": "O29V",
+    "hieroglyph": "𓉼",
+    "description": "Vertical wood column",
+    "details": "Use as O29",
+    "is_priority": false,
+    "unicode_hex": "1327"
+  },
+  {
+    "gardiner_num": "O30",
+    "hieroglyph": "𓉽",
+    "description": "Supporting pole",
+    "details": "Ideo. in sḫnt “support.”",
+    "is_priority": false,
+    "unicode_hex": "1327"
+  },
+  {
+    "gardiner_num": "O31",
+    "hieroglyph": "𓉿",
+    "description": "Door",
+    "details": "Det. in ʿ3 “door,” sn, wn “open.”",
+    "is_priority": false,
+    "unicode_hex": "1327"
+  },
+  {
+    "gardiner_num": "O32",
+    "hieroglyph": "𓊀",
+    "description": "Gateway",
+    "details": "Det. in sb3 “door,” sbḫt “gateway.”",
+    "is_priority": false,
+    "unicode_hex": "13280"
+  },
+  {
+    "gardiner_num": "O33",
+    "hieroglyph": "𓊁",
+    "description": "Palace or tomb facade",
+    "details": "Det. in srḫ “banner.”",
+    "is_priority": false,
+    "unicode_hex": "13281"
+  },
+  {
+    "gardiner_num": "O34",
+    "hieroglyph": "𓊃",
+    "description": "Door bolt",
+    "details": "Phono. s. In s “bolt.”",
+    "is_priority": true,
+    "unicode_hex": "13283"
+  },
+  {
+    "gardiner_num": "O35",
+    "hieroglyph": "𓊄",
+    "description": "Combination of O34 + D54",
+    "details": "Phono. s. In sbi “go,” “perish,” ms “bring.”",
+    "is_priority": false,
+    "unicode_hex": "13284"
+  },
+  {
+    "gardiner_num": "O36",
+    "hieroglyph": "𓊅",
+    "description": "Wall",
+    "details": "Ideo. in inb “wall.”",
+    "is_priority": false,
+    "unicode_hex": "13285"
+  },
+  {
+    "gardiner_num": "O37",
+    "hieroglyph": "𓊊",
+    "description": "Falling wall",
+    "details": "Det. in whn “overthrow,” gs3 “tilt.”",
+    "is_priority": false,
+    "unicode_hex": "1328"
+  },
+  {
+    "gardiner_num": "O38",
+    "hieroglyph": "𓊋",
+    "description": "Corner of wall",
+    "details": "Ideo. in qnbt “court, corner, magistrates.”",
+    "is_priority": false,
+    "unicode_hex": "1328"
+  },
+  {
+    "gardiner_num": "O39",
+    "hieroglyph": "𓊌",
+    "description": "Stone slab",
+    "details": "Det. in inr “stone,” dbni “deben (weight),” ḏbt “brick.”",
+    "is_priority": false,
+    "unicode_hex": "1328"
+  },
+  {
+    "gardiner_num": "O40",
+    "hieroglyph": "𓊍",
+    "description": "Stairway",
+    "details": "Det. in rwd “stairwaway,” ḫtyw “terrace.”",
+    "is_priority": false,
+    "unicode_hex": "1328"
+  },
+  {
+    "gardiner_num": "O41",
+    "hieroglyph": "𓊎",
+    "description": "Double stairway",
+    "details": "Det. in q3y “high place,” iʿr “ascend.”",
+    "is_priority": false,
+    "unicode_hex": "1328"
+  },
+  {
+    "gardiner_num": "O42",
+    "hieroglyph": "𓊏",
+    "description": "Fence",
+    "details": "Phono. šsp. In šsp “receive.”",
+    "is_priority": false,
+    "unicode_hex": "1328"
+  },
+  {
+    "gardiner_num": "O43",
+    "hieroglyph": "𓊐",
+    "description": "Var. of O42",
+    "details": "Use as O42",
+    "is_priority": false,
+    "unicode_hex": "13290"
+  },
+  {
+    "gardiner_num": "O44",
+    "hieroglyph": "𓊑",
+    "description": "Min emblem",
+    "details": "Ideo. in i3t “rank, office.”",
+    "is_priority": false,
+    "unicode_hex": "13291"
+  },
+  {
+    "gardiner_num": "O45",
+    "hieroglyph": "𓊒",
+    "description": "Domed building",
+    "details": "Det. or Ideo. in ipt “harim.”",
+    "is_priority": false,
+    "unicode_hex": "13292"
+  },
+  {
+    "gardiner_num": "O46",
+    "hieroglyph": "𓊓",
+    "description": "Var. of O45",
+    "details": "Use as O45.",
+    "is_priority": false,
+    "unicode_hex": "13293"
+  },
+  {
+    "gardiner_num": "O47",
+    "hieroglyph": "𓊔",
+    "description": "Enclosed mound",
+    "details": "Ideo. in nḫn “Hierakonpolis.”",
+    "is_priority": false,
+    "unicode_hex": "13294"
+  },
+  {
+    "gardiner_num": "O48",
+    "hieroglyph": "𓊕",
+    "description": "Var. of O47",
+    "details": "Use as O47",
+    "is_priority": false,
+    "unicode_hex": "13295"
+  },
+  {
+    "gardiner_num": "O49",
+    "hieroglyph": "𓊖",
+    "description": "Area with crossroads",
+    "details": "Ideo. in niwt “town.”",
+    "is_priority": false,
+    "unicode_hex": "13296"
+  },
+  {
+    "gardiner_num": "O50",
+    "hieroglyph": "𓊗",
+    "description": "Threshing floor with grain",
+    "details": "Phono. sp. In sp “occasion, time, event,” sp sn “two times.”",
+    "is_priority": false,
+    "unicode_hex": "13297"
+  },
+  {
+    "gardiner_num": "O51",
+    "hieroglyph": "𓊚",
+    "description": "Grain mound on mud floor",
+    "details": "Det. or Ideo. in šnwt “granary.”",
+    "is_priority": false,
+    "unicode_hex": "1329"
+  },
+  {
+    "gardiner_num": "P1",
+    "hieroglyph": "𓊛",
+    "description": "Boat on water",
+    "details": "Det. of boats. In dpt “ship,” ḥʿw “ships,” ḫdi “sail downstream.”",
+    "is_priority": false,
+    "unicode_hex": "1329"
+  },
+  {
+    "gardiner_num": "P1a",
+    "hieroglyph": "𓊜",
+    "description": "Boat upside down",
+    "details": "Det. in pnʿ “capsize.”",
+    "is_priority": false,
+    "unicode_hex": "1329"
+  },
+  {
+    "gardiner_num": "P2",
+    "hieroglyph": "𓊝",
+    "description": "Ship sailing",
+    "details": "Det. in ḫnti “sail upstream.”",
+    "is_priority": false,
+    "unicode_hex": "1329"
+  },
+  {
+    "gardiner_num": "P3",
+    "hieroglyph": "𓊞",
+    "description": "Sacred bark",
+    "details": "Det. wi3 “sacred bark,” ḏ3i “cross”",
+    "is_priority": false,
+    "unicode_hex": "1329"
+  },
+  {
+    "gardiner_num": "P4",
+    "hieroglyph": "𓊠",
+    "description": "Boat with net",
+    "details": "Phono. wḥʿ. In wḥʿ “fisherman.”",
+    "is_priority": false,
+    "unicode_hex": "1320"
+  },
+  {
+    "gardiner_num": "P5",
+    "hieroglyph": "𓊡",
+    "description": "Sail",
+    "details": "Det. or Ideo. in ṯ3w “wind, breath.” Det. mḥyt “north wind.”",
+    "is_priority": false,
+    "unicode_hex": "1321"
+  },
+  {
+    "gardiner_num": "P6",
+    "hieroglyph": "𓊢",
+    "description": "Mast",
+    "details": "Phono. ʿḥʿ. In ʿḥʿ “stand.”",
+    "is_priority": false,
+    "unicode_hex": "1322"
+  },
+  {
+    "gardiner_num": "P7",
+    "hieroglyph": "𓊣",
+    "description": "Combination of P6 +D36",
+    "details": "Use as P6.",
+    "is_priority": false,
+    "unicode_hex": "1323"
+  },
+  {
+    "gardiner_num": "P8",
+    "hieroglyph": "𓊤",
+    "description": "Oar",
+    "details": "Phono ḫrw. In m3ʿ ḫrw “justified” ḫrw “voice,” ḫrwy “enemy.”",
+    "is_priority": false,
+    "unicode_hex": "1324"
+  },
+  {
+    "gardiner_num": "P9",
+    "hieroglyph": "𓊥",
+    "description": "Combination of P8 + I9",
+    "details": "Ideo for ḫr.fy “says, said.”",
+    "is_priority": false,
+    "unicode_hex": "1325"
+  },
+  {
+    "gardiner_num": "P10",
+    "hieroglyph": "𓊦",
+    "description": "Steering oar",
+    "details": "Det. in ḥmw “steering oar,” ḥmy “steerer”",
+    "is_priority": false,
+    "unicode_hex": "1326"
+  },
+  {
+    "gardiner_num": "P11",
+    "hieroglyph": "𓊧",
+    "description": "Mooring post",
+    "details": "Det. in mnit “mooring post.”",
+    "is_priority": false,
+    "unicode_hex": "1327"
+  },
+  {
+    "gardiner_num": "Q1",
+    "hieroglyph": "𓊨",
+    "description": "Seat",
+    "details": "Phono. st, ws. In st “seat, place,” wsir “Osiris,” ḥtm “perish.”",
+    "is_priority": false,
+    "unicode_hex": "1328"
+  },
+  {
+    "gardiner_num": "Q2",
+    "hieroglyph": "𓊩",
+    "description": "Portable seat",
+    "details": "Phono. ws. In wsir “Osiris.”",
+    "is_priority": false,
+    "unicode_hex": "1329"
+  },
+  {
+    "gardiner_num": "Q3",
+    "hieroglyph": "𓊪",
+    "description": "Stool",
+    "details": "Phono. p.",
+    "is_priority": true,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "Q4",
+    "hieroglyph": "𓊫",
+    "description": "Headrest",
+    "details": "Det. in wrs “headrest.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "Q5",
+    "hieroglyph": "𓊬",
+    "description": "Chest",
+    "details": "Det. in hn “box,” ʿfdt “chest.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "Q6",
+    "hieroglyph": "𓊭",
+    "description": "Coffin",
+    "details": "Det. or Ideo. in qrs “bury,” qrsw “coffin.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "Q7",
+    "hieroglyph": "𓊮",
+    "description": "Brazier with flame",
+    "details": "Det. of fire. In ḫt “fire,” sḏt “flame,” srf “temperature.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "R1",
+    "hieroglyph": "𓊯",
+    "description": "Table with jug and loaves",
+    "details": "Det. or Ideo. in ḫ3t, ḫ3wt “offering table.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "R2",
+    "hieroglyph": "𓊰",
+    "description": "Table with bread slices",
+    "details": "Use as R1.",
+    "is_priority": false,
+    "unicode_hex": "1320"
+  },
+  {
+    "gardiner_num": "R3",
+    "hieroglyph": "𓊲",
+    "description": "Low table with Jug and loaves",
+    "details": "Det. or Ideo. in wḥḏw “offering table.”",
+    "is_priority": false,
+    "unicode_hex": "1322"
+  },
+  {
+    "gardiner_num": "R4",
+    "hieroglyph": "𓊵",
+    "description": "Bread loaf on mat",
+    "details": "Phono. ḥtp. In ḥtp “altar, rest, be pleased.”",
+    "is_priority": false,
+    "unicode_hex": "1325"
+  },
+  {
+    "gardiner_num": "R5",
+    "hieroglyph": "𓊶",
+    "description": "Censer",
+    "details": "Det. or Ideo. in k3p “fumigate.”",
+    "is_priority": false,
+    "unicode_hex": "1326"
+  },
+  {
+    "gardiner_num": "R6",
+    "hieroglyph": "𓊷",
+    "description": "Var. of R5",
+    "details": "Use as R5",
+    "is_priority": false,
+    "unicode_hex": "1327"
+  },
+  {
+    "gardiner_num": "R7",
+    "hieroglyph": "𓊸",
+    "description": "Incense bowl",
+    "details": "Det. or Ideo. in sntr “incense.”",
+    "is_priority": false,
+    "unicode_hex": "1328"
+  },
+  {
+    "gardiner_num": "R8",
+    "hieroglyph": "𓊹",
+    "description": "Flag",
+    "details": "Phono. nṯr. In nṯr “god.”",
+    "is_priority": false,
+    "unicode_hex": "1329"
+  },
+  {
+    "gardiner_num": "R9",
+    "hieroglyph": "𓊺",
+    "description": "Combination of R8 + V33",
+    "details": "Det. or Ideo. in bd “incense.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "R10",
+    "hieroglyph": "𓊻",
+    "description": "Combination of R8 + T28 + N29",
+    "details": "Ideo. in ẖrt-nṯr “necropolis.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "R11",
+    "hieroglyph": "𓊽",
+    "description": "Reed column",
+    "details": "Phono. ḏd. In ḏd “stable,” ḏdw “Busiris.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "R12",
+    "hieroglyph": "𓊾",
+    "description": "Standard",
+    "details": "Det. in i3t “standard.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "R13",
+    "hieroglyph": "𓊿",
+    "description": "Combination of G5 + R14",
+    "details": "Ideo. in imnt “West,” wnmi “right.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "R14",
+    "hieroglyph": "𓋀",
+    "description": "Var of R13",
+    "details": "Ideo. in imnt “West,” wnmi “right.”",
+    "is_priority": false,
+    "unicode_hex": "1320"
+  },
+  {
+    "gardiner_num": "R15",
+    "hieroglyph": "𓋁",
+    "description": "Spear as standard",
+    "details": "Ideo. in i3bt “East,” i3by “left.”",
+    "is_priority": false,
+    "unicode_hex": "1321"
+  },
+  {
+    "gardiner_num": "R16",
+    "hieroglyph": "𓋂",
+    "description": "Scepter with feathers",
+    "details": "Det. or Ideo in wḫ “Qus emblem.”",
+    "is_priority": false,
+    "unicode_hex": "1322"
+  },
+  {
+    "gardiner_num": "R17",
+    "hieroglyph": "𓋄",
+    "description": "Feathered wig with pole",
+    "details": "Det. or Ideo. in t3-wr “This,” “nome of Abydos.”",
+    "is_priority": false,
+    "unicode_hex": "1324"
+  },
+  {
+    "gardiner_num": "R18",
+    "hieroglyph": "𓋅",
+    "description": "Var. of R17",
+    "details": "Use as R17",
+    "is_priority": false,
+    "unicode_hex": "1325"
+  },
+  {
+    "gardiner_num": "R19",
+    "hieroglyph": "𓋆",
+    "description": "Combination of S40 + feather",
+    "details": "Det. in w3st “Thebes.”",
+    "is_priority": false,
+    "unicode_hex": "1326"
+  },
+  {
+    "gardiner_num": "R20",
+    "hieroglyph": "𓋇",
+    "description": "Seshat emblem",
+    "details": "Ideo. in sšt “Seshat.”",
+    "is_priority": false,
+    "unicode_hex": "1327"
+  },
+  {
+    "gardiner_num": "R21",
+    "hieroglyph": "𓋈",
+    "description": "Var. of R20",
+    "details": "Use as R20.",
+    "is_priority": false,
+    "unicode_hex": "1328"
+  },
+  {
+    "gardiner_num": "R22",
+    "hieroglyph": "𓋉",
+    "description": "Min emblem",
+    "details": "Phono. ḫm. In ḫm “shrine.” With standard, Ideo. in mnw “Min.”",
+    "is_priority": false,
+    "unicode_hex": "1329"
+  },
+  {
+    "gardiner_num": "R23",
+    "hieroglyph": "𓋊",
+    "description": "Var. of R22",
+    "details": "Use as R22",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "R24",
+    "hieroglyph": "𓋋",
+    "description": "Neith emblem",
+    "details": "Det. in nit “Neith.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "R25",
+    "hieroglyph": "𓋌",
+    "description": "Var. of R24",
+    "details": "Use as R24.",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S1",
+    "hieroglyph": "𓋑",
+    "description": "White crown of Upper Egypt",
+    "details": "Det. or Ideo. in ḥḏt “white crown.”",
+    "is_priority": false,
+    "unicode_hex": "1321"
+  },
+  {
+    "gardiner_num": "S2",
+    "hieroglyph": "𓋒",
+    "description": "Combination of S1 + V30",
+    "details": "Det. or Ideo. in ḥḏt “white crown.”",
+    "is_priority": false,
+    "unicode_hex": "1322"
+  },
+  {
+    "gardiner_num": "S3",
+    "hieroglyph": "𓋔",
+    "description": "Red crown of Lower Egypt",
+    "details": "Phono. n. Det. or Ideo in dšrt “Red Crown.”",
+    "is_priority": false,
+    "unicode_hex": "1324"
+  },
+  {
+    "gardiner_num": "S4",
+    "hieroglyph": "𓋕",
+    "description": "Combination of S3 + V30",
+    "details": "Use as S3.",
+    "is_priority": false,
+    "unicode_hex": "1325"
+  },
+  {
+    "gardiner_num": "S5",
+    "hieroglyph": "𓋖",
+    "description": "Combination of red and white crown",
+    "details": "Det. or Ideo. in sḫmty “double crown.”",
+    "is_priority": false,
+    "unicode_hex": "1326"
+  },
+  {
+    "gardiner_num": "S6",
+    "hieroglyph": "𓋗",
+    "description": "Combination of S5 + V30",
+    "details": "Use as S5.",
+    "is_priority": false,
+    "unicode_hex": "1327"
+  },
+  {
+    "gardiner_num": "S7",
+    "hieroglyph": "𓋙",
+    "description": "Blue Crown",
+    "details": "Det. or Ideo. in ḫprš “blue crown.”",
+    "is_priority": false,
+    "unicode_hex": "1329"
+  },
+  {
+    "gardiner_num": "S8",
+    "hieroglyph": "𓋚",
+    "description": "Atef crown",
+    "details": "Det. or Ideo. in 3tf “atef crown.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S9",
+    "hieroglyph": "𓋛",
+    "description": "Double plumes",
+    "details": "Det. or Ideo. in šwty “double plumes.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S10",
+    "hieroglyph": "𓋜",
+    "description": "Headband",
+    "details": "Phono mḏḥ. In mḏḥ “fillet.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S11",
+    "hieroglyph": "𓋝",
+    "description": "Collar",
+    "details": "Phono. wsḫ. In wsḫ “collar,” swsḫ “widen.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S12",
+    "hieroglyph": "𓋞",
+    "description": "Collar of beads",
+    "details": "Det. or Ideo. in nbw “gold,” ḥḏ “silver.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S13",
+    "hieroglyph": "𓋟",
+    "description": "Combination of S12 + D58",
+    "details": "Phono. nb.",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S14",
+    "hieroglyph": "𓋠",
+    "description": "Combination of S12 + T3",
+    "details": "Ideo. in ḥḏ “silver.”",
+    "is_priority": false,
+    "unicode_hex": "1320"
+  },
+  {
+    "gardiner_num": "S14a",
+    "hieroglyph": "𓋡",
+    "description": "Combination of S12 + S40",
+    "details": "Ideo. in ḏʿm “electrum.”",
+    "is_priority": false,
+    "unicode_hex": "1321"
+  },
+  {
+    "gardiner_num": "S15",
+    "hieroglyph": "𓋣",
+    "description": "Faience pectoral",
+    "details": "Det. or Ideo. in ṯḥn “sparkle,” ṯḥnt “faience.”",
+    "is_priority": false,
+    "unicode_hex": "1323"
+  },
+  {
+    "gardiner_num": "S16",
+    "hieroglyph": "𓋤",
+    "description": "Var. of S15",
+    "details": "Use as S15.",
+    "is_priority": false,
+    "unicode_hex": "1324"
+  },
+  {
+    "gardiner_num": "S17",
+    "hieroglyph": "𓋥",
+    "description": "Var of S15",
+    "details": "Use as S15",
+    "is_priority": false,
+    "unicode_hex": "1325"
+  },
+  {
+    "gardiner_num": "S18",
+    "hieroglyph": "𓋧",
+    "description": "Bead necklace",
+    "details": "Det. or Ideo. in mnit “bead necklace.”",
+    "is_priority": false,
+    "unicode_hex": "1327"
+  },
+  {
+    "gardiner_num": "S19",
+    "hieroglyph": "𓋨",
+    "description": "Necklace and cylinder seal",
+    "details": "Ideo. in sḏ3wty “treasurer,” sḏ3w “precious.” Det. or Ideo. in ḫtm “seal.”",
+    "is_priority": false,
+    "unicode_hex": "1328"
+  },
+  {
+    "gardiner_num": "S20",
+    "hieroglyph": "𓋩",
+    "description": "Necklace and cylinder seal",
+    "details": "Ideo. in ḫtm “seal.”",
+    "is_priority": false,
+    "unicode_hex": "1329"
+  },
+  {
+    "gardiner_num": "S21",
+    "hieroglyph": "𓋪",
+    "description": "Ring",
+    "details": "Det. in iwʿw, ʿʿw, sšw “ring.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S22",
+    "hieroglyph": "𓋫",
+    "description": "Shoulder knot",
+    "details": "Phono. sṯ. Det. or Ideo. in t3-wr “port.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S23",
+    "hieroglyph": "𓋬",
+    "description": "Knotted cloth",
+    "details": "Phono dmḏ. In dmḏ “unite.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S24",
+    "hieroglyph": "𓋭",
+    "description": "Knotted belt",
+    "details": "Phono. ṯs. In ṯs “tie, bind.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S25",
+    "hieroglyph": "𓋮",
+    "description": "Garment with ties",
+    "details": "Ideo. in iʿ3w “guide.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S26",
+    "hieroglyph": "𓋯",
+    "description": "Apron",
+    "details": "Det. or Ideo. in šndyt “apron.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S27",
+    "hieroglyph": "𓋲",
+    "description": "Horizontal strips of cloth",
+    "details": "Det. or Ideo. in mnḫt “clothing.”",
+    "is_priority": false,
+    "unicode_hex": "1322"
+  },
+  {
+    "gardiner_num": "S28",
+    "hieroglyph": "𓋳",
+    "description": "Cloth with fringe + S29",
+    "details": "Det. in ḥbs “clothing,” ḥ3p “conceal,” kfi “uncover.”",
+    "is_priority": false,
+    "unicode_hex": "1323"
+  },
+  {
+    "gardiner_num": "S29",
+    "hieroglyph": "𓋴",
+    "description": "Folded cloth",
+    "details": "Phono. s. In ʿnḫ.(w) (w)ḏ3 snb “may he live, be prosperous, be healthy.” (L.P.H.)",
+    "is_priority": true,
+    "unicode_hex": "1324"
+  },
+  {
+    "gardiner_num": "S30",
+    "hieroglyph": "𓋵",
+    "description": "Combination of S29 + I9",
+    "details": "Phono. sf. In sf “yesterday.”",
+    "is_priority": false,
+    "unicode_hex": "1325"
+  },
+  {
+    "gardiner_num": "S31",
+    "hieroglyph": "𓋶",
+    "description": "Combination of S29 + U1",
+    "details": "Phono. sm3. In sm3 “fighting bull.”",
+    "is_priority": false,
+    "unicode_hex": "1326"
+  },
+  {
+    "gardiner_num": "S32",
+    "hieroglyph": "𓋷",
+    "description": "Cloth iwht fringe",
+    "details": "Phono. si3. In si3t “fringed cloth.”",
+    "is_priority": false,
+    "unicode_hex": "1327"
+  },
+  {
+    "gardiner_num": "S33",
+    "hieroglyph": "𓋸",
+    "description": "Sandal",
+    "details": "Ideo. in ṯbt “sandal,” ṯbw “sandal maker.”",
+    "is_priority": false,
+    "unicode_hex": "1328"
+  },
+  {
+    "gardiner_num": "S34",
+    "hieroglyph": "𓋹",
+    "description": "Sandal strap",
+    "details": "Phono. ʿnḫ. In ʿnḫ “live,” ʿnḫ “sandal strap.”",
+    "is_priority": false,
+    "unicode_hex": "1329"
+  },
+  {
+    "gardiner_num": "S35",
+    "hieroglyph": "𓋺",
+    "description": "Sunshade",
+    "details": "Ideo. in šwt “shadow, shade.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S36",
+    "hieroglyph": "𓋼",
+    "description": "Var. of S35",
+    "details": "Use as S35",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S37",
+    "hieroglyph": "𓋽",
+    "description": "Fan",
+    "details": "Det. or Ideo. in ḫw “fan.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S38",
+    "hieroglyph": "𓋾",
+    "description": "Crook",
+    "details": "Phono. ḥq3. In ḥq3 “rule,” ḥq3t “scepter.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S39",
+    "hieroglyph": "𓋿",
+    "description": "Crook",
+    "details": "Phono ʿwt. In ʿwt “flock.”",
+    "is_priority": false,
+    "unicode_hex": "132"
+  },
+  {
+    "gardiner_num": "S40",
+    "hieroglyph": "𓌀",
+    "description": "Scepter with Seth animal",
+    "details": "Phono. w3s. In w3s “w3s-scepter.” Ideo. in i3tt “milk, cream.”",
+    "is_priority": false,
+    "unicode_hex": "13300"
+  },
+  {
+    "gardiner_num": "S41",
+    "hieroglyph": "𓌁",
+    "description": "Scepter with spiral shaft and Seth animal",
+    "details": "Phono. ḏʿm. In ḏʿm “fine gold.”",
+    "is_priority": false,
+    "unicode_hex": "13301"
+  },
+  {
+    "gardiner_num": "S42",
+    "hieroglyph": "𓌂",
+    "description": "Scepter",
+    "details": "Phono. sḫm. In sḫm “have power,” sḫm “scepter.” Det. or Ideo. in ḫrp “manage, at head.”",
+    "is_priority": false,
+    "unicode_hex": "13302"
+  },
+  {
+    "gardiner_num": "S43",
+    "hieroglyph": "𓌃",
+    "description": "Staff",
+    "details": "Phono. md. In mdw “speak.”",
+    "is_priority": false,
+    "unicode_hex": "13303"
+  },
+  {
+    "gardiner_num": "S44",
+    "hieroglyph": "𓌄",
+    "description": "Staff with flail",
+    "details": "Det. or Ideo. in 3ms “staff.”",
+    "is_priority": false,
+    "unicode_hex": "13304"
+  },
+  {
+    "gardiner_num": "S45",
+    "hieroglyph": "𓌅",
+    "description": "Flail",
+    "details": "Det. or Ideo. in nḫ3ḫ3w “flail.”",
+    "is_priority": false,
+    "unicode_hex": "13305"
+  },
+  {
+    "gardiner_num": "T1",
+    "hieroglyph": "𓌇",
+    "description": "Angular headed mace",
+    "details": "Phono. mn. In mnw “mace.”",
+    "is_priority": false,
+    "unicode_hex": "13307"
+  },
+  {
+    "gardiner_num": "T2",
+    "hieroglyph": "𓌈",
+    "description": "T3 tilted",
+    "details": "Det. in sqr, sqri “smite.”",
+    "is_priority": false,
+    "unicode_hex": "13308"
+  },
+  {
+    "gardiner_num": "T3",
+    "hieroglyph": "𓌉",
+    "description": "Pear shaped mace",
+    "details": "Phono. ḥḏ. In ḥḏ “mace,” ḥḏ “white, bright,” ḥḏi “damage.”",
+    "is_priority": false,
+    "unicode_hex": "13309"
+  },
+  {
+    "gardiner_num": "T4",
+    "hieroglyph": "𓌋",
+    "description": "Var of T3",
+    "details": "Use as T3",
+    "is_priority": false,
+    "unicode_hex": "1330"
+  },
+  {
+    "gardiner_num": "T5",
+    "hieroglyph": "𓌌",
+    "description": "Combination of T3 + I10",
+    "details": "Phono. ḥḏ.",
+    "is_priority": false,
+    "unicode_hex": "1330"
+  },
+  {
+    "gardiner_num": "T6",
+    "hieroglyph": "𓌍",
+    "description": "Combination of T5 + extra I10",
+    "details": "Phono. ḥḏḏ.",
+    "is_priority": false,
+    "unicode_hex": "1330"
+  },
+  {
+    "gardiner_num": "T7",
+    "hieroglyph": "𓌎",
+    "description": "Axe",
+    "details": "Det. in mibt, minb “axe,” mdḥ “hew.”",
+    "is_priority": false,
+    "unicode_hex": "1330"
+  },
+  {
+    "gardiner_num": "T7a",
+    "hieroglyph": "𓌏",
+    "description": "Axe",
+    "details": "Det. of 3qḥw “axe.”",
+    "is_priority": false,
+    "unicode_hex": "1330"
+  },
+  {
+    "gardiner_num": "T8",
+    "hieroglyph": "𓌐",
+    "description": "Dagger",
+    "details": "Phono. tp. In tpy “first, chief, upon.”",
+    "is_priority": false,
+    "unicode_hex": "13310"
+  },
+  {
+    "gardiner_num": "T8a",
+    "hieroglyph": "𓌑",
+    "description": "Dagger",
+    "details": "Det. in b3gsw “dagger.”",
+    "is_priority": false,
+    "unicode_hex": "13311"
+  },
+  {
+    "gardiner_num": "T9",
+    "hieroglyph": "𓌒",
+    "description": "Bow",
+    "details": "Phono. pd/pḏ, in pd “stretch,” pḏt “bow.”",
+    "is_priority": false,
+    "unicode_hex": "13312"
+  },
+  {
+    "gardiner_num": "T9a",
+    "hieroglyph": "𓌓",
+    "description": "Var of T9",
+    "details": "Use as T9",
+    "is_priority": false,
+    "unicode_hex": "13313"
+  },
+  {
+    "gardiner_num": "T10",
+    "hieroglyph": "𓌔",
+    "description": "Composite bow",
+    "details": "Use as T9",
+    "is_priority": false,
+    "unicode_hex": "13314"
+  },
+  {
+    "gardiner_num": "T11",
+    "hieroglyph": "𓌕",
+    "description": "Arrow",
+    "details": "Phono. swn. In swn “perish,” swnt “physician.”",
+    "is_priority": false,
+    "unicode_hex": "13315"
+  },
+  {
+    "gardiner_num": "T12",
+    "hieroglyph": "𓌗",
+    "description": "Bowstring",
+    "details": "Phono. rwd/rwḏ. In rwd “hard, firm.” Ideo. in d3r “subdue.”",
+    "is_priority": false,
+    "unicode_hex": "13317"
+  },
+  {
+    "gardiner_num": "T13",
+    "hieroglyph": "𓌘",
+    "description": "Wood tied together",
+    "details": "Phono. rs. In rs “wakeful.”",
+    "is_priority": false,
+    "unicode_hex": "13318"
+  },
+  {
+    "gardiner_num": "T14",
+    "hieroglyph": "𓌙",
+    "description": "Throw stick",
+    "details": "Det. of “foreign.” Ideo. in ʿ3m “Asiatics,” ṯḥnw “Libya.” Det. in qm3 “create,” qm3i “create.”",
+    "is_priority": false,
+    "unicode_hex": "13319"
+  },
+  {
+    "gardiner_num": "T15",
+    "hieroglyph": "𓌚",
+    "description": "Var. of T14",
+    "details": "Use as T14",
+    "is_priority": false,
+    "unicode_hex": "1331"
+  },
+  {
+    "gardiner_num": "T16",
+    "hieroglyph": "𓌛",
+    "description": "Scimitar",
+    "details": "Det. in ḫpš “scimitar.”",
+    "is_priority": false,
+    "unicode_hex": "1331"
+  },
+  {
+    "gardiner_num": "T17",
+    "hieroglyph": "𓌝",
+    "description": "Chariot",
+    "details": "Det. or Ideo. in wrrt “chariot.”",
+    "is_priority": false,
+    "unicode_hex": "1331"
+  },
+  {
+    "gardiner_num": "T18",
+    "hieroglyph": "𓌞",
+    "description": "Crook with package",
+    "details": "Phono. šms. In šms “follow, accompany.”",
+    "is_priority": false,
+    "unicode_hex": "1331"
+  },
+  {
+    "gardiner_num": "T19",
+    "hieroglyph": "𓌟",
+    "description": "Bone harpoon head",
+    "details": "Phono. qs. In qs “annoy,” qrs “bury.” Det. in twr “pure.”",
+    "is_priority": false,
+    "unicode_hex": "1331"
+  },
+  {
+    "gardiner_num": "T20",
+    "hieroglyph": "𓌠",
+    "description": "Var. of T19",
+    "details": "Use as T19",
+    "is_priority": false,
+    "unicode_hex": "13320"
+  },
+  {
+    "gardiner_num": "T21",
+    "hieroglyph": "𓌡",
+    "description": "Harpoon",
+    "details": "Phono. in wʿ. In wʿ “one.”",
+    "is_priority": false,
+    "unicode_hex": "13321"
+  },
+  {
+    "gardiner_num": "T22",
+    "hieroglyph": "𓌢",
+    "description": "Arrowhead",
+    "details": "Phono. sn. In sn “brother,” sn “smell.”",
+    "is_priority": false,
+    "unicode_hex": "13322"
+  },
+  {
+    "gardiner_num": "T23",
+    "hieroglyph": "𓌣",
+    "description": "Var. of T22",
+    "details": "Use as T22",
+    "is_priority": false,
+    "unicode_hex": "13323"
+  },
+  {
+    "gardiner_num": "T24",
+    "hieroglyph": "𓌤",
+    "description": "Fishing net",
+    "details": "Phono. ʿḥ/iḥ . In iḥ “net.”",
+    "is_priority": false,
+    "unicode_hex": "13324"
+  },
+  {
+    "gardiner_num": "T25",
+    "hieroglyph": "𓌥",
+    "description": "Reed Float",
+    "details": "Phono. db3/ḏb3. In ḏb3 “adorn,” db3 “replace.”",
+    "is_priority": false,
+    "unicode_hex": "13325"
+  },
+  {
+    "gardiner_num": "T26",
+    "hieroglyph": "𓌦",
+    "description": "Bird Trap",
+    "details": "Det. or Ideo. in sḫt “trap, snare.”",
+    "is_priority": false,
+    "unicode_hex": "13326"
+  },
+  {
+    "gardiner_num": "T27",
+    "hieroglyph": "𓌧",
+    "description": "Var. of T26",
+    "details": "Use as T26",
+    "is_priority": false,
+    "unicode_hex": "13327"
+  },
+  {
+    "gardiner_num": "T28",
+    "hieroglyph": "𓌨",
+    "description": "Butcher’s block",
+    "details": "Phono. ẖr. In ẖr “under,” ẖrt “portion.”",
+    "is_priority": false,
+    "unicode_hex": "13328"
+  },
+  {
+    "gardiner_num": "T29",
+    "hieroglyph": "𓌩",
+    "description": "Combination of T28 + T30",
+    "details": "Ideo. in nmt “place of slaughter.”",
+    "is_priority": false,
+    "unicode_hex": "13329"
+  },
+  {
+    "gardiner_num": "T30",
+    "hieroglyph": "𓌪",
+    "description": "Knife",
+    "details": "Ideo. for dmt “knife.” Det. in dm “be sharp.”",
+    "is_priority": false,
+    "unicode_hex": "1332"
+  },
+  {
+    "gardiner_num": "T31",
+    "hieroglyph": "𓌫",
+    "description": "Knife sharpener",
+    "details": "Phono sšm. In sšm “guide, lead.”",
+    "is_priority": false,
+    "unicode_hex": "1332"
+  },
+  {
+    "gardiner_num": "T32",
+    "hieroglyph": "𓌬",
+    "description": "Combination of T31 + D54",
+    "details": "Phono sšm. In sšm “guide, lead.”",
+    "is_priority": false,
+    "unicode_hex": "1332"
+  },
+  {
+    "gardiner_num": "T33",
+    "hieroglyph": "𓌮",
+    "description": "Butcher’s knife sharpener",
+    "details": "Ideo. in sšm “butcher.”",
+    "is_priority": false,
+    "unicode_hex": "1332"
+  },
+  {
+    "gardiner_num": "T34",
+    "hieroglyph": "𓌰",
+    "description": "Butcher’s knife",
+    "details": "Phono. nm. In nm “knife,” ḫnms “friend.”",
+    "is_priority": false,
+    "unicode_hex": "13330"
+  },
+  {
+    "gardiner_num": "T35",
+    "hieroglyph": "𓌱",
+    "description": "Var. of T34",
+    "details": "Use as T34",
+    "is_priority": false,
+    "unicode_hex": "13331"
+  },
+  {
+    "gardiner_num": "U1",
+    "hieroglyph": "𓌳",
+    "description": "Sickle",
+    "details": "Phono. m3. In m33 “see,” 3sḫ “reap.”",
+    "is_priority": false,
+    "unicode_hex": "13333"
+  },
+  {
+    "gardiner_num": "U2",
+    "hieroglyph": "𓌴",
+    "description": "Var. of U1",
+    "details": "Use as U1.",
+    "is_priority": false,
+    "unicode_hex": "13334"
+  },
+  {
+    "gardiner_num": "U3",
+    "hieroglyph": "𓌵",
+    "description": "Combination of U1 + D4",
+    "details": "Phono. m3. In m33 “see.”",
+    "is_priority": false,
+    "unicode_hex": "13335"
+  },
+  {
+    "gardiner_num": "U4",
+    "hieroglyph": "𓌶",
+    "description": "Combination of U1 + Aa11",
+    "details": "Phono. m3ʿ. In m3ʿ “true.”",
+    "is_priority": false,
+    "unicode_hex": "13336"
+  },
+  {
+    "gardiner_num": "U5",
+    "hieroglyph": "𓌷",
+    "description": "Var. of U4",
+    "details": "Use as U4.",
+    "is_priority": false,
+    "unicode_hex": "13337"
+  },
+  {
+    "gardiner_num": "U6",
+    "hieroglyph": "𓌸",
+    "description": "Hoe",
+    "details": "Phono. mr. In mri “love.”",
+    "is_priority": false,
+    "unicode_hex": "13338"
+  },
+  {
+    "gardiner_num": "U7",
+    "hieroglyph": "𓌻",
+    "description": "Var. of U6",
+    "details": "Use as U6.",
+    "is_priority": false,
+    "unicode_hex": "1333"
+  },
+  {
+    "gardiner_num": "U8",
+    "hieroglyph": "𓌼",
+    "description": "Hoe",
+    "details": "Phono. ḥn. In ḥn “hoe.”",
+    "is_priority": false,
+    "unicode_hex": "1333"
+  },
+  {
+    "gardiner_num": "U9",
+    "hieroglyph": "𓌽",
+    "description": "Grain measure with grain streaming outwards",
+    "details": "Det. in bdt “emmer,” ḫ3i “measure,” ḥq3t “hekat measure.”",
+    "is_priority": false,
+    "unicode_hex": "1333"
+  },
+  {
+    "gardiner_num": "U10",
+    "hieroglyph": "𓌾",
+    "description": "Combination of U9 + M33",
+    "details": "Ideo. in it “barley.”",
+    "is_priority": false,
+    "unicode_hex": "1333"
+  },
+  {
+    "gardiner_num": "U11",
+    "hieroglyph": "𓌿",
+    "description": "Combination of S38 + U9",
+    "details": "Ideo. in ḥq3t “hekat measure.”",
+    "is_priority": false,
+    "unicode_hex": "1333"
+  },
+  {
+    "gardiner_num": "U12",
+    "hieroglyph": "𓍀",
+    "description": "Combination of D50 + U9",
+    "details": "Ideo. in ḥq3t “hekat measure.”",
+    "is_priority": false,
+    "unicode_hex": "13340"
+  },
+  {
+    "gardiner_num": "U13",
+    "hieroglyph": "𓍁",
+    "description": "Plow",
+    "details": "Phono. šnʿ. In šnʿ “repel.” Phono hb. In hb “plow.”",
+    "is_priority": false,
+    "unicode_hex": "13341"
+  },
+  {
+    "gardiner_num": "U14",
+    "hieroglyph": "𓍂",
+    "description": "Two branches joined",
+    "details": "Phono. šnʿ. In šnʿ “repel.”",
+    "is_priority": false,
+    "unicode_hex": "13342"
+  },
+  {
+    "gardiner_num": "U15",
+    "hieroglyph": "𓍃",
+    "description": "Sled",
+    "details": "Phono. tm. In tm “be complete,” ḥtm “perish.”",
+    "is_priority": false,
+    "unicode_hex": "13343"
+  },
+  {
+    "gardiner_num": "U16",
+    "hieroglyph": "𓍄",
+    "description": "Sled with jackal head bearing a load",
+    "details": "Det. in bi3 “wonder.”",
+    "is_priority": false,
+    "unicode_hex": "13344"
+  },
+  {
+    "gardiner_num": "U17",
+    "hieroglyph": "𓍅",
+    "description": "Pick with pool",
+    "details": "Phono. grg. In grg “establish, snare,” grg “falshood, lie.”",
+    "is_priority": false,
+    "unicode_hex": "13345"
+  },
+  {
+    "gardiner_num": "U18",
+    "hieroglyph": "𓍆",
+    "description": "Var. U17",
+    "details": "Use as U17.",
+    "is_priority": false,
+    "unicode_hex": "13346"
+  },
+  {
+    "gardiner_num": "U19",
+    "hieroglyph": "𓍇",
+    "description": "Adze",
+    "details": "Phono. nw. In nw “this.”",
+    "is_priority": false,
+    "unicode_hex": "13347"
+  },
+  {
+    "gardiner_num": "U20",
+    "hieroglyph": "𓍈",
+    "description": "Var. of U19",
+    "details": "Use as U19",
+    "is_priority": false,
+    "unicode_hex": "13348"
+  },
+  {
+    "gardiner_num": "U21",
+    "hieroglyph": "𓍉",
+    "description": "Adze with wood block",
+    "details": "Phono. stp/sṯp. In stp “choose.”",
+    "is_priority": false,
+    "unicode_hex": "13349"
+  },
+  {
+    "gardiner_num": "U22",
+    "hieroglyph": "𓍊",
+    "description": "Chisel",
+    "details": "Det. in mnḫ “efficient,” mnḫ “carve.”",
+    "is_priority": false,
+    "unicode_hex": "1334"
+  },
+  {
+    "gardiner_num": "U23",
+    "hieroglyph": "𓍋",
+    "description": "Chisel",
+    "details": "Phono. mr. In mr “ill,” smr “friend.” Phono. 3b. In 3bi “desire.”",
+    "is_priority": false,
+    "unicode_hex": "1334"
+  },
+  {
+    "gardiner_num": "U24",
+    "hieroglyph": "𓍍",
+    "description": "Drill for stone",
+    "details": "Ideo. in ḥmt “craft, art.”",
+    "is_priority": false,
+    "unicode_hex": "1334"
+  },
+  {
+    "gardiner_num": "U25",
+    "hieroglyph": "𓍎",
+    "description": "Var. of U24",
+    "details": "Use as U24.",
+    "is_priority": false,
+    "unicode_hex": "1334"
+  },
+  {
+    "gardiner_num": "U26",
+    "hieroglyph": "𓍏",
+    "description": "Drill for beads",
+    "details": "Ideo. in wb3 “open.”",
+    "is_priority": false,
+    "unicode_hex": "1334"
+  },
+  {
+    "gardiner_num": "U27",
+    "hieroglyph": "𓍐",
+    "description": "Var. of U26",
+    "details": "Use as U26.",
+    "is_priority": false,
+    "unicode_hex": "13350"
+  },
+  {
+    "gardiner_num": "U28",
+    "hieroglyph": "𓍑",
+    "description": "Fire drill",
+    "details": "Phono. ḏ3. In ʿnḫ.(w) (w)ḏ3 snb “may he live, be prosperous, be healthy.” (L.P.H.)",
+    "is_priority": false,
+    "unicode_hex": "13351"
+  },
+  {
+    "gardiner_num": "U29",
+    "hieroglyph": "𓍒",
+    "description": "Var. of U28",
+    "details": "Use as U28.",
+    "is_priority": false,
+    "unicode_hex": "13352"
+  },
+  {
+    "gardiner_num": "U30",
+    "hieroglyph": "𓍔",
+    "description": "Kiln",
+    "details": "Phono. t3. In št3 “hot,” t3 “mysterious.",
+    "is_priority": false,
+    "unicode_hex": "13354"
+  },
+  {
+    "gardiner_num": "U31",
+    "hieroglyph": "𓍕",
+    "description": "Baker’s rake",
+    "details": "Det. or Ideo. in rtḥty “baker,” rtḥ “restrain.”",
+    "is_priority": false,
+    "unicode_hex": "13355"
+  },
+  {
+    "gardiner_num": "U32",
+    "hieroglyph": "𓍖",
+    "description": "Mortar and pestle",
+    "details": "Det. in smn “press down,” smn “establish.”",
+    "is_priority": false,
+    "unicode_hex": "13356"
+  },
+  {
+    "gardiner_num": "U33",
+    "hieroglyph": "𓍘",
+    "description": "Pestle",
+    "details": "Phono. ti.",
+    "is_priority": false,
+    "unicode_hex": "13358"
+  },
+  {
+    "gardiner_num": "U34",
+    "hieroglyph": "𓍙",
+    "description": "Spindle",
+    "details": "Phono. ḫsf. In ḫsf “repel.”",
+    "is_priority": false,
+    "unicode_hex": "13359"
+  },
+  {
+    "gardiner_num": "U35",
+    "hieroglyph": "𓍚",
+    "description": "Combination of U34 + I9",
+    "details": "Phono. ḫsf.",
+    "is_priority": false,
+    "unicode_hex": "1335"
+  },
+  {
+    "gardiner_num": "U36",
+    "hieroglyph": "𓍛",
+    "description": "Club used in washing",
+    "details": "Phono. ḥm. In ḥm “slave,” ḥm “Majesty.”",
+    "is_priority": false,
+    "unicode_hex": "1335"
+  },
+  {
+    "gardiner_num": "U37",
+    "hieroglyph": "𓍜",
+    "description": "Razor",
+    "details": "Det. in ẖʿq “shave.”",
+    "is_priority": false,
+    "unicode_hex": "1335"
+  },
+  {
+    "gardiner_num": "U38",
+    "hieroglyph": "𓍝",
+    "description": "Scale",
+    "details": "Det. or Ideo. in mḫ3t “scale.”",
+    "is_priority": false,
+    "unicode_hex": "1335"
+  },
+  {
+    "gardiner_num": "U39",
+    "hieroglyph": "𓍞",
+    "description": "Scale post",
+    "details": "Det. in wsṯt “post,” wṯs, ṯsi “raise, lift.”",
+    "is_priority": false,
+    "unicode_hex": "1335"
+  },
+  {
+    "gardiner_num": "U40",
+    "hieroglyph": "𓍟",
+    "description": "Var. of U39",
+    "details": "Use as U39",
+    "is_priority": false,
+    "unicode_hex": "1335"
+  },
+  {
+    "gardiner_num": "U41",
+    "hieroglyph": "𓍠",
+    "description": "Plumb bob",
+    "details": "Det. in tḫ “plumb bob.”",
+    "is_priority": false,
+    "unicode_hex": "13360"
+  },
+  {
+    "gardiner_num": "V1",
+    "hieroglyph": "𓍢",
+    "description": "Rope coil",
+    "details": "Phono. šn. In šnt “dispute,” šni “litigate,” št “hundred.”",
+    "is_priority": false,
+    "unicode_hex": "13362"
+  },
+  {
+    "gardiner_num": "V2",
+    "hieroglyph": "𓍬",
+    "description": "Combination of V1 + O34",
+    "details": "Det. in st3 “drag.” Ideo. in sṯ3t “aurora.”",
+    "is_priority": false,
+    "unicode_hex": "1336"
+  },
+  {
+    "gardiner_num": "V3",
+    "hieroglyph": "𓍮",
+    "description": "Same as V2, but with two additional coils",
+    "details": "Ideo. in r-sṯ3w “necropolis.”",
+    "is_priority": false,
+    "unicode_hex": "1336"
+  },
+  {
+    "gardiner_num": "V4",
+    "hieroglyph": "𓍯",
+    "description": "Lasso",
+    "details": "Phono. w3. In w3ḥ “endure.”",
+    "is_priority": false,
+    "unicode_hex": "1336"
+  },
+  {
+    "gardiner_num": "V5",
+    "hieroglyph": "𓍰",
+    "description": "Looped rope",
+    "details": "Det. or Ideo. in snṯ “plot.”",
+    "is_priority": false,
+    "unicode_hex": "13370"
+  },
+  {
+    "gardiner_num": "V6",
+    "hieroglyph": "𓍱",
+    "description": "Cord with loop facing downwards",
+    "details": "Phono. šs, šsr.",
+    "is_priority": false,
+    "unicode_hex": "13371"
+  },
+  {
+    "gardiner_num": "V7",
+    "hieroglyph": "𓍲",
+    "description": "Cord with loop facing upwards",
+    "details": "Phono. šn.",
+    "is_priority": false,
+    "unicode_hex": "13372"
+  },
+  {
+    "gardiner_num": "V8",
+    "hieroglyph": "𓍴",
+    "description": "Var. of V7",
+    "details": "Use as V7",
+    "is_priority": false,
+    "unicode_hex": "13374"
+  },
+  {
+    "gardiner_num": "V9",
+    "hieroglyph": "𓍶",
+    "description": "Round cartouche",
+    "details": "Det. in šnw “cartouche.”",
+    "is_priority": false,
+    "unicode_hex": "13376"
+  },
+  {
+    "gardiner_num": "V10",
+    "hieroglyph": "𓍷",
+    "description": "Oval cartouche",
+    "details": "Det. in šnw “cartouche,” rn “name.",
+    "is_priority": false,
+    "unicode_hex": "13377"
+  },
+  {
+    "gardiner_num": "V11",
+    "hieroglyph": "𓍸",
+    "description": "End of cartouche",
+    "details": "Det. in dni “restrain, dam,” pḫ3 “split.",
+    "is_priority": false,
+    "unicode_hex": "13378"
+  },
+  {
+    "gardiner_num": "V12",
+    "hieroglyph": "𓍼",
+    "description": "String",
+    "details": "Det. in sšd “headband,” fḫ “loosen,” fḫnw “Phoenicians.",
+    "is_priority": false,
+    "unicode_hex": "1337"
+  },
+  {
+    "gardiner_num": "V13",
+    "hieroglyph": "𓍿",
+    "description": "Tethering rope",
+    "details": "Phono. ṯ.",
+    "is_priority": true,
+    "unicode_hex": "1337"
+  },
+  {
+    "gardiner_num": "V14",
+    "hieroglyph": "𓎀",
+    "description": "Var. of V13",
+    "details": "Use as last.",
+    "is_priority": false,
+    "unicode_hex": "13380"
+  },
+  {
+    "gardiner_num": "V15",
+    "hieroglyph": "𓎁",
+    "description": "Combination of V13 and D54",
+    "details": "Phono. iṯ. In iṯi “seize.”",
+    "is_priority": false,
+    "unicode_hex": "13381"
+  },
+  {
+    "gardiner_num": "V16",
+    "hieroglyph": "𓎂",
+    "description": "Hobble for cattle",
+    "details": "Phono. s3. In s3 “protection.”",
+    "is_priority": false,
+    "unicode_hex": "13382"
+  },
+  {
+    "gardiner_num": "V17",
+    "hieroglyph": "𓎃",
+    "description": "Herdsman’s shelter",
+    "details": "Ideo. in s3 “protection.”",
+    "is_priority": false,
+    "unicode_hex": "13383"
+  },
+  {
+    "gardiner_num": "V18",
+    "hieroglyph": "𓎄",
+    "description": "Var. of V17",
+    "details": "Use as V17",
+    "is_priority": false,
+    "unicode_hex": "13384"
+  },
+  {
+    "gardiner_num": "V19",
+    "hieroglyph": "𓎅",
+    "description": "Hobble for cattle",
+    "details": "Det. in mḏt “stable,” k3r “shrine,” tm3 “mat.”",
+    "is_priority": false,
+    "unicode_hex": "13385"
+  },
+  {
+    "gardiner_num": "V20",
+    "hieroglyph": "𓎆",
+    "description": "Hobble for cattle sans crossbar",
+    "details": "Phono. mḏ. In mḏwt “stables,” mḏ “10.”",
+    "is_priority": false,
+    "unicode_hex": "13386"
+  },
+  {
+    "gardiner_num": "V21",
+    "hieroglyph": "𓎓",
+    "description": "Combination of V20 + I10",
+    "details": "Phono. mḏ.",
+    "is_priority": false,
+    "unicode_hex": "13393"
+  },
+  {
+    "gardiner_num": "V22",
+    "hieroglyph": "𓎔",
+    "description": "Whip",
+    "details": "Phono. mḥ. In mḥ “fill.”",
+    "is_priority": false,
+    "unicode_hex": "13394"
+  },
+  {
+    "gardiner_num": "V23",
+    "hieroglyph": "𓎕",
+    "description": "Var. of V22",
+    "details": "Use as V22.",
+    "is_priority": false,
+    "unicode_hex": "13395"
+  },
+  {
+    "gardiner_num": "V24",
+    "hieroglyph": "𓎗",
+    "description": "Cord on Stick",
+    "details": "Phono. wḏ. In wḏ “command, decree.”",
+    "is_priority": false,
+    "unicode_hex": "13397"
+  },
+  {
+    "gardiner_num": "V25",
+    "hieroglyph": "𓎘",
+    "description": "Var. of V24",
+    "details": "Use as V24",
+    "is_priority": false,
+    "unicode_hex": "13398"
+  },
+  {
+    "gardiner_num": "V26",
+    "hieroglyph": "𓎙",
+    "description": "Spool with thread",
+    "details": "Phono. ʿd/ʿḏ. In ʿd “good condition.”",
+    "is_priority": false,
+    "unicode_hex": "13399"
+  },
+  {
+    "gardiner_num": "V27",
+    "hieroglyph": "𓎚",
+    "description": "Var. of V26",
+    "details": "Use as V26.",
+    "is_priority": false,
+    "unicode_hex": "1339"
+  },
+  {
+    "gardiner_num": "V28",
+    "hieroglyph": "𓎛",
+    "description": "Wick",
+    "details": "Phono. ḥ.",
+    "is_priority": true,
+    "unicode_hex": "1339"
+  },
+  {
+    "gardiner_num": "V29",
+    "hieroglyph": "𓎝",
+    "description": "Swab",
+    "details": "Phono. w3ḥ, sk.",
+    "is_priority": false,
+    "unicode_hex": "1339"
+  },
+  {
+    "gardiner_num": "V30",
+    "hieroglyph": "𓎟",
+    "description": "Basket",
+    "details": "Phono. nb. In nb “lord,” nb “every, all.”",
+    "is_priority": false,
+    "unicode_hex": "1339"
+  },
+  {
+    "gardiner_num": "V31",
+    "hieroglyph": "𓎡",
+    "description": "Basket with handle",
+    "details": "Phono k.",
+    "is_priority": true,
+    "unicode_hex": "1331"
+  },
+  {
+    "gardiner_num": "V31a",
+    "hieroglyph": "𓎢",
+    "description": "V31 reversed",
+    "details": "Use as V31.",
+    "is_priority": false,
+    "unicode_hex": "1332"
+  },
+  {
+    "gardiner_num": "V32",
+    "hieroglyph": "𓎣",
+    "description": "Wicker satchel",
+    "details": "Phono. msn. In msn “Mesen.” Det. in g3wt “bundles,” g3w “absence, lack.”",
+    "is_priority": false,
+    "unicode_hex": "1333"
+  },
+  {
+    "gardiner_num": "V33",
+    "hieroglyph": "𓎤",
+    "description": "Linen bag",
+    "details": "Det. in šsr “linen.”",
+    "is_priority": false,
+    "unicode_hex": "1334"
+  },
+  {
+    "gardiner_num": "V34",
+    "hieroglyph": "𓎥",
+    "description": "Var. of V33",
+    "details": "Use as V33.",
+    "is_priority": false,
+    "unicode_hex": "1335"
+  },
+  {
+    "gardiner_num": "V35",
+    "hieroglyph": "𓎧",
+    "description": "Var. of V33",
+    "details": "Use as V33.",
+    "is_priority": false,
+    "unicode_hex": "1337"
+  },
+  {
+    "gardiner_num": "V36",
+    "hieroglyph": "𓎨",
+    "description": "Receptacle",
+    "details": "Phono. ḥn. In ḥnt “occupation.”",
+    "is_priority": false,
+    "unicode_hex": "1338"
+  },
+  {
+    "gardiner_num": "V37",
+    "hieroglyph": "𓎩",
+    "description": "Bandage",
+    "details": "Det. or Ideo. in idr “bandage, bind,” idr “herd.”",
+    "is_priority": false,
+    "unicode_hex": "1339"
+  },
+  {
+    "gardiner_num": "V38",
+    "hieroglyph": "𓎫",
+    "description": "Bandage",
+    "details": "Det. in wt “bandage.”",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "V39",
+    "hieroglyph": "𓎬",
+    "description": "Tie",
+    "details": "Ideo. in tit “Isis knot.”",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "W1",
+    "hieroglyph": "𓎯",
+    "description": "Oil jar",
+    "details": "Det. in mḏt “ointment,” mrḥt “oil.”",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "W2",
+    "hieroglyph": "𓎰",
+    "description": "Oil jar without ties",
+    "details": "Phono. b3s. In b3stt “Bastet,” b3s “oil jar.”",
+    "is_priority": false,
+    "unicode_hex": "1330"
+  },
+  {
+    "gardiner_num": "W3",
+    "hieroglyph": "𓎱",
+    "description": "Alabaster basin",
+    "details": "Det. or Ideo. in ḥb “feast,” ḥb “mourn.”",
+    "is_priority": false,
+    "unicode_hex": "1331"
+  },
+  {
+    "gardiner_num": "W4",
+    "hieroglyph": "𓎳",
+    "description": "Combination of W3 + O22",
+    "details": "Det. or Ideo. in ḥb “feast,” tp-rnpt “feat of the first of the year.”",
+    "is_priority": false,
+    "unicode_hex": "1333"
+  },
+  {
+    "gardiner_num": "W5",
+    "hieroglyph": "𓎴",
+    "description": "Combination of W3 + T28",
+    "details": "Ideo in ẖry-ḥbt “lector priest.”",
+    "is_priority": false,
+    "unicode_hex": "1334"
+  },
+  {
+    "gardiner_num": "W6",
+    "hieroglyph": "𓎵",
+    "description": "Vessel",
+    "details": "Det. in wḥt “cauldron.”",
+    "is_priority": false,
+    "unicode_hex": "1335"
+  },
+  {
+    "gardiner_num": "W7",
+    "hieroglyph": "𓎶",
+    "description": "Granite bowl",
+    "details": "Det. in 3bt “family,” m3ṯ “proclaim.”",
+    "is_priority": false,
+    "unicode_hex": "1336"
+  },
+  {
+    "gardiner_num": "W8",
+    "hieroglyph": "𓎷",
+    "description": "Var. of W7",
+    "details": "Use as W7.",
+    "is_priority": false,
+    "unicode_hex": "1337"
+  },
+  {
+    "gardiner_num": "W9",
+    "hieroglyph": "𓎸",
+    "description": "Stone jug",
+    "details": "Phono. ẖnm.",
+    "is_priority": false,
+    "unicode_hex": "1338"
+  },
+  {
+    "gardiner_num": "W10",
+    "hieroglyph": "𓎺",
+    "description": "Cup",
+    "details": "Phono. ḥnw. In ḥnwt “mistress.” Det. or Ideo. in wsḫ “wide.”",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "W10a",
+    "hieroglyph": "𓎻",
+    "description": "Pot",
+    "details": "Phono. b3.",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "W11",
+    "hieroglyph": "𓎼",
+    "description": "Ring stand",
+    "details": "Phono. g. Det. or Ideo. in nst “throne.”",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "W12",
+    "hieroglyph": "𓎽",
+    "description": "Ring stand",
+    "details": "Use as W11.",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "W13",
+    "hieroglyph": "𓎾",
+    "description": "Pot",
+    "details": "Det. or Ideo. in dšrt “red pot.”",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "W14",
+    "hieroglyph": "𓎿",
+    "description": "Tall jar",
+    "details": "Phono. ḥs. In ḥst “water jar.”",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "W15",
+    "hieroglyph": "𓏁",
+    "description": "Tall jar with water",
+    "details": "Det. or Ideo. in qbb, qbḥ “cool, water.”",
+    "is_priority": false,
+    "unicode_hex": "1331"
+  },
+  {
+    "gardiner_num": "W16",
+    "hieroglyph": "𓏂",
+    "description": "Combination of W15 + W12",
+    "details": "Use as W15.",
+    "is_priority": false,
+    "unicode_hex": "1332"
+  },
+  {
+    "gardiner_num": "W17",
+    "hieroglyph": "𓏃",
+    "description": "Tall jars in rack.",
+    "details": "Phono. ḫnt. In ḫntw “jar rack.”",
+    "is_priority": false,
+    "unicode_hex": "1333"
+  },
+  {
+    "gardiner_num": "W18",
+    "hieroglyph": "𓏅",
+    "description": "Var. W17",
+    "details": "Use as W17",
+    "is_priority": false,
+    "unicode_hex": "1335"
+  },
+  {
+    "gardiner_num": "W19",
+    "hieroglyph": "𓏇",
+    "description": "Milk jug",
+    "details": "Phono. mi. In mi “likeness.”",
+    "is_priority": false,
+    "unicode_hex": "1337"
+  },
+  {
+    "gardiner_num": "W20",
+    "hieroglyph": "𓏈",
+    "description": "Milk jug with leaf",
+    "details": "Det. in irtt “milk.”",
+    "is_priority": false,
+    "unicode_hex": "1338"
+  },
+  {
+    "gardiner_num": "W21",
+    "hieroglyph": "𓏉",
+    "description": "Wine jars",
+    "details": "Det. in irp “wine.”",
+    "is_priority": false,
+    "unicode_hex": "1339"
+  },
+  {
+    "gardiner_num": "W22",
+    "hieroglyph": "𓏊",
+    "description": "Beer jugs",
+    "details": "Ideo. in ḥnqt “beer.” Det. in qrḥt “vessel.”",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "W23",
+    "hieroglyph": "𓏋",
+    "description": "Jug with handles",
+    "details": "Use as W22.",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "W24",
+    "hieroglyph": "𓏌",
+    "description": "Bowl",
+    "details": "Phono. nw, in, ink.",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "W25",
+    "hieroglyph": "𓏎",
+    "description": "Combination of W24 + legs",
+    "details": "Phono. in. In ini “fetch, bring.”",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "X1",
+    "hieroglyph": "𓏏",
+    "description": "Small bread loaf",
+    "details": "Phono. t. Ideo. in t “bread.”",
+    "is_priority": true,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "X2",
+    "hieroglyph": "𓏐",
+    "description": "Tall bread loaf",
+    "details": "Det. of bread. In t “bread.” Ideo. in dḥwty “Thoth.”",
+    "is_priority": false,
+    "unicode_hex": "1330"
+  },
+  {
+    "gardiner_num": "X3",
+    "hieroglyph": "𓏑",
+    "description": "Var. of X2",
+    "details": "Use as X2",
+    "is_priority": false,
+    "unicode_hex": "1331"
+  },
+  {
+    "gardiner_num": "X4",
+    "hieroglyph": "𓏒",
+    "description": "Bread roll",
+    "details": "Det. in sni “pass by,” fq3 “cake.”",
+    "is_priority": false,
+    "unicode_hex": "1332"
+  },
+  {
+    "gardiner_num": "X5",
+    "hieroglyph": "𓏕",
+    "description": "Var. of X4",
+    "details": "Det. in ʿqw “provisions.”",
+    "is_priority": false,
+    "unicode_hex": "1335"
+  },
+  {
+    "gardiner_num": "X6",
+    "hieroglyph": "𓏖",
+    "description": "Round loaf with baker’s mark",
+    "details": "Det. in p3t “loaf.”",
+    "is_priority": false,
+    "unicode_hex": "1336"
+  },
+  {
+    "gardiner_num": "X7",
+    "hieroglyph": "𓏘",
+    "description": "Half loaf of bread",
+    "details": "Det. in snw “offerings.” When doubled, wnm “eat.”",
+    "is_priority": false,
+    "unicode_hex": "1338"
+  },
+  {
+    "gardiner_num": "X8",
+    "hieroglyph": "𓏙",
+    "description": "Conical Loaf",
+    "details": "Phono. di. In rdi “give.”",
+    "is_priority": false,
+    "unicode_hex": "1339"
+  },
+  {
+    "gardiner_num": "Y1",
+    "hieroglyph": "𓏛",
+    "description": "Papyrus scroll",
+    "details": "Phono. mḏ3t. Ideo. in mḏ3t “paypyrus roll, book.” Det. in rḫ “know.”",
+    "is_priority": true,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "Y1v",
+    "hieroglyph": "𓏜",
+    "description": "Papyrus scroll (vertical)",
+    "details": "Use as Y1",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "Y2",
+    "hieroglyph": "𓏝",
+    "description": "Var. of Y1",
+    "details": "Use as Y1",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "Y3",
+    "hieroglyph": "𓏞",
+    "description": "Scribal kit",
+    "details": "Det. or Ideo. in sš “write,” nʿʿ “smooth.”",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "Y4",
+    "hieroglyph": "𓏟",
+    "description": "Y4 reversed",
+    "details": "Use as Y3",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "Y5",
+    "hieroglyph": "𓏠",
+    "description": "Game board",
+    "details": "Phono. mn. In imn “Amun” mn “remain.”",
+    "is_priority": false,
+    "unicode_hex": "1330"
+  },
+  {
+    "gardiner_num": "Y6",
+    "hieroglyph": "𓏡",
+    "description": "Game piece",
+    "details": "Det. or Ideo. in ib3 “game piece,” “dance.”",
+    "is_priority": false,
+    "unicode_hex": "1331"
+  },
+  {
+    "gardiner_num": "Y7",
+    "hieroglyph": "𓏢",
+    "description": "Harp",
+    "details": "Det. in bnt “harp.”",
+    "is_priority": false,
+    "unicode_hex": "1332"
+  },
+  {
+    "gardiner_num": "Y8",
+    "hieroglyph": "𓏣",
+    "description": "Sistrum",
+    "details": "Det. in sššt “sistrum.”",
+    "is_priority": false,
+    "unicode_hex": "1333"
+  },
+  {
+    "gardiner_num": "Z1",
+    "hieroglyph": "𓏤",
+    "description": "Stroke",
+    "details": "Follows Ideograms. Det. wʿ “one.” Ideo. numerals 1-9.",
+    "is_priority": false,
+    "unicode_hex": "1334"
+  },
+  {
+    "gardiner_num": "Z2",
+    "hieroglyph": "𓏥",
+    "description": "Triple stroke",
+    "details": "Det. of plurality.",
+    "is_priority": false,
+    "unicode_hex": "1335"
+  },
+  {
+    "gardiner_num": "Z3",
+    "hieroglyph": "𓏪",
+    "description": "Three Z1 vertical strokes",
+    "details": "Same as Z2.",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "Z3a",
+    "hieroglyph": "𓏫",
+    "description": "Z2 vertical",
+    "details": "Same as Z2.",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "Z4",
+    "hieroglyph": "𓏭",
+    "description": "Two diagonal strokes",
+    "details": "Det. Duality",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "Z4a",
+    "hieroglyph": "𓏮",
+    "description": "Two vertical strokes",
+    "details": "Det. Duality.",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "Z5",
+    "hieroglyph": "𓏯",
+    "description": "Diagonal stroke in hieratic",
+    "details": "Replacement for complex or dangerous signs, human figures.",
+    "is_priority": false,
+    "unicode_hex": "133"
+  },
+  {
+    "gardiner_num": "Z6",
+    "hieroglyph": "𓏱",
+    "description": "Hieratic var. of A13 and A14",
+    "details": "Det. in m(w)t “die”",
+    "is_priority": false,
+    "unicode_hex": "1331"
+  },
+  {
+    "gardiner_num": "Z7",
+    "hieroglyph": "𓏲",
+    "description": "From hieratic var. of G43.",
+    "details": "Phono. w.",
+    "is_priority": false,
+    "unicode_hex": "1332"
+  },
+  {
+    "gardiner_num": "Z8",
+    "hieroglyph": "𓏳",
+    "description": "Oval",
+    "details": "Det. of round.",
+    "is_priority": false,
+    "unicode_hex": "1333"
+  },
+  {
+    "gardiner_num": "Z9",
+    "hieroglyph": "𓏴",
+    "description": "Crossed sticks",
+    "details": "Phono. sw3. In sw3 “pass.”",
+    "is_priority": false,
+    "unicode_hex": "1334"
+  },
+  {
+    "gardiner_num": "Z10",
+    "hieroglyph": "𓏵",
+    "description": "Var. of Z9",
+    "details": "Use as Z9.",
+    "is_priority": false,
+    "unicode_hex": "1335"
+  },
+  {
+    "gardiner_num": "Z11",
+    "hieroglyph": "𓏶",
+    "description": "Crossed planks",
+    "details": "Phono. im. In imy “who is in.”",
+    "is_priority": false,
+    "unicode_hex": "1336"
+  },
+  {
+    "gardiner_num": "Aa1",
+    "hieroglyph": "𓐍",
+    "description": "Placenta?",
+    "details": "Phono. ḫ.",
+    "is_priority": true,
+    "unicode_hex": "1340"
+  },
+  {
+    "gardiner_num": "Aa2",
+    "hieroglyph": "𓐎",
+    "description": "Pustule or gland?",
+    "details": "Det. in bodily growths or conditions.",
+    "is_priority": false,
+    "unicode_hex": "1340"
+  },
+  {
+    "gardiner_num": "Aa3",
+    "hieroglyph": "𓐏",
+    "description": "Aa2 with substance issuing",
+    "details": "Use as Aa2.",
+    "is_priority": false,
+    "unicode_hex": "1340"
+  },
+  {
+    "gardiner_num": "Aa4",
+    "hieroglyph": "𓐐",
+    "description": "Pot",
+    "details": "Var. of W10a.",
+    "is_priority": false,
+    "unicode_hex": "13410"
+  },
+  {
+    "gardiner_num": "Aa5",
+    "hieroglyph": "𓐑",
+    "description": "Part of ship?",
+    "details": "Phono. ḥp.",
+    "is_priority": false,
+    "unicode_hex": "13411"
+  },
+  {
+    "gardiner_num": "Aa6",
+    "hieroglyph": "𓐒",
+    "description": "Unknown",
+    "details": "Det. in tm3 “mat.”",
+    "is_priority": false,
+    "unicode_hex": "13412"
+  },
+  {
+    "gardiner_num": "Aa7",
+    "hieroglyph": "𓐓",
+    "description": "Unknown",
+    "details": "Det. in sqr “smite.”",
+    "is_priority": false,
+    "unicode_hex": "13413"
+  },
+  {
+    "gardiner_num": "Aa8",
+    "hieroglyph": "𓐖",
+    "description": "Irrigation canal?",
+    "details": "Phono. qn. In qn “complete.”",
+    "is_priority": false,
+    "unicode_hex": "13416"
+  },
+  {
+    "gardiner_num": "Aa9",
+    "hieroglyph": "𓐗",
+    "description": "Unknown",
+    "details": "Det. in ḫwd “rich.”",
+    "is_priority": false,
+    "unicode_hex": "13417"
+  },
+  {
+    "gardiner_num": "Aa10",
+    "hieroglyph": "𓐘",
+    "description": "Unknown",
+    "details": "Det. in drf “writing.”",
+    "is_priority": false,
+    "unicode_hex": "13418"
+  },
+  {
+    "gardiner_num": "Aa11",
+    "hieroglyph": "𓐙",
+    "description": "Unknown",
+    "details": "Phono. m3ʿ.",
+    "is_priority": false,
+    "unicode_hex": "13419"
+  },
+  {
+    "gardiner_num": "Aa12",
+    "hieroglyph": "𓐚",
+    "description": "Unknown",
+    "details": "Use as Aa11.",
+    "is_priority": false,
+    "unicode_hex": "1341"
+  },
+  {
+    "gardiner_num": "Aa13",
+    "hieroglyph": "𓐛",
+    "description": "Unknown",
+    "details": "Phono. im, m.",
+    "is_priority": false,
+    "unicode_hex": "1341"
+  },
+  {
+    "gardiner_num": "Aa14",
+    "hieroglyph": "𓐜",
+    "description": "Unknown",
+    "details": "Phono. im, m.",
+    "is_priority": false,
+    "unicode_hex": "1341"
+  },
+  {
+    "gardiner_num": "Aa15",
+    "hieroglyph": "𓐝",
+    "description": "Var. Aa13",
+    "details": "Phono. im, m.",
+    "is_priority": false,
+    "unicode_hex": "1341"
+  },
+  {
+    "gardiner_num": "Aa16",
+    "hieroglyph": "𓐞",
+    "description": "Short form Aa13",
+    "details": "Phono. gs. In gs “side, half.”",
+    "is_priority": false,
+    "unicode_hex": "1341"
+  },
+  {
+    "gardiner_num": "Aa17",
+    "hieroglyph": "𓐟",
+    "description": "Back of something?",
+    "details": "Phono. s3. In s3 “back.”",
+    "is_priority": false,
+    "unicode_hex": "1341"
+  },
+  {
+    "gardiner_num": "Aa18",
+    "hieroglyph": "𓐠",
+    "description": "Var. of Aa17",
+    "details": "Use as Aa17",
+    "is_priority": false,
+    "unicode_hex": "13420"
+  },
+  {
+    "gardiner_num": "Aa19",
+    "hieroglyph": "𓐡",
+    "description": "Unknown",
+    "details": "Det. in ḥr “prepare,” ḥryt “dread.”",
+    "is_priority": false,
+    "unicode_hex": "13421"
+  },
+  {
+    "gardiner_num": "Aa20",
+    "hieroglyph": "𓐢",
+    "description": "Unknown",
+    "details": "Phono. ʿpr. In ʿpr “equip.”",
+    "is_priority": false,
+    "unicode_hex": "13422"
+  },
+  {
+    "gardiner_num": "Aa21",
+    "hieroglyph": "𓐣",
+    "description": "Unknown",
+    "details": "Phono. wḏʿ. In wḏʿ “judge.”",
+    "is_priority": false,
+    "unicode_hex": "13423"
+  },
+  {
+    "gardiner_num": "Aa22",
+    "hieroglyph": "𓐤",
+    "description": "Combination of Aa21 + D36",
+    "details": "Use as Aa21.",
+    "is_priority": false,
+    "unicode_hex": "13424"
+  },
+  {
+    "gardiner_num": "Aa23",
+    "hieroglyph": "𓐥",
+    "description": "Warp between stakes?",
+    "details": "Det. in mḏd “puncture, press, adhere.”",
+    "is_priority": false,
+    "unicode_hex": "13425"
+  },
+  {
+    "gardiner_num": "Aa24",
+    "hieroglyph": "𓐦",
+    "description": "Var. Aa23",
+    "details": "Use as Aa23.",
+    "is_priority": false,
+    "unicode_hex": "13426"
+  },
+  {
+    "gardiner_num": "Aa25",
+    "hieroglyph": "𓐧",
+    "description": "Unknown",
+    "details": "Ideo. in sm3 “stolist” (priestly title).",
+    "is_priority": false,
+    "unicode_hex": "13427"
+  },
+  {
+    "gardiner_num": "Aa26",
+    "hieroglyph": "𓐨",
+    "description": "Unknown",
+    "details": "Det. in sbi “rebel.”",
+    "is_priority": false,
+    "unicode_hex": "13428"
+  },
+  {
+    "gardiner_num": "Aa27",
+    "hieroglyph": "𓐩",
+    "description": "Unknown",
+    "details": "Phono. nḏ. In nḏ “ask, inquire.”",
+    "is_priority": false,
+    "unicode_hex": "13429"
+  },
+  {
+    "gardiner_num": "Aa28",
+    "hieroglyph": "𓐪",
+    "description": "Builder’s tool?",
+    "details": "Phono. qd. In qd “build.”",
+    "is_priority": false,
+    "unicode_hex": "1342"
+  },
+  {
+    "gardiner_num": "Aa29",
+    "hieroglyph": "𓐫",
+    "description": "Var. of Aa28",
+    "details": "Use as Aa28.",
+    "is_priority": false,
+    "unicode_hex": "1342"
+  },
+  {
+    "gardiner_num": "Aa30",
+    "hieroglyph": "𓐬",
+    "description": "Frieze element?",
+    "details": "Det. in ẖqr “adorn.”",
+    "is_priority": false,
+    "unicode_hex": "1342"
+  },
+  {
+    "gardiner_num": "Aa31",
+    "hieroglyph": "𓐭",
+    "description": "Var. of Aa30",
+    "details": "Use as Aa30.",
+    "is_priority": false,
+    "unicode_hex": "1342"
+  }
+]
