@@ -1,9 +1,9 @@
 {
  "meta": {
   "name": "hiero",
-  "created": "2026-07-06",
-  "handwriting": "/home/jovyan/egyptian_hiero/hiero_data/Hand-drawn Hieroglyph Dataset",
-  "canonical": "/home/jovyan/egyptian_hiero/hiero_data/archaeohack-starterpack/data/utf-pngs",
+  "created": "2026-07-09",
+  "handwriting": "/burg-archive/home/dh3065/egyptian_hiero/hiero_data/Hand-drawn Hieroglyph Dataset",
+  "canonical": "/burg-archive/home/dh3065/egyptian_hiero/hiero_data/archaeohack-starterpack/data/utf-pngs",
   "content_size": 32,
   "height": 64,
   "n_classes": 565,

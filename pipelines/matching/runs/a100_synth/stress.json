@@ -1,0 +1,123 @@
+{
+ "device": "cuda",
+ "n": 800,
+ "corruptions": {
+  "clean": {
+   "n": 800,
+   "top1": 0.9625,
+   "top5": 0.97875,
+   "top10": 0.98
+  },
+  "rotate20": {
+   "n": 800,
+   "top1": 0.95625,
+   "top5": 0.9775,
+   "top10": 0.98125
+  },
+  "blur": {
+   "n": 800,
+   "top1": 0.41625,
+   "top5": 0.53375,
+   "top10": 0.56875
+  },
+  "noise": {
+   "n": 800,
+   "top1": 0.96625,
+   "top5": 0.9825,
+   "top10": 0.985
+  },
+  "occlude28": {
+   "n": 800,
+   "top1": 0.85375,
+   "top5": 0.9175,
+   "top10": 0.9275
+  },
+  "lowres32": {
+   "n": 800,
+   "top1": 0.4125,
+   "top5": 0.605,
+   "top10": 0.6475
+  },
+  "thin": {
+   "n": 800,
+   "top1": 0.9625,
+   "top5": 0.975,
+   "top10": 0.97875
+  },
+  "dropstroke": {
+   "n": 800,
+   "top1": 0.6825,
+   "top5": 0.79625,
+   "top10": 0.8325
+  },
+  "wobble": {
+   "n": 800,
+   "top1": 0.9275,
+   "top5": 0.96125,
+   "top10": 0.96625
+  }
+ },
+ "top_confusions": [
+  {
+   "truth": "S16",
+   "pred": "F9",
+   "count": 1
+  },
+  {
+   "truth": "D17",
+   "pred": "F9",
+   "count": 1
+  },
+  {
+   "truth": "T21",
+   "pred": "F9",
+   "count": 1
+  },
+  {
+   "truth": "T9a",
+   "pred": "F9",
+   "count": 1
+  },
+  {
+   "truth": "O38",
+   "pred": "Aa4",
+   "count": 1
+  },
+  {
+   "truth": "F13",
+   "pred": "Aa7",
+   "count": 1
+  },
+  {
+   "truth": "D11",
+   "pred": "F9",
+   "count": 1
+  },
+  {
+   "truth": "A43a",
+   "pred": "A44",
+   "count": 1
+  },
+  {
+   "truth": "O8",
+   "pred": "F9",
+   "count": 1
+  },
+  {
+   "truth": "F22",
+   "pred": "H3",
+   "count": 1
+  },
+  {
+   "truth": "A14a",
+   "pred": "A5a",
+   "count": 1
+  },
+  {
+   "truth": "M21",
+   "pred": "F9",
+   "count": 1
+  }
+ ],
+ "latency_ms_per_query": 11.6
+}

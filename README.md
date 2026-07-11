@@ -13,38 +13,54 @@ generalize to any symbol inventory / ancient script:
 Start here: **[`pipelines/README.md`](pipelines/README.md)** for the map and
 both runbooks.
 
-## Preliminary results
+## Results
 
-(See [`pipelines/smoke_results/README.md`](pipelines/smoke_results/README.md)
-for more details)
+Full HPC (A100) training, reviewer-grade stress testing, and repro commands
+are in each pipeline's README: [`pipelines/matching/README.md`](pipelines/matching/README.md),
+[`pipelines/generation/README.md`](pipelines/generation/README.md).
 
-**Matching** — resnet18@112, only 3 epochs, **8/8 top-1** on held-out
-handwriting queries below (held-out set overall: top-1 **0.905**, top-5
-0.964, n=800; the harder unseen-writer probe: top-1 0.859, n=256 — full
-numbers in the smoke-results report):
-
-<p align="center">
-  <img src="pipelines/smoke_results/matching/predictions_val.png" width="480" alt="Matcher predictions on held-out handwriting: query vs. top-5 canonical glyphs, 8/8 top-1">
-</p>
-<p align="center"><em>Column 1: drawn query (true label). Columns 2–6: top-5 predicted canonical glyphs by cosine similarity, correct hit outlined green.</em></p>
-
-**Generation** — procedural engine (zero-training, production-usable today):
-two independent samples of the same canonical sign (A1; see first row above), each with its own
-pen wobble, width, and pressure variation:
+**Matching** (production model `pipelines/matching/runs/default`, resnet34@160,
+100 epochs + missing-stroke augmentation) — held-out handwriting retrieval
+top-1 **0.971** / top-5 0.985 (n=4521); unseen-writer probe (a writer excluded
+from training) top-1 **0.863** / top-5 **0.988** (n=256). Corruption
+robustness (n=800/case): clean 0.966, shaky-hand wobble 0.938, 28%-block
+occlusion 0.868, severed/missing strokes 0.779; blur and low-resolution
+capture remain the sharpest failure modes (~0.40–0.46), i.e. degraded capture
+hurts more than degraded drawing.
 
 <p align="center">
-  <img src="pipelines/smoke_results/generation/procedural/A1/A1_p00.png" width="220" alt="Procedural handwriting sample 1, sign A1">
-  <img src="pipelines/smoke_results/generation/procedural/A1/A1_p01.png" width="220" alt="Procedural handwriting sample 2, sign A1">
+  <img src="pipelines/showcase/matching_predictions.png" width="720" alt="Matcher predictions: 4 real hand-drawn held-out queries, each correctly matched top-1 against the 769-sign canonical inventory">
 </p>
+<p align="center"><em>Real held-out handwriting queries (never seen in training), run through the production model. Column 1: the drawn query. Columns 2–6: its top-5 canonical matches by cosine similarity — correct hit outlined green, always ranked first here.</em></p>
+
+**Generation** — two complementary engines, not two attempts at the same
+thing. **Procedural** (skeletonize canonical → re-stroke with wobble/pressure,
+zero training, CPU, any symbol): deterministic, always on-class, the reliable
+default. **One-DM** (latent diffusion, style-conditioned, fine-tuned on real
+handwriting): after fixing an initial faint/blank-output failure mode (higher-
+resolution latents + classifier-free guidance), recognizability of its output
+reached top-1 **0.567** on held-out signs (from a 0.0 broken baseline) — it
+contributes learned realism and writer-style transfer that procedural
+generation cannot, at the cost of needing GPU fine-tuning and real handwriting
+data. A synthetic-data feedback loop (One-DM output → matcher training) was
+built with anti-collapse guardrails and tested; it was correctly rejected by
+its own acceptance criteria (see matching README) and left as a documented,
+re-runnable pipeline rather than a standing recommendation.
+
+<p align="center">
+  <img src="pipelines/showcase/generation_comparison.png" width="460" alt="Canonical glyph vs procedural handwriting vs One-DM diffusion output, for four signs: fish, animal on shrine, crocodile, comb">
+</p>
+<p align="center"><em>Four signs, both engines, same canonical source. Procedural output is deterministic and always on-class every time; One-DM output is real production-model inference but selected for legibility from a wider, uneven sample — the quantitative numbers above (top-1 0.567, top-5 0.600 on held-out signs) are the honest measure of typical output.</em></p>
 
 ## Repository layout
 
 | Path | Contents |
 |---|---|
-| `pipelines/` | The two product pipelines + `smoke_results/` (proof-of-work evidence) |
+| `pipelines/` | The two product pipelines (generation, matching) + `showcase/` (README figures above) |
 | `One-DM/` | Vendored + extended [One-DM](#citations-and-acknowledgements) diffusion handwriting generator (the learned generation engine) |
 | `hiero_data/` | Datasets: the [Hand-drawn Hieroglyph Dataset](#citations-and-acknowledgements) (handwriting) and the `archaeohack-starterpack` (canonical glyphs, Gardiner↔Unicode mapping, font, single-writer probe set) |
 | `misc/` | Shared procedural scripts, portable `uv`-based environments, project notes (`PROJECT_NOTES.md`, `RESETUP.md`, `REJECTED_SOFTWARE.md`) |
+| `slurm/` | SLURM job scripts for HPC training/evaluation (reproduction record for the results above) |
 
 ## Setup
 
@@ -59,10 +75,12 @@ wherever the repo lives. See `misc/RESETUP.md` for details and GPU notes.
 
 Large, regenerable artifacts are excluded via `.gitignore` rather than
 committed: raw datasets (`hiero_data/Hand-drawn Hieroglyph Dataset/`,
-`One-DM/data/hiero/`), model weights (`One-DM/model_zoo/`, `*.pt`/`*.pth`
-checkpoints), and the `.venv`/tool caches that `misc/resetup.sh` rebuilds.
-`pipelines/smoke_results/` and the small prepped-dataset metadata under
-`One-DM/data/` are kept so the repo is self-explanatory without them.
+`One-DM/data/hiero*/`), model weights (`One-DM/model_zoo/`, `One-DM/Saved/`,
+`*.pt`/`*.pth` checkpoints), SLURM job logs (`slurm/logs/`), and the
+`.venv`/tool caches that `misc/resetup.sh` rebuilds. Small evidence artifacts
+that make results reproducible/auditable without the raw data — matcher
+eval/stress JSONs and prototype indexes under `pipelines/matching/runs/`, and
+the prepped-dataset metadata under `One-DM/data/` — are kept.
 
 ## Citations and acknowledgements
 

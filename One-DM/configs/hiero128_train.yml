@@ -1,0 +1,39 @@
+# Fine-tune One-DM on the 'hiero128' symbol dataset (built by prep_dataset.py).
+# Entry point: train.py --one_dm model_zoo/One-DM-ckpt.pt (recon + writer-NCE losses;
+# train_finetune.py is NOT used -- its frozen OCR/CTC loss is Latin-specific).
+OUTPUT_DIR: Saved/hiero128
+MODEL:
+  STYLE_ENCODER_LAYERS: 3
+  NUM_IMGS: 15
+  IN_CHANNELS: 4
+  OUT_CHANNELS: 4
+  NUM_RES_BLOCKS: 1
+  NUM_HEADS: 4
+  EMB_DIM: 512
+SOLVER:
+  BASE_LR: 5e-05
+  EPOCHS: 100
+  WARMUP_ITERS: 20000
+  TYPE: AdamW
+  GRAD_L2_CLIP: 5.0
+TRAIN:
+  TYPE: train
+  IMS_PER_BATCH: 48
+  SNAPSHOT_BEGIN: 0            # epochs (train.py path snapshots per-epoch)
+  SNAPSHOT_ITERS: 5
+  VALIDATE_BEGIN: 0
+  VALIDATE_ITERS: 5
+  SEED: 1001
+  COND_DROP_PROB: 0.1
+  IMG_H: 128
+  IMG_W: 128
+TEST:
+  TYPE: test
+  IMS_PER_BATCH: 48
+  IMG_H: 128
+  IMG_W: 128
+DATA_LOADER:
+  NUM_THREADS: 12
+  IAMGE_PATH: ./data/hiero128/IAM64-new
+  STYLE_PATH: ./data/hiero/IAM64-new
+  LAPLACE_PATH: ./data/hiero/IAM64_laplace

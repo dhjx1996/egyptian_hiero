@@ -8,9 +8,10 @@ own README with full operation instructions; this is the map.
 | **`generation/`** | "Give me handwriting samples of symbol X" | `python3 pipelines/generation/generate.py` |
 | **`matching/`** | "Which symbol did the user draw?" (dictionary app) | `pipelines/matching/match.py` / `demo_server.py` |
 
-**Proof it works:** `smoke_results/` holds the T4 smoke-test evidence — generated
-samples from both generation engines and matcher prediction sheets + accuracy
-reports (its README explains every artifact).
+**Proof it works:** verified numbers and repro commands live in each pipeline's
+README (top-level `README.md` has the summary); small eval/stress-test JSONs
+and prototype indexes for the production matcher live under
+`matching/runs/` (see `matching/README.md` §"File inventory").
 
 Both are **script-agnostic**: they take a *canonical glyph inventory* (a folder
 of `<CLASS>.png`) plus a *handwriting corpus* (a folder tree `<CLASS>/*.png`) and

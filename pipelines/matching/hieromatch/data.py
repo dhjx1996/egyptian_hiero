@@ -99,6 +99,28 @@ def _morph(g, rng):
     # NB erode darkens (thickens ink), dilate lightens (thins ink)
 
 
+def _dropstroke(g, rng, n_cuts=(1, 4)):
+    """Missing-stroke simulation: white pen-skip slashes sever strokes, and (half
+    the time, when the glyph has separable parts) one minor connected component is
+    deleted outright. Mirrors stress_test.c_dropstroke -- the matcher's largest
+    measured weakness (top1 0.969 clean -> 0.680) before this augmentation."""
+    out = g.copy()
+    ink = (out < 200).astype(np.uint8)
+    n_cc, cc = cv2.connectedComponents(ink)
+    if n_cc > 2 and rng.random() < 0.5:
+        sizes = np.bincount(cc.ravel())[1:]
+        minor = [i + 1 for i, s in enumerate(sizes) if s <= 0.5 * sizes.sum()]
+        if minor:
+            out[cc == int(rng.choice(minor))] = 255
+    ys, xs = np.where(out < 200)
+    if len(xs):
+        w_line = max(2, max(out.shape) // 24)
+        for _ in range(int(rng.integers(*n_cuts))):
+            i, j = rng.integers(0, len(xs), 2)
+            cv2.line(out, (int(xs[i]), int(ys[i])), (int(xs[j]), int(ys[j])), 255, w_line)
+    return out
+
+
 def _photo(g, rng):
     if rng.random() < 0.5:
         g = cv2.GaussianBlur(g, (0, 0), rng.uniform(0.4, 1.1))
@@ -122,7 +144,7 @@ def _handwrite(g, rng):
     return _HW.handwrite(g, seed_rng)
 
 
-def augment(g, rng, source, size, p_handwrite=0.35):
+def augment(g, rng, source, size, p_handwrite=0.35, p_dropstroke=0.0):
     """g: uint8 gray dark-on-white (any shape). Returns size x size uint8."""
     work = letterbox(g, 224 if source == "canon" else size, jitter=0.06, rng=rng)
     if source == "canon":
@@ -140,16 +162,25 @@ def augment(g, rng, source, size, p_handwrite=0.35):
         work = _elastic(work, rng, alpha=6, sigma=7)
     if rng.random() < 0.6:
         work = _morph(work, rng)
+    if p_dropstroke and rng.random() < p_dropstroke:
+        work = _dropstroke(work, rng)
     work = _photo(work, rng)
     return letterbox(work, size, jitter=0.05, rng=rng)
 
 
 # ---------------------------------------------------------------- datasets
 def build_items(handwriting_root, canonical_dir, val_frac=0.1, seed=17, canon_repeat=8,
-                min_val_n=8):
+                min_val_n=8, synthetic_root=None, synth_cap_frac=0.25, synth_per_class=20):
     """Returns (classes, train_items, val_items). Item = (path, class_idx, source).
     Classes = canonical stems UNION handwriting dirs, so canonical-only classes are
-    trainable (via augmentation) and stay matchable. Deterministic split."""
+    trainable (via augmentation) and stay matchable. Deterministic split.
+
+    synthetic_root: optional <CLASS>/*.png tree of GENERATED samples (e.g. quality-
+    gated One-DM outputs, see synth_filter.py). Guard rails against model collapse:
+    synthetic items only ever ADD to training (never to val, which stays real-only),
+    are capped per class (synth_per_class) and globally to synth_cap_frac of the
+    real handwriting train count, and get source='synth' (light augmentation path,
+    same as real handwriting)."""
     canon = {}
     if canonical_dir:
         canon = {os.path.splitext(f)[0]: os.path.join(canonical_dir, f)
@@ -177,12 +208,29 @@ def build_items(handwriting_root, canonical_dir, val_frac=0.1, seed=17, canon_re
             train_items.append((p, idx[c], "hand"))
     for c, p in canon.items():
         train_items.extend([(p, idx[c], "canon")] * canon_repeat)
+
+    if synthetic_root and os.path.isdir(synthetic_root):
+        n_real = sum(1 for it in train_items if it[2] == "hand")
+        cap_total = int(n_real * synth_cap_frac)
+        synth = []
+        for c in sorted(os.listdir(synthetic_root)):
+            d = os.path.join(synthetic_root, c)
+            if c not in idx or not os.path.isdir(d):
+                continue
+            fs = sorted(os.path.join(d, f) for f in os.listdir(d) if f.lower().endswith(".png"))
+            rng.shuffle(fs)
+            synth.extend((p, idx[c], "synth") for p in fs[:synth_per_class])
+        if len(synth) > cap_total:
+            rng.shuffle(synth)
+            synth = synth[:cap_total]
+        train_items.extend(synth)
     return classes, train_items, val_items
 
 
 class TrainDataset(Dataset):
-    def __init__(self, items, size=112, p_handwrite=0.35, seed=0):
+    def __init__(self, items, size=112, p_handwrite=0.35, seed=0, p_dropstroke=0.0):
         self.items, self.size, self.p_handwrite, self.seed = items, size, p_handwrite, seed
+        self.p_dropstroke = p_dropstroke
         self.epoch = 0
 
     def set_epoch(self, e):
@@ -194,7 +242,8 @@ class TrainDataset(Dataset):
     def __getitem__(self, i):
         path, label, source = self.items[i]
         rng = np.random.default_rng((self.seed * 1000003 + self.epoch * 7919 + i) % 2**31)
-        g = augment(load_gray(path), rng, source, self.size, self.p_handwrite)
+        g = augment(load_gray(path), rng, source, self.size, self.p_handwrite,
+                    p_dropstroke=self.p_dropstroke)
         return to_tensor(g), label
 
 

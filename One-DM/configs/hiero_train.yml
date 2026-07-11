@@ -32,7 +32,7 @@ TEST:
   IMG_H: 64
   IMG_W: 64
 DATA_LOADER:
-  NUM_THREADS: 8
+  NUM_THREADS: 12
   IAMGE_PATH: ./data/hiero/IAM64-new
   STYLE_PATH: ./data/hiero/IAM64-new
   LAPLACE_PATH: ./data/hiero/IAM64_laplace

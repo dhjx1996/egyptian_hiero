@@ -85,6 +85,11 @@ __C.TRAIN.DROPOUT_P = 0.
 # Set the random seed
 __C.TRAIN.SEED = 1001
 
+# Per-sample probability of zeroing the fused (style+content) cross-attention
+# context during training; >0 teaches an unconditional mode so ddim_sample can
+# apply classifier-free guidance (cfg_scale > 1)
+__C.TRAIN.COND_DROP_PROB = 0.
+
 
 # ---------------------------------------------------------------------------- #
 # Data loader options

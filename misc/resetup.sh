@@ -67,4 +67,4 @@ PY
 
 echo; echo "Done. Activate the main env with:  source misc/env/activate.sh"
 echo "ML envs: One-DM/.venv, pipelines/matching/.venv (Jupyter kernels: onedm, hieromatch)."
-echo "Next: pipelines/README.md (the two pipelines) + pipelines/smoke_results/ (evidence)."
+echo "Next: pipelines/README.md (the two pipelines) + README.md (results + figures)."

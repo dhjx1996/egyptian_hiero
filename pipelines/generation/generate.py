@@ -57,6 +57,8 @@ def main():
     ap.add_argument("--style-dir", default="", help="ANY folder of handwriting samples as the style")
     ap.add_argument("--style-split", default="train", choices=["train", "test"])
     ap.add_argument("--timesteps", type=int, default=25)
+    ap.add_argument("--cfg-scale", type=float, default=1.0,
+                    help="classifier-free guidance weight (ckpt must be trained with COND_DROP_PROB > 0)")
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--device", default="")
     args = ap.parse_args()
@@ -94,7 +96,8 @@ def main():
                "--wid-map", f"data/{name}_wid_map.json",
                "--n", str(args.n), "--out", os.path.join(os.path.abspath(args.out), "onedm"),
                "--style-class", args.style_class, "--style-split", args.style_split,
-               "--sampling_timesteps", str(args.timesteps), "--seed", str(args.seed)]
+               "--sampling_timesteps", str(args.timesteps), "--seed", str(args.seed),
+               "--cfg-scale", str(args.cfg_scale)]
         if args.signs:
             cmd += ["--signs", args.signs]
         if args.style_dir:

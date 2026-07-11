@@ -116,6 +116,17 @@ def main():
     ap.add_argument("--style-dir", default="", help="ANY folder of sample images to use as the style")
     ap.add_argument("--n", type=int, default=4, help="variants per sign")
     ap.add_argument("--width", default="auto", help="'auto' (from glyph aspect) or pixels")
+    ap.add_argument("--img-height", type=int, default=0,
+                    help="output pixel height (0 = cfg TRAIN.IMG_H; style refs stay 64px)")
+    ap.add_argument("--cfg-scale", type=float, default=1.0,
+                    help="classifier-free guidance weight; needs a ckpt trained with COND_DROP_PROB > 0")
+    ap.add_argument("--init-strength", type=float, default=0.0,
+                    help="SDEdit image-to-image: >0 starts sampling from the canonical glyph "
+                         "noised to this fraction of the schedule (structure from the glyph, "
+                         "texture from diffusion); 0 = pure-noise sampling")
+    ap.add_argument("--canonical-dir", default="",
+                    help="dir of <CLASS>.png canonical glyphs for --init-strength "
+                         "(fallback: upscaled content bitmap)")
     ap.add_argument("--sampling_timesteps", type=int, default=25)
     ap.add_argument("--eta", type=float, default=0.0)
     ap.add_argument("--seed", type=int, default=42)
@@ -201,10 +212,33 @@ def main():
             aspect = aspect_of.get(name) or 1.0
         # width must be a multiple of 16: the VAE /8 plus the UNet's own /2 need
         # an even latent width or the decoder skip-connection cat fails
+        img_h = args.img_height or cfg.TRAIN.IMG_H
         if args.width == "auto":
-            w = int(np.clip(round(64 * float(aspect) / 16) * 16, 32, 256))
+            w = int(np.clip(round(img_h * float(aspect) / 16) * 16, 32, 4 * img_h))
         else:
             w = max(32, (int(args.width) // 16) * 16)
+
+        # SDEdit init: canonical glyph rendered dark-on-white at output size -> latent
+        init1 = None
+        if args.init_strength > 0:
+            cpth = os.path.join(args.canonical_dir, name + ".png") if args.canonical_dir else ""
+            if cpth and os.path.isfile(cpth):
+                g = to_gray_on_white(cpth)
+                ys, xs = np.where(g < 200)
+                if len(xs):
+                    g = g[ys.min():ys.max() + 1, xs.min():xs.max() + 1]
+            else:  # blocky fallback from the 32x32 content bitmap (0=ink after inversion)
+                g = (content1[0, 0].numpy() * 255).astype(np.uint8)
+            gh, gw = g.shape
+            s = min((img_h - 8) / gh, (w - 8) / gw)
+            g = cv2.resize(g, (max(1, round(gw * s)), max(1, round(gh * s))), interpolation=cv2.INTER_AREA)
+            canvas = np.full((img_h, w), 255, np.uint8)
+            y0, x0 = (img_h - g.shape[0]) // 2, (w - g.shape[1]) // 2
+            canvas[y0:y0 + g.shape[0], x0:x0 + g.shape[1]] = g
+            im = torch.from_numpy(canvas.astype(np.float32) / 127.5 - 1.0)
+            im = im.view(1, 1, img_h, w).repeat(1, 3, 1, 1).to(device)
+            with torch.no_grad():
+                init1 = vae.encode(im).latent_dist.sample() * 0.18215
 
         spaths = style_paths_for(name)
         outd = os.path.join(args.out, name)
@@ -215,9 +249,12 @@ def main():
                 bpaths = spaths[done:done + args.batch]
                 style, lap = style_batch(bpaths, device)
                 content = content1.to(device).repeat(len(bpaths), 1, 1, 1)
-                x = torch.randn((len(bpaths), 4, 64 // 8, w // 8), device=device)
+                x = torch.randn((len(bpaths), 4, img_h // 8, w // 8), device=device)
+                init_l = init1.repeat(len(bpaths), 1, 1, 1) if init1 is not None else None
                 imgs = diffusion.ddim_sample(unet, vae, len(bpaths), x, style, lap, content,
-                                             args.sampling_timesteps, args.eta)
+                                             args.sampling_timesteps, args.eta,
+                                             cfg_scale=args.cfg_scale,
+                                             init_latent=init_l, init_strength=args.init_strength)
                 for i in range(len(bpaths)):
                     im = torchvision.transforms.ToPILImage()(imgs[i]).convert("L")
                     im.save(os.path.join(outd, f"{name}_v{done + i:02d}.png"))

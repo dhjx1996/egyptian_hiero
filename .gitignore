@@ -25,9 +25,16 @@ __pycache__/
 hiero_data/archaeohack-starterpack/.git.orig-clone-backup/
 
 # --- Raw / prepped datasets (multi-GB; see hiero_data/ and README provenance notes) ---
+# Kept: small metadata siblings for the PRODUCTION dataset tier (hiero_*, hiero128_*
+# -- content.pickle/corpus.txt/letters.txt/train.txt/test.txt/wid_map.json), same
+# convention as pipelines/matching/runs/ below. Ignored: their image trees (large)
+# and everything from disposable smoke-tier validation runs (hiero_smoke*, hs64*, hs128*).
 hiero_data/Hand-drawn Hieroglyph Dataset/
 One-DM/data/hiero/
-One-DM/data/hiero_smoke*/
+One-DM/data/hiero128/
+One-DM/data/hiero_smoke*
+One-DM/data/hs64*
+One-DM/data/hs128*
 
 # --- Model weights & checkpoints (regenerate via download_weights.py / training runs) ---
 One-DM/model_zoo/
@@ -39,6 +46,12 @@ One-DM/Saved/
 
 # --- Misc training/output scratch dirs, if ever created ---
 misc/outputs/
+
+# --- SLURM job logs & ephemeral job-id scratch notes (cluster/session-specific;
+# the .sbatch scripts themselves and README/memory capture the reproducible part) ---
+slurm/logs/
+slurm/job_ids.env
+slurm/best_gen.env
 
 # --- External reference literature (public papers, not authored here) ---
 misc/OneDM.pdf

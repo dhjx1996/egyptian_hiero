@@ -52,9 +52,17 @@ class Trainer:
         # forward
         t = self.diffusion.sample_timesteps(images.shape[0]).to(self.device)
         x_t, noise = self.diffusion.noise_images(images, t)
-        
-       
-        predicted_noise, high_nce_emb, low_nce_emb = self.model(x_t, t, style_ref, laplace_ref, content_ref, tag='train')
+
+        # classifier-free training: zero the fused conditioning for a random
+        # subset of samples (mask applied after mix_net, so NCE losses still see
+        # real style features)
+        context_mask = None
+        if cfg.TRAIN.COND_DROP_PROB > 0:
+            context_mask = (torch.rand(images.shape[0], device=self.device)
+                            >= cfg.TRAIN.COND_DROP_PROB).float()
+
+        predicted_noise, high_nce_emb, low_nce_emb = self.model(x_t, t, style_ref, laplace_ref, content_ref, tag='train',
+                                                                context_mask=context_mask)
         # calculate loss
         recon_loss = self.recon_criterion(predicted_noise, noise)
         high_nce_loss = self.nce_criterion(high_nce_emb, labels=wid)
@@ -151,16 +159,22 @@ class Trainer:
             # non-Latin charset: preview the first three glyphs, one glyph per
             # sample, rendered wider (single signs are square-ish, not 32px chars)
             texts = list(load_content.letters[:3])
-            char_w = 64
+            char_w = cfg.TRAIN.IMG_H
         else:
             texts = ['getting', 'both', 'success']
             char_w = 32
+        # target latent height follows the training image height, NOT the style
+        # ref height (they differ when training e.g. 128px targets on 64px styles);
+        # preview with guidance when the model is trained for it
+        img_h = cfg.TRAIN.IMG_H if self.letters_path else style_ref.shape[2]
+        cfg_scale = 2.5 if cfg.TRAIN.COND_DROP_PROB > 0 else 1.0
         for text in texts:
             rank = dist.get_rank()
             text_ref = load_content.get_content(text)
             text_ref = text_ref.to(self.device).repeat(style_ref.shape[0], 1, 1, 1)
-            x = torch.randn((text_ref.shape[0], 4, style_ref.shape[2]//8, (text_ref.shape[1]*char_w)//8)).to(self.device)
-            preds = self.diffusion.ddim_sample(self.model, self.vae, images.shape[0], x, style_ref, laplace_ref, text_ref)
+            x = torch.randn((text_ref.shape[0], 4, img_h//8, (text_ref.shape[1]*char_w)//8)).to(self.device)
+            preds = self.diffusion.ddim_sample(self.model, self.vae, images.shape[0], x, style_ref, laplace_ref, text_ref,
+                                               cfg_scale=cfg_scale)
             out_path = os.path.join(self.save_sample_dir, f"epoch-{epoch}-{text}-process-{rank}.png")
             self._save_images(preds, out_path)
 

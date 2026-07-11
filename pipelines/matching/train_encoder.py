@@ -58,7 +58,15 @@ def main():
     ap.add_argument("--canon-repeat", type=int, default=8, help="canonical oversampling per epoch")
     ap.add_argument("--p-handwrite", type=float, default=0.35,
                     help="prob. of procedural pen simulation on canonical samples")
+    ap.add_argument("--p-dropstroke", type=float, default=0.0,
+                    help="prob. of missing-stroke augmentation (pen skips / dropped parts)")
     ap.add_argument("--val-frac", type=float, default=0.1)
+    ap.add_argument("--synthetic", default="",
+                    help="<root>/<CLASS>/*.png of quality-gated GENERATED samples "
+                         "(see synth_filter.py); adds to training only, never to val")
+    ap.add_argument("--synth-cap-frac", type=float, default=0.25,
+                    help="max synthetic items as a fraction of real handwriting train items")
+    ap.add_argument("--synth-per-class", type=int, default=20)
     ap.add_argument("--seed", type=int, default=17)
     ap.add_argument("--resume", default="", help="last.pt to continue from")
     ap.add_argument("--device", default="cuda" if torch.cuda.is_available() else "cpu")
@@ -71,15 +79,18 @@ def main():
 
     classes, train_items, val_items = build_items(
         args.handwriting, args.canonical, val_frac=args.val_frac, seed=args.seed,
-        canon_repeat=args.canon_repeat)
+        canon_repeat=args.canon_repeat, synthetic_root=args.synthetic or None,
+        synth_cap_frac=args.synth_cap_frac, synth_per_class=args.synth_per_class)
     n_hand = sum(1 for it in train_items if it[2] == "hand")
+    n_synth = sum(1 for it in train_items if it[2] == "synth")
     print(f"[train] {len(classes)} classes | train {len(train_items)} "
-          f"(hand {n_hand}, canon x{args.canon_repeat}) | val {len(val_items)}")
+          f"(hand {n_hand}, synth {n_synth}, canon x{args.canon_repeat}) | val {len(val_items)}")
     save_split(os.path.join(outd, "val_split.json"), classes, val_items)
     with open(os.path.join(outd, "classes.json"), "w") as f:
         json.dump(classes, f)
 
-    train_ds = TrainDataset(train_items, size=args.size, p_handwrite=args.p_handwrite, seed=args.seed)
+    train_ds = TrainDataset(train_items, size=args.size, p_handwrite=args.p_handwrite, seed=args.seed,
+                            p_dropstroke=args.p_dropstroke)
     val_ds = EvalDataset(val_items, size=args.size)
     train_ld = DataLoader(train_ds, batch_size=args.batch_size, shuffle=True, drop_last=True,
                           num_workers=args.workers, pin_memory=True, persistent_workers=args.workers > 0)

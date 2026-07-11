@@ -107,19 +107,38 @@ class Diffusion:
         return x, noise_list[0], high_nce_emb, low_nce_emb
 
     @torch.no_grad()
-    def ddim_sample(self, model, vae, n, x, styles, laplace, content, sampling_timesteps=50, eta=0):
+    def ddim_sample(self, model, vae, n, x, styles, laplace, content, sampling_timesteps=50, eta=0, cfg_scale=1.0,
+                    init_latent=None, init_strength=0.0):
+        # cfg_scale > 1 applies classifier-free guidance: a second, unconditional
+        # pass (context zeroed) extrapolates away from the mode-averaged prediction.
+        # Only meaningful for checkpoints trained with TRAIN.COND_DROP_PROB > 0.
+        #
+        # init_latent + init_strength (0,1] run SDEdit-style image-to-image: sampling
+        # starts from the init latent noised to init_strength of the schedule instead
+        # of pure noise, so global structure is inherited from the init image (e.g.
+        # the canonical glyph) and diffusion only re-synthesizes texture/style.
         model.eval()
 
         total_timesteps, sampling_timesteps = self.noise_steps, sampling_timesteps
-        times = torch.linspace(-1, total_timesteps - 1, steps = sampling_timesteps + 1)   # [-1, 0, 1, 2, ..., T-1] when sampling_timesteps == total_timesteps
+        if init_latent is not None and init_strength > 0:
+            t_start = max(1, min(int(total_timesteps * init_strength), total_timesteps) - 1)
+            sampling_timesteps = max(2, int(sampling_timesteps * init_strength))
+            x, _ = self.noise_images(init_latent, torch.full((n,), t_start, dtype=torch.long, device=self.device))
+        else:
+            t_start = total_timesteps - 1
+        times = torch.linspace(-1, t_start, steps = sampling_timesteps + 1)   # [-1, 0, 1, 2, ..., T-1] when sampling_timesteps == total_timesteps
         times = list(reversed(times.int().tolist()))
         time_pairs = list(zip(times[:-1], times[1:])) # [(T-1, T-2), (T-2, T-3), ..., (1, 0), (0, -1)]
         x_start = None
+        uncond_mask = torch.zeros(n, device=x.device) if cfg_scale != 1.0 else None
 
         for time, time_next in tqdm(time_pairs, position=1, leave=False, desc='sampling'):
             time = (torch.ones(n) * time).long().to(self.device)
             time_next = (torch.ones(n) * time_next).long().to(self.device)
             predicted_noise = model(x, time, styles, laplace, content)
+            if uncond_mask is not None:
+                uncond_noise = model(x, time, styles, laplace, content, context_mask=uncond_mask)
+                predicted_noise = uncond_noise + cfg_scale * (predicted_noise - uncond_noise)
 
             beta = self.beta[time][:, None, None, None]
             alpha_hat = self.alpha_hat[time][:, None, None, None]

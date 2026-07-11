@@ -966,16 +966,18 @@ class UNetModel(nn.Module):
 
         
     
-    def forward(self, x, timesteps=None, style=None, laplace=None, content=None, tag='test', **kwargs):
+    def forward(self, x, timesteps=None, style=None, laplace=None, content=None, tag='test', context_mask=None, **kwargs):
         """
         Apply the model to an input batch.
         :param x: an [N x C x ...] Tensor of inputs.
         :param timesteps: a 1-D batch of timesteps.
         :param context: styled characters conditioning plugged in via crossattn
+        :param context_mask: optional [N] float tensor; 0 zeroes a sample's fused
+            conditioning (classifier-free training drop / unconditional CFG pass)
         :return: an [N x C x ...] Tensor of outputs.
         """
         #print('y', y.shape)
-        
+
         hs = []
         t_emb = timestep_embedding(timesteps, self.model_channels, repeat_only=False)
         emb = self.time_embed(t_emb)
@@ -984,6 +986,8 @@ class UNetModel(nn.Module):
             context, high_nce_emb, low_nce_emb = self.mix_net(style, laplace, content)
         else:
             context = self.mix_net.generate(style, laplace, content)
+        if context_mask is not None:
+            context = context * context_mask.to(context.dtype).view(-1, 1, 1)
         h = x.type(self.dtype)
         
         #INPUT BLOCKS

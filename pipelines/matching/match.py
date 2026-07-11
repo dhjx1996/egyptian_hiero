@@ -1,8 +1,11 @@
 """
 Match handwritten symbol image(s) against the canonical index (Pipeline 2 CLI).
 
-    ./.venv/bin/python match.py --ckpt runs/run1/best.pt --index runs/run1/index.npz \
+    ./.venv/bin/python match.py --ckpt runs/default/best.pt --index runs/default/index.npz \
         --image /path/drawn.png --top 5
+
+runs/default is a symlink to the current production run (see runs/README or
+train_encoder.py history for how it was selected).
 
 Python API:  from match import Matcher; Matcher(ckpt, index).match(pil_or_path)
 """
@@ -68,8 +71,8 @@ class Matcher:
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--ckpt", required=True)
-    ap.add_argument("--index", required=True)
+    ap.add_argument("--ckpt", default="runs/default/best.pt")
+    ap.add_argument("--index", default="runs/default/index.npz")
     ap.add_argument("--image", action="append", default=[], help="query image (repeatable)")
     ap.add_argument("--dir", default="", help="match every .png in a directory")
     ap.add_argument("--top", type=int, default=5)

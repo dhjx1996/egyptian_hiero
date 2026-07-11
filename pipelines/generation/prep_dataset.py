@@ -184,13 +184,13 @@ TRAIN:
   VALIDATE_BEGIN: 100000
   VALIDATE_ITERS: 100000
   SEED: 1001
-  IMG_H: 64
-  IMG_W: 64
+  IMG_H: {height}
+  IMG_W: {height}
 TEST:
   TYPE: test
   IMS_PER_BATCH: 16
-  IMG_H: 64
-  IMG_W: 64
+  IMG_H: {height}
+  IMG_W: {height}
 DATA_LOADER:
   NUM_THREADS: 4
   IAMGE_PATH: ./data/{name}/IAM64-new
@@ -224,13 +224,13 @@ TRAIN:
   VALIDATE_BEGIN: 0
   VALIDATE_ITERS: {snap}
   SEED: 1001
-  IMG_H: 64
-  IMG_W: 64
+  IMG_H: {height}
+  IMG_W: {height}
 TEST:
   TYPE: test
   IMS_PER_BATCH: {batch}
-  IMG_H: 64
-  IMG_W: 64
+  IMG_H: {height}
+  IMG_W: {height}
 DATA_LOADER:
   NUM_THREADS: {threads}
   IAMGE_PATH: ./data/{name}/IAM64-new
@@ -249,6 +249,9 @@ def main():
     ap.add_argument("--content-size", type=int, default=32,
                     help="content bitmap size; 16 and 32 are drop-in for the pretrained model")
     ap.add_argument("--height", type=int, default=64)
+    ap.add_argument("--max-width", type=int, default=STYLE_LEN,
+                    help="width cap before aspect squish; raise for --height > 64 "
+                         "(64px style refs must keep the 352 default)")
     ap.add_argument("--val-frac", type=float, default=0.1)
     ap.add_argument("--min-per-class", type=int, default=4)
     ap.add_argument("--limit-classes", type=int, default=0, help="first N classes only (smoke test)")
@@ -314,7 +317,7 @@ def main():
         seen, n_written = set(), {"train": 0, "test": 0}
         for f in fs:
             g = to_gray_on_white(os.path.join(cdir, f))
-            img = style_image(g, args.height)
+            img = style_image(g, args.height, max_w=args.max_width)
             if img is None:
                 n_bad += 1
                 continue
@@ -376,11 +379,11 @@ def main():
         json.dump({"meta": meta, "classes": wid_map}, f, ensure_ascii=False, indent=1)
 
     with open(os.path.join(cfg_dir, f"{name}.yml"), "w") as f:
-        f.write(GEN_CFG.format(name=name))
+        f.write(GEN_CFG.format(name=name, height=args.height))
     with open(os.path.join(cfg_dir, f"{name}_train.yml"), "w") as f:
         f.write(TRAIN_CFG.format(name=name, lr=args.lr, epochs=args.epochs,
                                  batch=args.batch_size, snap=args.snapshot_every,
-                                 threads=args.threads))
+                                 threads=args.threads, height=args.height))
 
     print(f"[prep] wrote {len(train_lines)} train / {len(test_lines)} test images "
           f"({n_bad} unreadable/blank skipped) for {len(classes)} classes")

@@ -1,0 +1,40 @@
+# CFG-adapt stage for the 64px hiero fine-tune: continues from the last
+# Saved/hiero checkpoint with conditioning dropout enabled so sampling can use
+# classifier-free guidance (the pass that fixes the faint/blank outputs).
+# Entry point: slurm/onedm_cfg64.sbatch (train.py --one_dm <latest hiero ckpt>).
+OUTPUT_DIR: Saved/hiero_cfg64
+MODEL:
+  STYLE_ENCODER_LAYERS: 3
+  NUM_IMGS: 15
+  IN_CHANNELS: 4
+  OUT_CHANNELS: 4
+  NUM_RES_BLOCKS: 1
+  NUM_HEADS: 4
+  EMB_DIM: 512
+SOLVER:
+  BASE_LR: 2.5e-05
+  EPOCHS: 60
+  WARMUP_ITERS: 20000
+  TYPE: AdamW
+  GRAD_L2_CLIP: 5.0
+TRAIN:
+  TYPE: train
+  IMS_PER_BATCH: 96
+  SNAPSHOT_BEGIN: 0            # epochs (train.py path snapshots per-epoch)
+  SNAPSHOT_ITERS: 5
+  VALIDATE_BEGIN: 0
+  VALIDATE_ITERS: 5
+  SEED: 1001
+  COND_DROP_PROB: 0.1
+  IMG_H: 64
+  IMG_W: 64
+TEST:
+  TYPE: test
+  IMS_PER_BATCH: 96
+  IMG_H: 64
+  IMG_W: 64
+DATA_LOADER:
+  NUM_THREADS: 12
+  IAMGE_PATH: ./data/hiero/IAM64-new
+  STYLE_PATH: ./data/hiero/IAM64-new
+  LAPLACE_PATH: ./data/hiero/IAM64_laplace

@@ -9,8 +9,8 @@ This file is the map. Companion docs:
 - **`../pipelines/README.md` — THE TWO PIPELINES (start here)**, with
   `../pipelines/generation/README.md` and `../pipelines/matching/README.md`
   as the full runbooks (T4 smoke + HPC/A100 training commands).
-- **`../pipelines/smoke_results/`** — predictions + generated samples proving
-  each pipeline works (with its own README).
+- **`../README.md`** — production results (full HPC training + stress testing)
+  with figures; **`../pipelines/showcase/`** — the underlying images.
 - `REJECTED_SOFTWARE.md` — why InkSight/PaliGemma/SwiftSketch/… were considered
   and not used, and when each would become relevant again.
 - `One-DM/HIERO_WORKFLOW.md` — One-DM internals + adaptation notes.
@@ -29,24 +29,28 @@ This file is the map. Companion docs:
 > ~/.local/share/jupyter/kernels/swiftsketch`.
 > Rationale for each rejection: `REJECTED_SOFTWARE.md`.
 
-## 0. Pipeline status (2026-07-06, verified on this box's T4)
+## 0. Pipeline status (2026-07-11, verified on HPC A100s — see `../README.md` for numbers)
 
 - **Generation** (`pipelines/generation/`): procedural engine works today
-  (CPU); One-DM route fully wired — `prep_dataset.py` builds a complete
-  fine-tune dataset from ANY `<CLASS>/*.png` + `<CLASS>.png` corpus (Unicode
-  optional → PUA fallback), `train.py --one_dm` fine-tunes (2-epoch smoke ran
-  on the T4; real run belongs on A100s), `generate_hiero.py` samples per sign
-  with aspect-aware widths, external glyphs (`--glyph`) and arbitrary style
-  folders (`--style-dir`). Fine-tuning is REQUIRED for visual quality (the
-  IAM-Latin checkpoint zero-shots to near-blank on glyphs). The full 565-class
-  dataset is already prepped in `One-DM/data/hiero*`.
+  (CPU, zero training, any symbol). One-DM route fully wired and fine-tuned to
+  production quality — `prep_dataset.py` builds a complete fine-tune dataset
+  from ANY `<CLASS>/*.png` + `<CLASS>.png` corpus (Unicode optional → PUA
+  fallback), `train.py --one_dm` fine-tunes, `generate_hiero.py` samples per
+  sign with aspect-aware widths, classifier-free guidance (`--cfg-scale`),
+  external glyphs (`--glyph`) and arbitrary style folders (`--style-dir`). The
+  IAM-Latin checkpoint zero-shots to near-blank on glyphs; fixing that required
+  128px latents + CFG (see `../README.md` Results). The full 565-class dataset
+  is already prepped in `One-DM/data/hiero*`.
 - **Matching** (`pipelines/matching/`): encoder + canonical-prototype index
-  (open-set: new symbols/scripts = re-index, no retrain). T4 smoke (3 epochs):
-  held-out handwriting top-1 0.905; unseen-writer pjb probe top-1 0.859 /
-  top-5 0.973. Trained model + index live in `pipelines/matching/runs/smoke/`;
-  visual evidence in `pipelines/smoke_results/matching/`.
+  (open-set: new symbols/scripts = re-index, no retrain). Production model +
+  index live in `pipelines/matching/runs/default/` (symlink to the current
+  best run); full corruption/generalization numbers in
+  `pipelines/matching/README.md`.
 - Both consume/emit the same labeled-tree layout, so generated handwriting can
-  be scored for recognizability by the matcher (`evaluate.py --probe-dir`).
+  be scored for recognizability by the matcher (`evaluate.py --probe-dir`);
+  a synthetic-feedback loop between them exists (`train_encoder.py
+  --synthetic`) with anti-collapse guardrails, currently gated off pending
+  better generation fidelity (see matching README).
 
 ---
 
@@ -129,9 +133,8 @@ against an index of canonical embeddings (+ optional handwriting centroids).
 ```bash
 # generate handwriting for three signs (CPU, ~seconds)
 python3 pipelines/generation/generate.py --signs A1,D21,N35 --n 4
-# match a drawing against all 769 signs (uses the T4-smoke model)
-cd pipelines/matching && ./.venv/bin/python match.py --ckpt runs/smoke/best.pt \
-    --index runs/smoke/index.npz --image <drawing.png>
+# match a drawing against all 769 signs (uses the production model, runs/default)
+cd pipelines/matching && ./.venv/bin/python match.py --image <drawing.png>
 ```
 
 ## 6. Software inventory (what's in this directory)
@@ -139,7 +142,7 @@ cd pipelines/matching && ./.venv/bin/python match.py --ckpt runs/smoke/best.pt \
 Goal split: **dictionary / matching** → `pipelines/matching/`; **handwriting
 generation** → `pipelines/generation/` (procedural + One-DM).
 
-- **`pipelines/`** — the two product pipelines + `smoke_results/` evidence.
+- **`pipelines/`** — the two product pipelines + `showcase/` (README figures).
   *Docs:* `pipelines/README.md` and per-pipeline READMEs.
 - **`One-DM/`** — one-shot **diffusion handwriting generator** (the learned
   generation engine; upstream code + our backwards-compatible extensions:

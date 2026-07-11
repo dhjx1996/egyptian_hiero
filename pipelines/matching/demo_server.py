@@ -5,8 +5,10 @@ Stdlib HTTP server + the trained matcher; no extra deps. For local/dev use only
 (no auth). On JupyterHub, open a terminal port-forward or use jupyter-server-proxy
 (https://<hub>/user/<you>/proxy/<port>/).
 
-    ./.venv/bin/python demo_server.py --ckpt runs/run1/best.pt \
-        --index runs/run1/index.npz --port 8787
+    ./.venv/bin/python demo_server.py --ckpt runs/default/best.pt \
+        --index runs/default/index.npz --port 8787
+
+runs/default is a symlink to the current production run.
 """
 import argparse
 import base64
@@ -122,8 +124,8 @@ class Handler(BaseHTTPRequestHandler):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--ckpt", required=True)
-    ap.add_argument("--index", required=True)
+    ap.add_argument("--ckpt", default="runs/default/best.pt")
+    ap.add_argument("--index", default="runs/default/index.npz")
     ap.add_argument("--canonical", default=D_CANON, help="glyph thumbnails dir")
     ap.add_argument("--csv", default=D_CSV)
     ap.add_argument("--port", type=int, default=8787)
