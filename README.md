@@ -20,10 +20,10 @@ are in each pipeline's README: [`pipelines/matching/README.md`](pipelines/matchi
 [`pipelines/generation/README.md`](pipelines/generation/README.md).
 
 **Matching** (production model `pipelines/matching/runs/default`, resnet34@160,
-100 epochs + missing-stroke augmentation) — held-out handwriting retrieval
-top-1 **0.971** / top-5 0.985 (n=4521); unseen-writer probe (a writer excluded
-from training) top-1 **0.863** / top-5 **0.988** (n=256). Corruption
-robustness (n=800/case): clean 0.966, shaky-hand wobble 0.938, 28%-block
+100 epochs + missing-stroke augmentation): 
+* Held-out handwriting retrieval top-1 **0.971** / top-5 0.985 (n=4521)
+* Unseen-writer (handwriting from a person not in the training data) probe top-1 **0.863** / top-5 0.988 (n=256)
+* Corruption robustness (n=800/case): clean 0.966, shaky-hand wobble 0.938, 28%-block
 occlusion 0.868, severed/missing strokes 0.779; blur and low-resolution
 capture remain the sharpest failure modes (~0.40–0.46), i.e. degraded capture
 hurts more than degraded drawing.
@@ -34,23 +34,18 @@ hurts more than degraded drawing.
 <p align="center"><em>Real held-out handwriting queries (never seen in training), run through the production model. Column 1: the drawn query. Columns 2–6: its top-5 canonical matches by cosine similarity — correct hit outlined green, always ranked first here.</em></p>
 
 **Generation** — two complementary engines, not two attempts at the same
-thing. **Procedural** (skeletonize canonical → re-stroke with wobble/pressure,
+thing:
+* **Procedural** (skeletonize canonical → re-stroke with wobble/pressure,
 zero training, CPU, any symbol): deterministic, always on-class, the reliable
-default. **One-DM** (latent diffusion, style-conditioned, fine-tuned on real
-handwriting): after fixing an initial faint/blank-output failure mode (higher-
-resolution latents + classifier-free guidance), recognizability of its output
-reached top-1 **0.567** on held-out signs (from a 0.0 broken baseline) — it
-contributes learned realism and writer-style transfer that procedural
-generation cannot, at the cost of needing GPU fine-tuning and real handwriting
-data. A synthetic-data feedback loop (One-DM output → matcher training) was
-built with anti-collapse guardrails and tested; it was correctly rejected by
-its own acceptance criteria (see matching README) and left as a documented,
-re-runnable pipeline rather than a standing recommendation.
+default. 
+* **One-DM** (latent diffusion, style-conditioned, fine-tuned on real
+handwriting): recognizability of its output is top-1 **0.567** / top-5 0.600 on held-out signs which is more indicative of flaws in the generator than in the matcher. A synthetic-data feedback loop (One-DM output → matcher training) was
+built with anti-collapse guardrails and tested but currently not used due to the flawed-generator (see [`pipelines/matching/README.md`](pipelines/matching/README.md) for more details).
 
 <p align="center">
   <img src="pipelines/showcase/generation_comparison.png" width="460" alt="Canonical glyph vs procedural handwriting vs One-DM diffusion output, for four signs: fish, animal on shrine, crocodile, comb">
 </p>
-<p align="center"><em>Four signs, both engines, same canonical source. Procedural output is deterministic and always on-class every time; One-DM output is real production-model inference but selected for legibility from a wider, uneven sample — the quantitative numbers above (top-1 0.567, top-5 0.600 on held-out signs) are the honest measure of typical output.</em></p>
+<p align="center"><em>Four signs, both engines, same canonical source. Procedural output is deterministic and always on-class every time; One-DM output is real production-model inference, selected for legibility from a wider, lower-quality sample.</em></p>
 
 ## Repository layout
 
