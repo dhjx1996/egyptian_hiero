@@ -3,11 +3,11 @@
  * one visit. Bump VERSION on any deploy to invalidate. */
 const VERSION = "v1";
 const CORE = [
-  ".", "index.html", "css/style.css", "js/app.js", "js/preprocess.mjs",
-  "js/matcher.mjs", "manifest.webmanifest", "icons/icon-192.png",
-  "icons/icon-512.png", "vendor/ort/ort.min.js",
-  "data/config.json", "data/index_meta.json", "data/glyphs.json",
-  "data/index.bin",
+  "./", "./index.html", "./css/style.css", "./js/app.js", "./js/preprocess.mjs",
+  "./js/matcher.mjs", "./manifest.webmanifest", "./icons/icon-192.png",
+  "./icons/icon-512.png", "./vendor/ort/ort.min.js",
+  "./data/config.json", "./data/index_meta.json", "./data/glyphs.json",
+  "./data/index.bin",
 ];
 
 self.addEventListener("install", (e) => {

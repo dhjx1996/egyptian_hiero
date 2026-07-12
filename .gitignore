@@ -47,6 +47,7 @@ One-DM/Saved/
 # --- Misc training/output scratch dirs, if ever created ---
 misc/outputs/
 pipelines/matching/review/examples/*.png
+*.mp4
 
 # --- SLURM job logs & ephemeral job-id scratch notes (cluster/session-specific;
 # the .sbatch scripts themselves and README/memory capture the reproducible part) ---

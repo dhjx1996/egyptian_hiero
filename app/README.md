@@ -92,3 +92,13 @@ cd app && python3 -m http.server 8080     # then http://localhost:8080
   chosen sign), so users can revisit past identifications; doubles as the
   labeled-drawing collection point the review recommends for growing the
   unseen-writer probe. Not implemented yet.
+- **Multi-threading** — `onnxruntime-web` is currently forced to
+  `numThreads = 1`. Threaded WASM needs `SharedArrayBuffer`, which only works
+  when the page is served `crossOriginIsolated` (COOP: `same-origin` + COEP:
+  `require-corp` response headers). Plain static hosts (GitHub Pages,
+  `python -m http.server`, most LAN setups) don't send those headers, so
+  turning threading on without them silently falls back to single-thread or
+  breaks entirely depending on the host. Re-enabling it means either
+  documenting the required headers per host or feature-detecting
+  `crossOriginIsolated` at boot and only opting in then — worth it mainly for
+  low-end Android where the fp32 model's inference time is most noticeable.

@@ -44,15 +44,20 @@ async function boot() {
       throw new Error("This browser does not support the on-device recognizer " +
                       "(WebAssembly required).");
     }
-    ort.env.wasm.wasmPaths = "vendor/ort/";
-    ort.env.wasm.numThreads = globalThis.crossOriginIsolated
-      ? Math.min(4, navigator.hardwareConcurrency || 1) : 1;
+    // Must be an absolute URL: onnxruntime-web dynamically imports the wasm
+    // glue module from *within* ort.min.js's own scope, so a relative prefix
+    // like "./vendor/ort/" gets resolved a second time against that script's
+    // own directory (.../vendor/ort/vendor/ort/...). An absolute URL sidesteps
+    // that, and (unlike a root-absolute "/vendor/ort/") still works when the
+    // app is hosted under a subpath (e.g. GitHub Pages project sites).
+    ort.env.wasm.wasmPaths = new URL("./vendor/ort/", document.baseURI).href;
+    ort.env.wasm.numThreads = 1;
 
     text.textContent = "Loading sign data…";
-    cfg = await (await fetch("data/config.json")).json();
+    cfg = await (await fetch("./data/config.json")).json();
     const [meta, glyphsJson] = await Promise.all([
-      (await fetch("data/index_meta.json")).json(),
-      (await fetch("data/glyphs.json")).json(),
+      (await fetch("./data/index_meta.json")).json(),
+      (await fetch("./data/glyphs.json")).json(),
     ]);
     glyphs = glyphsJson;
 
@@ -61,8 +66,8 @@ async function boot() {
     const upd = () => { fill.style.width =
       `${Math.round(100 * (0.9 * parts.model + 0.1 * parts.index))}%`; };
     const [modelBuffer, indexBuffer] = await Promise.all([
-      fetchProgress(`data/${cfg.model}`, (p) => { parts.model = p; upd(); }),
-      fetchProgress("data/index.bin", (p) => { parts.index = p; upd(); }),
+      fetchProgress(`./data/${cfg.model}`, (p) => { parts.model = p; upd(); }),
+      fetchProgress("./data/index.bin", (p) => { parts.index = p; upd(); }),
     ]);
 
     text.textContent = "Starting…";
@@ -203,7 +208,7 @@ function renderResults(hits) {
     const el = document.createElement("button");
     el.className = "card" + (i === 0 ? " best" : "");
     el.innerHTML =
-      `<img src="glyphs/${encodeURIComponent(h.label)}.png" alt="" loading="lazy"
+      `<img src="./glyphs/${encodeURIComponent(h.label)}.png" alt="" loading="lazy"
             onerror="this.style.visibility='hidden'">
        <span class="code">${h.label}</span>
        <span class="sim">${h.score.toFixed(2)}</span>` +
@@ -219,7 +224,7 @@ function renderResults(hits) {
 function showDetail(label) {
   const g = glyphs[label] || {};
   $("detail-code").textContent = label;
-  $("detail-img").src = `glyphs/${encodeURIComponent(label)}.png`;
+  $("detail-img").src = `./glyphs/${encodeURIComponent(label)}.png`;
   $("detail-name").textContent = g.desc || "(no description)";
   $("detail-details").textContent = g.details || "";
   $("detail-gardiner").textContent = label + (g.priority ? " · common sign" : "");
@@ -252,7 +257,7 @@ $("about-close").onclick = () => $("about").close();
 
 /* ------------------------------------------------ selftest (?selftest) */
 async function selftest() {
-  const fixtures = await (await fetch("data/selftest.json")).json();
+  const fixtures = await (await fetch("./data/selftest.json")).json();
   const out = [];
   for (const f of fixtures) {
     const img = new Image();
@@ -277,5 +282,5 @@ async function selftest() {
 }
 
 /* ------------------------------------------------ go */
-if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js");
 boot();
