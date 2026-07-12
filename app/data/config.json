@@ -1,0 +1,11 @@
+{
+ "model": "model.onnx",
+ "size": 160,
+ "thresh": 200,
+ "pad": 6,
+ "margin": 0.08,
+ "top_k": 5,
+ "score_threshold": 0.6,
+ "margin_threshold": 0.03,
+ "_thresholds_from": "review probe P5/P7 (2026-07-11): at 0.60 ~99% of genuine top-1s kept, ~95% of impostors and ~90% of scribble/latin garbage rejected"
+}

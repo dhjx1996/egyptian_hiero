@@ -1,0 +1,10 @@
+{
+  "name": "hieroglyph-dictionary-build",
+  "private": true,
+  "type": "module",
+  "description": "Build-time verification for the Hieroglyph Dictionary PWA (not shipped)",
+  "dependencies": {
+    "onnxruntime-web": "1.19.2",
+    "pngjs": "7.0.0"
+  }
+}

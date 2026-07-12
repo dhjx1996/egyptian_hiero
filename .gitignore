@@ -46,6 +46,7 @@ One-DM/Saved/
 
 # --- Misc training/output scratch dirs, if ever created ---
 misc/outputs/
+pipelines/matching/review/examples/*.png
 
 # --- SLURM job logs & ephemeral job-id scratch notes (cluster/session-specific;
 # the .sbatch scripts themselves and README/memory capture the reproducible part) ---
@@ -56,3 +57,13 @@ slurm/best_gen.env
 # --- External reference literature (public papers, not authored here) ---
 misc/OneDM.pdf
 hiero_data/archaeohack-starterpack/docs/*.pdf
+
+# --- Dictionary app: large regenerable assets (rebuild: sbatch slurm/app_export.sbatch).
+# Kept: app source, config.json (hand-tuned thresholds), index_meta/glyphs/selftest
+# JSONs and export_report.json (small evidence, same convention as runs/). ---
+app/data/model*.onnx
+app/data/index.bin
+app/glyphs/
+app/vendor/
+app/build/node_modules/
+app/build/package-lock.json

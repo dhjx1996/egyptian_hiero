@@ -51,6 +51,7 @@ built with anti-collapse guardrails and tested but currently not used due to the
 
 | Path | Contents |
 |---|---|
+| `app/` | **Hieroglyph Dictionary** — installable PWA (Android/iOS phone + tablet): draw a sign, get the top-5 canonical matches, tap through to its meaning; all inference on-device (see `app/README.md`) |
 | `pipelines/` | The two product pipelines (generation, matching) + `showcase/` (README figures above) |
 | `One-DM/` | Vendored + extended [One-DM](#citations-and-acknowledgements) diffusion handwriting generator (the learned generation engine) |
 | `hiero_data/` | Datasets: the [Hand-drawn Hieroglyph Dataset](#citations-and-acknowledgements) (handwriting) and the `archaeohack-starterpack` (canonical glyphs, Gardiner↔Unicode mapping, font, single-writer probe set) |
@@ -71,7 +72,7 @@ wherever the repo lives. See `misc/RESETUP.md` for details and GPU notes.
 Large, regenerable artifacts are excluded via `.gitignore` rather than
 committed: raw datasets (`hiero_data/Hand-drawn Hieroglyph Dataset/`,
 `One-DM/data/hiero*/`), model weights (`One-DM/model_zoo/`, `One-DM/Saved/`,
-`*.pt`/`*.pth` checkpoints), SLURM job logs (`slurm/logs/`), and the
+`*.pt`/`*.pth` checkpoints, `app/data/model.onnx`), SLURM job logs (`slurm/logs/`), and the
 `.venv`/tool caches that `misc/resetup.sh` rebuilds. Small evidence artifacts
 that make results reproducible/auditable without the raw data — matcher
 eval/stress JSONs and prototype indexes under `pipelines/matching/runs/`, and

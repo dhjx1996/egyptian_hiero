@@ -1,0 +1,123 @@
+{
+ "device": "cuda",
+ "n": 800,
+ "corruptions": {
+  "clean": {
+   "n": 800,
+   "top1": 0.9375,
+   "top5": 0.985,
+   "top10": 0.99125
+  },
+  "rotate20": {
+   "n": 800,
+   "top1": 0.9075,
+   "top5": 0.98125,
+   "top10": 0.9875
+  },
+  "blur": {
+   "n": 800,
+   "top1": 0.39875,
+   "top5": 0.55,
+   "top10": 0.585
+  },
+  "noise": {
+   "n": 800,
+   "top1": 0.9325,
+   "top5": 0.9825,
+   "top10": 0.98625
+  },
+  "occlude28": {
+   "n": 800,
+   "top1": 0.81125,
+   "top5": 0.91625,
+   "top10": 0.935
+  },
+  "lowres32": {
+   "n": 800,
+   "top1": 0.33375,
+   "top5": 0.53875,
+   "top10": 0.6175
+  },
+  "thin": {
+   "n": 800,
+   "top1": 0.9275,
+   "top5": 0.9825,
+   "top10": 0.9875
+  },
+  "dropstroke": {
+   "n": 800,
+   "top1": 0.7175,
+   "top5": 0.84875,
+   "top10": 0.885
+  },
+  "wobble": {
+   "n": 800,
+   "top1": 0.86625,
+   "top5": 0.96375,
+   "top10": 0.975
+  }
+ },
+ "top_confusions": [
+  {
+   "truth": "N2",
+   "pred": "N3",
+   "count": 4
+  },
+  {
+   "truth": "S14a",
+   "pred": "S14",
+   "count": 3
+  },
+  {
+   "truth": "Aa15",
+   "pred": "Aa13",
+   "count": 3
+  },
+  {
+   "truth": "L5",
+   "pred": "N35",
+   "count": 2
+  },
+  {
+   "truth": "N1",
+   "pred": "Aa12",
+   "count": 1
+  },
+  {
+   "truth": "R13",
+   "pred": "R20",
+   "count": 1
+  },
+  {
+   "truth": "A37",
+   "pred": "A38",
+   "count": 1
+  },
+  {
+   "truth": "S38",
+   "pred": "D21",
+   "count": 1
+  },
+  {
+   "truth": "N1",
+   "pred": "Q5",
+   "count": 1
+  },
+  {
+   "truth": "D16",
+   "pred": "F36",
+   "count": 1
+  },
+  {
+   "truth": "N26",
+   "pred": "T23",
+   "count": 1
+  },
+  {
+   "truth": "A44",
+   "pred": "C5",
+   "count": 1
+  }
+ ],
+ "latency_ms_per_query": 11.58
+}

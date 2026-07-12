@@ -29,6 +29,15 @@ dropstroke only 0.680) as the better robustness/generalization tradeoff — see
 `--p-dropstroke` below. To repoint production at a new run: `ln -sfn <name>
 runs/default`.
 
+> **2026-07-11 adversarial review** ([`review/REVIEW.md`](review/REVIEW.md)):
+> the held-out 0.971 is inflated by dataset leakage (~13 near-duplicate
+> variants per source drawing straddle the file-level split; a group-disjoint
+> retrain of the same recipe measures **0.935**), the model partly keys on
+> scan-frame borders absent from real queries, and app-domain (canvas-style)
+> accuracy is ~0.78 top-1 / 0.85 top-5. See the review for evidence,
+> reproduction jobs and prioritized recommendations before quoting numbers
+> from this README.
+
 ## 1. Train the encoder
 
 ```bash

@@ -1,0 +1,50 @@
+{
+ "run": "/burg-archive/home/dh3065/egyptian_hiero/pipelines/matching/runs/a100_drop10",
+ "val": {
+  "torch": {
+   "top1": 0.9825,
+   "top5": 0.995,
+   "n": 400
+  },
+  "onnx_fp32": {
+   "top1": 0.9825,
+   "top5": 0.995,
+   "n": 400
+  },
+  "onnx_int8": {
+   "top1": 0.9775,
+   "top5": 0.995,
+   "n": 400
+  },
+  "fp32_int8_cos": 0.9508,
+  "onnx_fp16": {
+   "top1": 0.9825,
+   "top5": 0.995,
+   "n": 400
+  }
+ },
+ "pjb": {
+  "torch": {
+   "top1": 0.8633,
+   "top5": 0.9883,
+   "n": 256
+  },
+  "onnx_fp32": {
+   "top1": 0.8633,
+   "top5": 0.9883,
+   "n": 256
+  },
+  "onnx_int8": {
+   "top1": 0.8398,
+   "top5": 0.9805,
+   "n": 256
+  },
+  "fp32_int8_cos": 0.891,
+  "onnx_fp16": {
+   "top1": 0.8633,
+   "top5": 0.9883,
+   "n": 256
+  }
+ },
+ "ship": "model.fp16.onnx"
+}

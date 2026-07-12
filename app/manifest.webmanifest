@@ -1,0 +1,14 @@
+{
+  "name": "Hieroglyph Dictionary",
+  "short_name": "Glyph",
+  "description": "Draw an Egyptian hieroglyph, identify the Gardiner sign, read what it means. Works offline.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f7f2e7",
+  "theme_color": "#2b5ea7",
+  "orientation": "portrait-primary",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
