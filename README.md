@@ -1,4 +1,5 @@
-# egyptian_hiero
+# SESHAT
+*Named after the ancient Egyptian goddess of writing, wisdom, and knowledge.*
 
 Two product pipelines around Gardiner-sign Egyptian hieroglyphs, both built to
 generalize to any symbol inventory / ancient script:
@@ -112,3 +113,8 @@ font): [github.com/ArchaeoHack/archaeohack-starterpack](https://github.com/Archa
 
 In addition, this project originates from and builds upon work from the [ArchaeoHack 2025 hackathon](https://archaeohack-evfhl.wordpress.com/), 
 and has been assisted by Claude Fable 5, Opus 4.8 and Sonnet 5.
+
+## Contact
+**App files are distributed only upon request, for now.**
+
+Dion HO: dh3065@columbia.edu

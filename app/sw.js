@@ -1,10 +1,11 @@
 /* Cache-first service worker: the app shell is precached; the model, index and
  * glyph thumbnails are cached on first use, so the app is fully offline after
  * one visit. Bump VERSION on any deploy to invalidate. */
-const VERSION = "v1";
+const VERSION = "v4";
 const CORE = [
   "./", "./index.html", "./css/style.css", "./js/app.js", "./js/preprocess.mjs",
-  "./js/matcher.mjs", "./manifest.webmanifest", "./icons/icon-192.png",
+  "./js/matcher.mjs", "./js/collect.mjs",
+  "./manifest.webmanifest", "./icons/icon-192.png",
   "./icons/icon-512.png", "./vendor/ort/ort.min.js",
   "./data/config.json", "./data/index_meta.json", "./data/glyphs.json",
   "./data/index.bin",

@@ -24,6 +24,7 @@ Capacitor/TWA without code changes.
 | `index.html`, `css/`, `js/app.js` | UI: draw screen (canvas, undo/clear, auto-match on stroke end) + detail screen (info from `hiero_data`'s Gardiner CSV) |
 | `js/preprocess.mjs` | faithful JS port of `hieromatch/data.py` preprocessing (crop-ink → letterbox → tensor); shared by browser and build test |
 | `js/matcher.mjs` | ONNX session + per-label max cosine ranking (mirrors `match.py::Matcher`) |
+| `js/collect.mjs` | local drawing collection (IndexedDB): save/patch/count/export/clear snapshots for future training data |
 | `data/` | generated: `model.int8.onnx`, `index.bin`, `index_meta.json`, `glyphs.json`, `config.json` (incl. the review-derived rejection threshold), `selftest.json`, `export_report.json` |
 | `glyphs/` | generated: 769 canonical thumbnails |
 | `vendor/ort/` | generated: vendored onnxruntime-web (self-contained, no CDN) |
@@ -48,7 +49,7 @@ calibrated, and fp16 misranks under the wasm runtime despite passing on CPU —
 so the app currently ships the **fp32 model (~85 MB, one-time download, cached
 offline by the service worker)**.
 
-## Serve / deploy
+## Installation (FILES DISTRIBUTED ONLY UPON REQUEST FOR NOW)
 
 Any static host (GitHub Pages, Netlify, `python -m http.server` on a LAN).
 HTTPS (or localhost) is required for the service worker/PWA install. Quick
@@ -62,6 +63,60 @@ cd app && python3 -m http.server 8080     # then http://localhost:8080
   "Add to Home Screen". Both give a standalone fullscreen app.
 - **Self-test on any device**: open `…/?selftest=1` — runs bundled fixtures
   through the on-device pipeline and reports PASS/MISMATCH.
+
+## Collecting drawings for training data
+
+Every drawing is saved locally the moment the user taps a candidate sign, so a
+stream of labeled, in-the-wild drawings accumulates to grow the training set
+and the unseen-writer probe the review recommends. **Nothing is uploaded** —
+records live in the browser's IndexedDB (`glyph-collect` store) and are manually moved (see below).
+
+**What a snapshot captures** (one record per candidate tap, `js/collect.mjs`):
+
+| Field | Meaning |
+|---|---|
+| `png` | PNG of exactly what the recognizer saw (the normalized 512² render) |
+| `strokes`, `strokeCount`, `size` | raw vector strokes, so a drawing can be re-rendered at any resolution |
+| `label`, `rank`, `score` | the sign picked, its position in the tray (0 = best match, −1 = off-tray), its cosine |
+| `candidates` | the full top-5 the recognizer offered, `[label, score]` |
+| `margin`, `lowConfidence` | rank-1→rank-2 gap and whether the low-confidence banner showed |
+| `drawingId` | groups every pick made from the **same** drawing — so a wrong pick followed by a corrected pick is recoverable as a labeled correction pair |
+| `ts`, `ua`, `schema` | timestamp, device string, record-shape version |
+
+**Quality-control flags** (patched onto the record by later actions):
+
+- `confirmed: true` — the user pressed **✎ Next sign** from the detail screen,
+  i.e. accepted the pick and moved on. The clean positive signal.
+- `wentBack: true` — the user pressed **← back** instead, i.e. returned to
+  reconsider. A soft signal the pick may be wrong; if they then tap a different
+  candidate, the new record shares the same `drawingId`, so the pair encodes
+  what they *actually* meant.
+- `dwellMs` — time spent on the detail screen before back/next (a fast bounce
+  reads differently from an engaged read).
+
+Records with neither flag set (app closed on the detail screen) are kept but
+should be treated as unconfirmed. When filtering for high-quality labels, use
+`confirmed && !lowConfidence`; treat `wentBack` picks as negatives / corrections.
+
+**Export & clear** — open the **history** tab (footer link). Records live in
+the browser's IndexedDB, *not* a file in the app folder, so export is the only
+way to get them off a device (especially phone/tablet installs):
+
+- **⬇ Export drawings** downloads `glyph-drawings-YYYY-MM-DD.json` (all records,
+  PNGs inline as data URLs). **Please send the JSONs over to be merged into the training pipeline.**
+- **🗑 Clear drawings** wipes this device's store after a confirm — the manual
+  way each user reclaims space once their drawings have been transferred.
+
+The store is capped at **5000 drawings** (intentionally large for now); past that, 
+the oldest are dropped on each new save. Browse saved
+drawings from the **history** footer link.
+
+Storage growth and transfer are handled by hand for now:
+export periodically, then clear. To wipe everything (including model/index
+cache) outside the app, clear the site data in the browser: desktop Chrome →
+DevTools → Application → Storage → *Clear site data*; Android Chrome →
+Site settings → Data → *Clear & reset*; iOS Safari → Settings → Safari →
+Advanced → Website Data → remove the app's entry.
 
 ## Behavior notes (tied to the adversarial review)
 
@@ -88,10 +143,6 @@ cd app && python3 -m http.server 8080     # then http://localhost:8080
 
 ## Planned features
 
-- **History tab** — a locally-stored log of confirmed lookups (drawing +
-  chosen sign), so users can revisit past identifications; doubles as the
-  labeled-drawing collection point the review recommends for growing the
-  unseen-writer probe. Not implemented yet.
 - **Multi-threading** — `onnxruntime-web` is currently forced to
   `numThreads = 1`. Threaded WASM needs `SharedArrayBuffer`, which only works
   when the page is served `crossOriginIsolated` (COOP: `same-origin` + COEP:

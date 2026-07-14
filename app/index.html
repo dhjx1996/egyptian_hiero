@@ -49,9 +49,27 @@
   </div>
 
   <footer class="foot">
-    <p>Runs entirely on your device · Gardiner sign list ·
+    <p>Runs entirely on your device · <a href="#" id="history-link">history</a> ·
        <a href="#" id="about-link">about</a></p>
   </footer>
+</section>
+
+<!-- ============================== screen 3: history ========================== -->
+<section id="screen-history" class="screen" hidden>
+  <header class="bar">
+    <button id="btn-history-back" class="back" aria-label="back to drawing">←</button>
+    <h1>History</h1>
+  </header>
+  <div class="history">
+    <p class="small history-note">Saved on this device only as future training
+       data — nothing is uploaded. <span id="history-count">0</span> stored.</p>
+    <div class="history-actions">
+      <button id="btn-export" class="tool">⬇ Export drawings</button>
+      <button id="btn-clear-data" class="tool">🗑 Clear drawings</button>
+    </div>
+    <p id="history-empty" class="results-note" hidden>No saved drawings yet.</p>
+    <div class="cards" id="history-cards"></div>
+  </div>
 </section>
 
 <!-- ============================== screen 2: detail ============================ -->
@@ -79,8 +97,8 @@
   <h2>About</h2>
   <p>Draw a hieroglyph and the app matches it against the 769 canonical
      Gardiner signs using a neural encoder that runs locally in your browser —
-     no drawing ever leaves your device. After the first visit it works
-     offline.</p>
+     no drawing ever leaves your device.</p>
+	 <!-- Add after online deployment: "After the first visit it works offline." -->
   <p class="small">Recognizer trained on the Hand-drawn Hieroglyph Dataset
      (Aneesh&nbsp;et&nbsp;al., IC4&nbsp;2024); canonical glyphs and sign data from the
      ArchaeoHack starter pack. Match quality is best for complete, single-sign

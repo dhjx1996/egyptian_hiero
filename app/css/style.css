@@ -104,6 +104,13 @@ body {
 .results-note { text-align: center; color: var(--muted); font-size: .85rem;
                 margin: 12px 0 0; }
 
+/* ------------------------------ history ------------------------------ */
+.history { margin-top: 8px; }
+.history .cards { justify-content: flex-start; }
+.history-note { color: var(--muted); font-size: .85rem; margin: 0 0 12px; }
+.history-note span { font-weight: 700; color: var(--ink); }
+.history-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+
 /* ------------------------------ status / loading ------------------------------ */
 .status { margin: 26px auto 0; max-width: 340px; text-align: center; }
 .progress { height: 6px; border-radius: 3px; background: var(--line);

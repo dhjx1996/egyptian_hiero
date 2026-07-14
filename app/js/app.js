@@ -4,6 +4,10 @@
  * All inference is local (onnxruntime-web, wasm). */
 import { rgbaToGray, preprocess } from "./preprocess.mjs";
 import { GlyphMatcher } from "./matcher.mjs";
+import {
+  saveSample, patchSample, countSamples, clearSamples, exportSamples,
+  listSamples,
+} from "./collect.mjs";
 
 const $ = (id) => document.getElementById(id);
 const ort = globalThis.ort;
@@ -14,6 +18,17 @@ let current = null;
 let matchTimer = null;
 let matchBusy = false;
 let matchQueued = false;
+
+/* drawing-collection state (see collect.mjs). lastHits/lastLow snapshot the
+ * most recent results so a tap can record what the recognizer offered;
+ * drawingId groups every pick made from the *same* drawing (a wrong pick then
+ * a corrected one share it); collectId is the sample the next back/next flags. */
+let lastHits = [];
+let lastLow = false;
+let drawingId = null;
+let collectId = null;
+let detailOpenedAt = 0;
+let viewFrom = "draw";                      // "draw" (live pick) or "history"
 
 /* ------------------------------------------------ boot */
 async function fetchProgress(url, onPart) {
@@ -129,10 +144,12 @@ pad.addEventListener("pointercancel", endStroke);
 $("btn-clear").onclick = () => {
   strokes = []; redraw();
   $("results").hidden = true;
+  drawingId = null; collectId = null;     // a cleared canvas is a new drawing
 };
 $("btn-undo").onclick = () => {
   strokes.pop(); redraw();
-  strokes.length ? scheduleMatch(120) : ($("results").hidden = true);
+  if (strokes.length) { scheduleMatch(120); }
+  else { $("results").hidden = true; drawingId = null; collectId = null; }
 };
 redraw();
 
@@ -202,6 +219,9 @@ function renderResults(hits) {
   cards.innerHTML = "";
   const low = !hits.length || hits[0].score < (cfg.score_threshold ?? 0.6) ||
               (hits[0].margin ?? 1) < (cfg.margin_threshold ?? 0.03);
+  lastHits = hits;
+  lastLow = low;
+  if (!drawingId && hits.length) drawingId = crypto.randomUUID();
   $("lowconf").hidden = !low;
   hits.forEach((h, i) => {
     const g = glyphs[h.label] || {};
@@ -221,7 +241,7 @@ function renderResults(hits) {
 }
 
 /* ------------------------------------------------ detail screen */
-function showDetail(label) {
+function showDetail(label, collect = true) {
   const g = glyphs[label] || {};
   $("detail-code").textContent = label;
   $("detail-img").src = `./glyphs/${encodeURIComponent(label)}.png`;
@@ -232,14 +252,33 @@ function showDetail(label) {
   $("detail-unicode").textContent = cp
     ? `${g.char}  U+${cp.toString(16).toUpperCase()}` : "—";
   $("screen-draw").hidden = true;
+  $("screen-history").hidden = true;
   $("screen-detail").hidden = false;
+  $("btn-next").hidden = !collect;        // "Next sign" is only for the live flow
   scrollTo(0, 0);
+  if (collect) {
+    viewFrom = "draw";
+    detailOpenedAt = Date.now();
+    collectSnapshot(label);
+  } else {
+    viewFrom = "history";
+  }
 }
-$("btn-back").onclick = () => {           // drawing + results are preserved
+$("btn-back").onclick = () => {
   $("screen-detail").hidden = true;
+  if (viewFrom === "history") { openHistory(); return; }
+  // Live flow: drawing + results are preserved. Going back to reconsider is a
+  // soft signal the pick may be wrong.
+  if (collectId) patchSample(collectId, {
+    wentBack: true, dwellMs: Date.now() - detailOpenedAt });
   $("screen-draw").hidden = false;
 };
 $("btn-next").onclick = () => {           // fresh canvas for the next sign
+  // Moving on from the detail screen confirms the pick.
+  if (collectId) patchSample(collectId, {
+    confirmed: true, dwellMs: Date.now() - detailOpenedAt });
+  collectId = null;
+  drawingId = null;
   clearTimeout(matchTimer);
   matchQueued = false;
   strokes = [];
@@ -249,6 +288,87 @@ $("btn-next").onclick = () => {           // fresh canvas for the next sign
   $("screen-detail").hidden = true;
   $("screen-draw").hidden = false;
   scrollTo(0, 0);
+};
+
+/* ------------------------------------------------ drawing collection */
+/* Snapshot the drawing the instant a candidate is tapped: the label picked,
+ * where it ranked, the full candidate tray, the vector strokes and a PNG of
+ * exactly what the recognizer saw (the normalized render). back/next later
+ * patch quality flags onto this record. Best-effort — never blocks the UI. */
+function collectSnapshot(label) {
+  try {
+    const rank = lastHits.findIndex((h) => h.label === label);
+    const hit = rank >= 0 ? lastHits[rank] : null;
+    renderNormalized();                    // ensure matchCanvas holds this drawing
+    collectId = crypto.randomUUID();
+    saveSample({
+      id: collectId,
+      drawingId,                           // links multiple picks of one drawing
+      ts: Date.now(),
+      label,
+      rank,                                // 0 = best match; -1 if off the tray
+      score: hit ? hit.score : null,
+      margin: lastHits[0]?.margin ?? null,
+      lowConfidence: lastLow,
+      candidates: lastHits.map((h) => [h.label, +h.score.toFixed(4)]),
+      strokeCount: strokes.length,
+      strokes: strokes.map((s) =>
+        s.map(([x, y]) => [Math.round(x), Math.round(y)])),
+      size: matchCanvas.width,
+      png: matchCanvas.toDataURL("image/png"),
+      wentBack: false,
+      confirmed: false,
+      dwellMs: null,
+      ua: navigator.userAgent,
+      schema: 1,                           // record shape; bump if fields change
+    });
+  } catch (e) {
+    console.warn("collect: snapshot failed", e);
+  }
+}
+
+/* ------------------------------------------------ history */
+/* Browsable list of saved drawings (newest first). Tapping one re-opens the
+ * detail screen in read-only mode (no new snapshot, no quality flags). */
+async function openHistory() {
+  const wrap = $("history-cards");
+  wrap.innerHTML = "";
+  const rows = await listSamples();
+  $("history-count").textContent = rows.length;
+  $("history-empty").hidden = rows.length > 0;
+  for (const r of rows) {
+    const el = document.createElement("button");
+    el.className = "card";
+    el.innerHTML =
+      `<img src="${r.png}" alt="" loading="lazy">
+       <span class="code">${r.label}</span>`;
+    el.title = new Date(r.ts).toLocaleString();
+    el.onclick = () => showDetail(r.label, false);
+    wrap.appendChild(el);
+  }
+  $("screen-draw").hidden = true;
+  $("screen-detail").hidden = true;
+  $("screen-history").hidden = false;
+  scrollTo(0, 0);
+}
+$("history-link").onclick = (e) => { e.preventDefault(); openHistory(); };
+$("btn-history-back").onclick = () => {
+  $("screen-history").hidden = true;
+  $("screen-draw").hidden = false;
+};
+$("btn-export").onclick = async () => {
+  const n = await countSamples();
+  if (!n) { alert("No drawings stored yet."); return; }
+  await exportSamples();
+};
+
+$("btn-clear-data").onclick = async () => {
+  const n = await countSamples();
+  if (!n) { alert("No drawings stored yet."); return; }
+  if (!confirm(`Delete all ${n} stored drawing(s) from this device? ` +
+               `Export and send us the JSON first? Pretty please?`)) return;
+  await clearSamples();
+  openHistory();                      // refresh list + count in place
 };
 
 /* ------------------------------------------------ about */
