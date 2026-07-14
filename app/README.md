@@ -56,7 +56,7 @@ HTTPS (or localhost) is required for the service worker/PWA install. Quick
 local test:
 
 ```bash
-cd app && python3 -m http.server 8080     # then http://localhost:8080
+cd app && python -m http.server 8080     # then http://localhost:8080
 ```
 
 - **Install**: Android Chrome → "Add to Home screen"; iOS Safari → Share →
