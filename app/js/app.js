@@ -50,6 +50,22 @@ async function fetchProgress(url, onPart) {
   return out.buffer;
 }
 
+/* Hosted deploys split the model into ./data/<model>.partN (static hosts cap
+ * file size, e.g. Cloudflare Pages 25 MiB); config.json then carries
+ * model_parts. Local/unsplit serving keeps the single-file path. */
+async function fetchModel(cfg, onPart) {
+  if (!cfg.model_parts) return fetchProgress(`./data/${cfg.model}`, onPart);
+  const done = new Array(cfg.model_parts).fill(0);
+  const bufs = await Promise.all(done.map((_, i) =>
+    fetchProgress(`./data/${cfg.model}.part${i}`, (p) => {
+      done[i] = p; onPart(done.reduce((a, b) => a + b, 0) / done.length);
+    })));
+  const out = new Uint8Array(bufs.reduce((a, b) => a + b.byteLength, 0));
+  let o = 0;
+  for (const b of bufs) { out.set(new Uint8Array(b), o); o += b.byteLength; }
+  return out.buffer;
+}
+
 async function boot() {
   const status = $("status"), text = $("status-text"), fill = $("progress-fill");
   status.classList.remove("error");
@@ -81,7 +97,7 @@ async function boot() {
     const upd = () => { fill.style.width =
       `${Math.round(100 * (0.9 * parts.model + 0.1 * parts.index))}%`; };
     const [modelBuffer, indexBuffer] = await Promise.all([
-      fetchProgress(`./data/${cfg.model}`, (p) => { parts.model = p; upd(); }),
+      fetchModel(cfg, (p) => { parts.model = p; upd(); }),
       fetchProgress("./data/index.bin", (p) => { parts.index = p; upd(); }),
     ]);
 

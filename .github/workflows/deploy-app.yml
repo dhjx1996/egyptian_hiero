@@ -1,0 +1,22 @@
+name: deploy-app
+on:
+  push:
+    branches: [main]
+    paths:
+      - "app/**"
+      - ".github/workflows/deploy-app.yml"
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Stage app (strip build tooling, split model, stamp SW version)
+        run: bash app/build/stage.sh "$RUNNER_TEMP/app-stage" "${GITHUB_SHA::7}"
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.EDIT_CFPAGES_TOKEN }}
+          accountId: 7b766e08ce99089e9558176f243c7cef  # account id is not a secret
+          command: pages deploy "${{ runner.temp }}/app-stage" --project-name=seshat --branch=main
