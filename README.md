@@ -16,20 +16,12 @@ both runbooks.
 
 ## Results
 
-Full HPC (A100) training, reviewer-grade stress testing, and repro commands
+Full HPC (A100) training, adversarial review and stress testing, and repro commands 
 are in each pipeline's README: [`pipelines/matching/README.md`](pipelines/matching/README.md),
 [`pipelines/generation/README.md`](pipelines/generation/README.md).
 
 **Matching** (production recipe: resnet34@160, 100 epochs + missing-stroke
-augmentation). An adversarial review
-([`review/REVIEW.md`](pipelines/matching/review/REVIEW.md)) found the original
-headline (0.971) inflated by train/val leakage — the dataset ships ~12
-augmented near-duplicates per source drawing, and the file-level split scattered
-them across both sides. The split is now **group-disjoint** (whole source
-drawings held out, the default in `hieromatch/data.py`); numbers below are from
-that honest split
-([`review/CORRECTIVE_ACTIONS.md`](pipelines/matching/review/CORRECTIVE_ACTIONS.md)
-has the full A/B study):
+augmentation):
 * Held-out handwriting retrieval top-1 **0.935** / top-5 0.982 (n=7344, group-disjoint)
 * Unseen-writer (a person not in the training data) probe top-1 **0.840** / top-5 0.984
   (n=256); adding stick-figure **abstraction augmentation** (skeletal renders of
