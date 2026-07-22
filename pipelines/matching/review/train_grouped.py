@@ -18,10 +18,8 @@ model-quality control.
 import argparse
 import json
 import os
-import random
 import sys
 import time
-from collections import defaultdict
 
 import torch
 import torch.nn.functional as F
@@ -31,54 +29,20 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 MATCH = os.path.dirname(HERE)
 sys.path.insert(0, MATCH)
 
-from hieromatch.data import TrainDataset, EvalDataset, save_split      # noqa: E402
+from hieromatch.data import TrainDataset, EvalDataset, save_split, build_items  # noqa: E402
 from hieromatch.model import HieroEncoder, CosineHead, save_encoder    # noqa: E402
 from train_encoder import validate, D_HAND, D_CANON                    # noqa: E402
 
 
-def group_id(path):
-    stem = os.path.splitext(os.path.basename(path))[0]
-    toks = stem.split("_")
-    return "_".join(toks[:2]) if len(toks) >= 4 else stem
-
-
 def build_items_grouped(handwriting_root, canonical_dir, val_frac=0.1, seed=17,
-                        canon_repeat=8, min_groups=3):
-    """Same item tuples as hieromatch.data.build_items, but the val split holds
-    out whole SOURCE-DRAWING groups (all augmented variants together)."""
-    canon = {os.path.splitext(f)[0]: os.path.join(canonical_dir, f)
-             for f in os.listdir(canonical_dir) if f.lower().endswith(".png")}
-    hand = {}
-    for c in sorted(os.listdir(handwriting_root)):
-        d = os.path.join(handwriting_root, c)
-        if os.path.isdir(d):
-            fs = sorted(os.path.join(d, f) for f in os.listdir(d)
-                        if f.lower().endswith(".png"))
-            if fs:
-                hand[c] = fs
-    classes = sorted(set(canon) | set(hand))
-    idx = {c: i for i, c in enumerate(classes)}
-
-    rng = random.Random(seed)
-    train_items, val_items, n_val_groups = [], [], 0
-    for c, fs in hand.items():
-        groups = defaultdict(list)
-        for p in fs:
-            groups[group_id(p)].append(p)
-        gids = sorted(groups)
-        rng.shuffle(gids)
-        n_val_g = max(1, round(len(gids) * val_frac)) if len(gids) >= min_groups else 0
-        n_val_groups += n_val_g
-        for g in gids[:n_val_g]:
-            val_items += [(p, idx[c], "hand") for p in groups[g]]
-        for g in gids[n_val_g:]:
-            train_items += [(p, idx[c], "hand") for p in groups[g]]
-    for c, p in canon.items():
-        train_items.extend([(p, idx[c], "canon")] * canon_repeat)
-    print(f"[grouped] held-out groups: {n_val_groups} "
-          f"({len(val_items)} files) | train hand files "
-          f"{sum(1 for it in train_items if it[2] == 'hand')}")
-    return classes, train_items, val_items
+                        canon_repeat=8, min_groups=3, abstract_root=None, abstract_repeat=4):
+    """The group-disjoint split is now the DEFAULT in hieromatch.data.build_items
+    (verified item-for-item identical to the original implementation here);
+    kept as a thin delegate so old run commands keep working."""
+    return build_items(handwriting_root, canonical_dir, val_frac=val_frac, seed=seed,
+                       canon_repeat=canon_repeat, min_groups=min_groups,
+                       abstract_root=abstract_root, abstract_repeat=abstract_repeat,
+                       group_val=True)
 
 
 def main():
@@ -96,6 +60,8 @@ def main():
     ap.add_argument("--weight-decay", type=float, default=1e-4)
     ap.add_argument("--workers", type=int, default=16)
     ap.add_argument("--canon-repeat", type=int, default=12)
+    ap.add_argument("--abstract", default="", help="stick-figure abstraction bank root (make_abstractions.py)")
+    ap.add_argument("--abstract-repeat", type=int, default=4)
     ap.add_argument("--p-handwrite", type=float, default=0.5)
     ap.add_argument("--p-dropstroke", type=float, default=0.10)
     ap.add_argument("--val-frac", type=float, default=0.1)
@@ -110,7 +76,8 @@ def main():
 
     classes, train_items, val_items = build_items_grouped(
         args.handwriting, args.canonical, val_frac=args.val_frac, seed=args.seed,
-        canon_repeat=args.canon_repeat)
+        canon_repeat=args.canon_repeat, abstract_root=args.abstract or None,
+        abstract_repeat=args.abstract_repeat)
     print(f"[grouped] {len(classes)} classes | train {len(train_items)} | val {len(val_items)}")
     save_split(os.path.join(outd, "val_split.json"), classes, val_items)
     with open(os.path.join(outd, "classes.json"), "w") as f:

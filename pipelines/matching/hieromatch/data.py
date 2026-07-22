@@ -10,6 +10,7 @@ import json
 import os
 import random
 import sys
+from collections import defaultdict
 
 import numpy as np
 import cv2
@@ -121,6 +122,45 @@ def _dropstroke(g, rng, n_cuts=(1, 4)):
     return out
 
 
+def _frame(g, rng):
+    """Synthetic scan-cell border: a dark rectangle near the edge (random inset /
+    thickness, occasionally a side missing). ~74% of dataset scans include the
+    grid-cell frame and the encoder learns to lean on it (review F2); drawing
+    random frames on ALL sources makes the frame an uninformative nuisance."""
+    out = g.copy()
+    h, w = out.shape
+    m = min(h, w)
+    inset = int(rng.integers(0, max(1, int(0.05 * m))))
+    th = int(rng.integers(1, max(2, int(0.02 * m))))
+    color = int(rng.integers(0, 90))
+    x0, y0, x1, y1 = inset, inset, w - 1 - inset, h - 1 - inset
+    for a, b in (((x0, y0), (x1, y0)), ((x1, y0), (x1, y1)),
+                 ((x1, y1), (x0, y1)), ((x0, y1), (x0, y0))):
+        if rng.random() < 0.9:                                # sometimes drop a side
+            cv2.line(out, a, b, color, th)
+    return out
+
+
+def _partial(g, rng):
+    """Keep only a contiguous PART of the drawing, whiten the rest: a random
+    half/side kept at a random fraction. Simulates a half-finished draw -- the
+    encoder's worst measured failure (top-half only -> 0.09 top1, review F4) --
+    so match-as-you-draw degrades gracefully instead of collapsing."""
+    out = g.copy()
+    h, w = out.shape
+    frac = float(rng.uniform(0.4, 0.7))                       # kept fraction along cut axis
+    mode = int(rng.integers(0, 4))
+    if mode == 0:                                             # keep top
+        out[int(h * frac):, :] = 255
+    elif mode == 1:                                           # keep bottom
+        out[:int(h * (1 - frac)), :] = 255
+    elif mode == 2:                                           # keep left
+        out[:, int(w * frac):] = 255
+    else:                                                     # keep right
+        out[:, int(w * (1 - frac)):] = 255
+    return out
+
+
 def _photo(g, rng):
     if rng.random() < 0.5:
         g = cv2.GaussianBlur(g, (0, 0), rng.uniform(0.4, 1.1))
@@ -144,7 +184,8 @@ def _handwrite(g, rng):
     return _HW.handwrite(g, seed_rng)
 
 
-def augment(g, rng, source, size, p_handwrite=0.35, p_dropstroke=0.0):
+def augment(g, rng, source, size, p_handwrite=0.35, p_dropstroke=0.0,
+            p_frame=0.0, p_partial=0.0):
     """g: uint8 gray dark-on-white (any shape). Returns size x size uint8."""
     work = letterbox(g, 224 if source == "canon" else size, jitter=0.06, rng=rng)
     if source == "canon":
@@ -164,16 +205,59 @@ def augment(g, rng, source, size, p_handwrite=0.35, p_dropstroke=0.0):
         work = _morph(work, rng)
     if p_dropstroke and rng.random() < p_dropstroke:
         work = _dropstroke(work, rng)
+    if p_partial and rng.random() < p_partial:               # F4: half-finished draw
+        work = _partial(work, rng)
     work = _photo(work, rng)
+    if p_frame and rng.random() < p_frame:                   # F2: scan-cell border (drawn last -> lands at edges after letterbox)
+        work = _frame(work, rng)
     return letterbox(work, size, jitter=0.05, rng=rng)
 
 
 # ---------------------------------------------------------------- datasets
+def group_id(path):
+    """Source-drawing id from a dataset filename `<src>_<drawing>_<variant>_<CLASS>-x-y`.
+    The ~13 <variant>s are augmented near-duplicates of one drawing, so splitting on
+    this (not on the file) holds out whole drawings and kills the val leakage (F1)."""
+    stem = os.path.splitext(os.path.basename(path))[0]
+    toks = stem.split("_")
+    return "_".join(toks[:2]) if len(toks) >= 4 else stem
+
+
+def abstract_items(abstract_root, idx, repeat=1):
+    """Stick-figure abstraction bank (make_abstractions.py) -> train items.
+
+    Layout <root>/lvl*/<CLASS>.png (one skeletal render per class per stroke-budget
+    level). Tagged source='canon' so they take the canonical heavy-aug path
+    (handwriting wobble on top of the abstraction = a hand-drawn stick figure).
+    This is the training-side bridge for the abstraction gap (figurative signs
+    redrawn as stick figures, e.g. A39). Added to TRAIN only, never val."""
+    items = []
+    if not abstract_root or not os.path.isdir(abstract_root):
+        return items
+    for lvl in sorted(os.listdir(abstract_root)):
+        d = os.path.join(abstract_root, lvl)
+        if not os.path.isdir(d):
+            continue
+        for f in sorted(os.listdir(d)):
+            c = os.path.splitext(f)[0]
+            if f.lower().endswith(".png") and c in idx:
+                items.extend([(os.path.join(d, f), idx[c], "canon")] * repeat)
+    return items
+
+
 def build_items(handwriting_root, canonical_dir, val_frac=0.1, seed=17, canon_repeat=8,
-                min_val_n=8, synthetic_root=None, synth_cap_frac=0.25, synth_per_class=20):
+                min_val_n=8, synthetic_root=None, synth_cap_frac=0.25, synth_per_class=20,
+                abstract_root=None, abstract_repeat=4, group_val=True, min_groups=3):
     """Returns (classes, train_items, val_items). Item = (path, class_idx, source).
     Classes = canonical stems UNION handwriting dirs, so canonical-only classes are
     trainable (via augmentation) and stay matchable. Deterministic split.
+
+    group_val (DEFAULT): hold out whole SOURCE DRAWINGS (all ~13 augmented variants
+    together), keyed on group_id(). The dataset ships pre-augmented, so a file-level
+    split leaks near-duplicates into val and inflates the metric ~3.6 pt (review F1);
+    the group split is the honest one. Set group_val=False for the legacy file-level
+    split (kept only to reproduce pre-2026-07 runs). min_groups: a class needs at
+    least this many source drawings to contribute val items (mirrors min_val_n).
 
     synthetic_root: optional <CLASS>/*.png tree of GENERATED samples (e.g. quality-
     gated One-DM outputs, see synth_filter.py). Guard rails against model collapse:
@@ -200,14 +284,23 @@ def build_items(handwriting_root, canonical_dir, val_frac=0.1, seed=17, canon_re
     train_items, val_items = [], []
     for c, fs in hand.items():
         fs = list(fs)
-        rng.shuffle(fs)
-        n_val = max(1, round(len(fs) * val_frac)) if len(fs) >= min_val_n else 0
-        for p in fs[:n_val]:
-            val_items.append((p, idx[c], "hand"))
-        for p in fs[n_val:]:
-            train_items.append((p, idx[c], "hand"))
+        if group_val:                                    # hold out whole source drawings (F1)
+            groups = defaultdict(list)
+            for p in fs:
+                groups[group_id(p)].append(p)
+            gids = sorted(groups)
+            rng.shuffle(gids)
+            n_val_g = max(1, round(len(gids) * val_frac)) if len(gids) >= min_groups else 0
+            val_items += [(p, idx[c], "hand") for g in gids[:n_val_g] for p in groups[g]]
+            train_items += [(p, idx[c], "hand") for g in gids[n_val_g:] for p in groups[g]]
+        else:                                            # legacy file-level split (leaky)
+            rng.shuffle(fs)
+            n_val = max(1, round(len(fs) * val_frac)) if len(fs) >= min_val_n else 0
+            val_items += [(p, idx[c], "hand") for p in fs[:n_val]]
+            train_items += [(p, idx[c], "hand") for p in fs[n_val:]]
     for c, p in canon.items():
         train_items.extend([(p, idx[c], "canon")] * canon_repeat)
+    train_items.extend(abstract_items(abstract_root, idx, abstract_repeat))
 
     if synthetic_root and os.path.isdir(synthetic_root):
         n_real = sum(1 for it in train_items if it[2] == "hand")
@@ -228,9 +321,11 @@ def build_items(handwriting_root, canonical_dir, val_frac=0.1, seed=17, canon_re
 
 
 class TrainDataset(Dataset):
-    def __init__(self, items, size=112, p_handwrite=0.35, seed=0, p_dropstroke=0.0):
+    def __init__(self, items, size=112, p_handwrite=0.35, seed=0, p_dropstroke=0.0,
+                 p_frame=0.0, p_partial=0.0):
         self.items, self.size, self.p_handwrite, self.seed = items, size, p_handwrite, seed
         self.p_dropstroke = p_dropstroke
+        self.p_frame, self.p_partial = p_frame, p_partial
         self.epoch = 0
 
     def set_epoch(self, e):
@@ -243,7 +338,8 @@ class TrainDataset(Dataset):
         path, label, source = self.items[i]
         rng = np.random.default_rng((self.seed * 1000003 + self.epoch * 7919 + i) % 2**31)
         g = augment(load_gray(path), rng, source, self.size, self.p_handwrite,
-                    p_dropstroke=self.p_dropstroke)
+                    p_dropstroke=self.p_dropstroke, p_frame=self.p_frame,
+                    p_partial=self.p_partial)
         return to_tensor(g), label
 
 

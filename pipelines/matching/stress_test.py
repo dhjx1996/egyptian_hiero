@@ -79,10 +79,28 @@ def c_wobble(g, rng, alpha=None, sigma=4.0):
     xx, yy = np.meshgrid(np.arange(w, dtype=np.float32), np.arange(h, dtype=np.float32))
     return cv2.remap(g, xx + dx, yy + dy, cv2.INTER_LINEAR, borderValue=255)
 
+def c_frame(g, rng):
+    """Add a full scan-cell border (measures frame-reliance, review F2/P2). NB
+    implemented independently of the training _frame aug so this stays a held-out
+    transform, not a re-test of the exact training code (review F4 caveat)."""
+    out = g.copy()
+    h, w = out.shape
+    th = max(1, min(h, w) // 55)
+    cv2.rectangle(out, (2, 2), (w - 3, h - 3), int(rng.integers(0, 80)), th)
+    return out
+
+def c_half(g, rng):
+    """Keep only the top half, whiten the bottom (review F4's 0.09 worst case).
+    Distinct from the randomized training _partial aug: fixed top-half."""
+    out = g.copy()
+    out[out.shape[0] // 2:, :] = 255
+    return out
+
 CORRUPTIONS = {
     "clean": c_clean, "rotate20": c_rotate, "blur": c_blur, "noise": c_noise,
     "occlude28": c_occlude, "lowres32": c_lowres, "thin": c_thin,
     "dropstroke": c_dropstroke, "wobble": c_wobble,
+    "frame": c_frame, "half_top": c_half,
 }
 
 

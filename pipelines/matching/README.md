@@ -37,6 +37,16 @@ runs/default`.
 > accuracy is ~0.78 top-1 / 0.85 top-5. See the review for evidence,
 > reproduction jobs and prioritized recommendations before quoting numbers
 > from this README.
+>
+> **2026-07-22 corrective actions** ([`review/CORRECTIVE_ACTIONS.md`](review/CORRECTIVE_ACTIONS.md)):
+> the group-disjoint split is now the **default** (`--file-level-split` to
+> reproduce old runs), and three isolated A/B retrains were run against the
+> honest baseline (val 0.935 / pjb 0.840). Headline: stick-figure abstraction
+> augmentation (`make_abstractions.py` + `--abstract`) lifts unseen-writer pjb
+> to **0.973** at −1.5 pt val — candidate next production model. Frame aug: tie
+> (baseline already frame-robust, 0.911). Partial-stroke aug (`--p-partial`)
+> triples half-drawing robustness (0.11 → 0.35) but regresses ~2 pt elsewhere;
+> off by default.
 
 ## 1. Train the encoder
 

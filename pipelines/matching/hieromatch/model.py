@@ -49,7 +49,9 @@ def save_encoder(path, encoder, classes, size, extra=None):
 
 def load_encoder(path, device="cpu"):
     """Returns (encoder.eval(), meta dict with size/classes/arch/embed_dim)."""
-    ck = torch.load(path, map_location="cpu", weights_only=False)
+    # weights_only=True: checkpoint is tensors + str/int/float/list only, so the
+    # safe loader suffices and a swapped checkpoint can't execute code (F8).
+    ck = torch.load(path, map_location="cpu", weights_only=True)
     enc = HieroEncoder(arch=ck["arch"], embed_dim=ck["embed_dim"], pretrained=False)
     enc.load_state_dict(ck["state_dict"])
     enc.to(device).eval()

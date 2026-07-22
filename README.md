@@ -20,14 +20,28 @@ Full HPC (A100) training, reviewer-grade stress testing, and repro commands
 are in each pipeline's README: [`pipelines/matching/README.md`](pipelines/matching/README.md),
 [`pipelines/generation/README.md`](pipelines/generation/README.md).
 
-**Matching** (production model `pipelines/matching/runs/default`, resnet34@160,
-100 epochs + missing-stroke augmentation): 
-* Held-out handwriting retrieval top-1 **0.971** / top-5 0.985 (n=4521)
-* Unseen-writer (handwriting from a person not in the training data) probe top-1 **0.863** / top-5 0.988 (n=256)
-* Corruption robustness (n=800/case): clean 0.966, shaky-hand wobble 0.938, 28%-block
-occlusion 0.868, severed/missing strokes 0.779; blur and low-resolution
-capture remain the sharpest failure modes (~0.40–0.46), i.e. degraded capture
-hurts more than degraded drawing.
+**Matching** (production recipe: resnet34@160, 100 epochs + missing-stroke
+augmentation). An adversarial review
+([`review/REVIEW.md`](pipelines/matching/review/REVIEW.md)) found the original
+headline (0.971) inflated by train/val leakage — the dataset ships ~12
+augmented near-duplicates per source drawing, and the file-level split scattered
+them across both sides. The split is now **group-disjoint** (whole source
+drawings held out, the default in `hieromatch/data.py`); numbers below are from
+that honest split
+([`review/CORRECTIVE_ACTIONS.md`](pipelines/matching/review/CORRECTIVE_ACTIONS.md)
+has the full A/B study):
+* Held-out handwriting retrieval top-1 **0.935** / top-5 0.982 (n=7344, group-disjoint)
+* Unseen-writer (a person not in the training data) probe top-1 **0.840** / top-5 0.984
+  (n=256); adding stick-figure **abstraction augmentation** (skeletal renders of
+  all 769 glyphs as extra training data) lifts this to **0.973** at −1.5 pt
+  held-out — the candidate next model, pending confirmation on user-collected
+  drawings.
+* Corruption robustness (n=800/case): clean 0.938, scan-cell frame 0.911,
+  shaky-hand wobble 0.866, 28%-block occlusion 0.811, severed/missing strokes
+  0.718; blur and low-resolution capture remain the sharpest failure modes
+  (~0.33–0.40), and half-finished drawings score 0.11 (a partial-stroke
+  augmentation triples that to 0.35 but costs ~2 pt everywhere else — shipped as
+  an off-by-default flag, `--p-partial`).
 
 <p align="center">
   <img src="pipelines/showcase/matching_predictions.png" width="720" alt="Matcher predictions: 4 real hand-drawn held-out queries, each correctly matched top-1 against the 769-sign canonical inventory">

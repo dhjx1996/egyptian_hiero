@@ -1,0 +1,135 @@
+{
+ "device": "cuda",
+ "n": 800,
+ "corruptions": {
+  "clean": {
+   "n": 800,
+   "top1": 0.9275,
+   "top5": 0.975,
+   "top10": 0.98375
+  },
+  "rotate20": {
+   "n": 800,
+   "top1": 0.87875,
+   "top5": 0.96125,
+   "top10": 0.97625
+  },
+  "blur": {
+   "n": 800,
+   "top1": 0.3325,
+   "top5": 0.48875,
+   "top10": 0.55875
+  },
+  "noise": {
+   "n": 800,
+   "top1": 0.91375,
+   "top5": 0.97375,
+   "top10": 0.985
+  },
+  "occlude28": {
+   "n": 800,
+   "top1": 0.81125,
+   "top5": 0.91625,
+   "top10": 0.94625
+  },
+  "lowres32": {
+   "n": 800,
+   "top1": 0.315,
+   "top5": 0.49,
+   "top10": 0.5625
+  },
+  "thin": {
+   "n": 800,
+   "top1": 0.90625,
+   "top5": 0.96875,
+   "top10": 0.98
+  },
+  "dropstroke": {
+   "n": 800,
+   "top1": 0.705,
+   "top5": 0.8175,
+   "top10": 0.8625
+  },
+  "wobble": {
+   "n": 800,
+   "top1": 0.8375,
+   "top5": 0.94875,
+   "top10": 0.96125
+  },
+  "frame": {
+   "n": 800,
+   "top1": 0.89125,
+   "top5": 0.95875,
+   "top10": 0.975
+  },
+  "half_top": {
+   "n": 800,
+   "top1": 0.345,
+   "top5": 0.5225,
+   "top10": 0.5975
+  }
+ },
+ "top_confusions": [
+  {
+   "truth": "N2",
+   "pred": "N3",
+   "count": 4
+  },
+  {
+   "truth": "Aa15",
+   "pred": "Aa13",
+   "count": 3
+  },
+  {
+   "truth": "M15",
+   "pred": "E9",
+   "count": 2
+  },
+  {
+   "truth": "N39",
+   "pred": "H5",
+   "count": 2
+  },
+  {
+   "truth": "O43",
+   "pred": "N24",
+   "count": 2
+  },
+  {
+   "truth": "A23",
+   "pred": "A22",
+   "count": 1
+  },
+  {
+   "truth": "N1",
+   "pred": "Aa12",
+   "count": 1
+  },
+  {
+   "truth": "S14a",
+   "pred": "S14",
+   "count": 1
+  },
+  {
+   "truth": "A37",
+   "pred": "A38",
+   "count": 1
+  },
+  {
+   "truth": "A43a",
+   "pred": "A43",
+   "count": 1
+  },
+  {
+   "truth": "M23",
+   "pred": "M28",
+   "count": 1
+  },
+  {
+   "truth": "S38",
+   "pred": "D45",
+   "count": 1
+  }
+ ],
+ "latency_ms_per_query": 12.23
+}

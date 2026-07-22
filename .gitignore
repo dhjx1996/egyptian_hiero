@@ -68,3 +68,10 @@ app/glyphs/
 app/vendor/
 app/build/node_modules/
 app/build/package-lock.json
+
+# generated stick-figure abstraction bank (make_abstractions.py; rebuilt on-node)
+hiero_data/abstractions/
+
+# Secrets
+.cloudflare_token*
+
